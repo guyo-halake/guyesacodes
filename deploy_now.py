@@ -39,3 +39,4 @@ cmd = [
 deploy_res = subprocess.run(cmd, capture_output=True, text=True, shell=False)
 print("Deploy status:", deploy_res.returncode)
 print("Deploy output:\n", deploy_res.stdout)
+
