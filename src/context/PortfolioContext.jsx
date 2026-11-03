@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 import { initialPortfolioData } from "../data/portfolioData";
 
 const PortfolioContext = createContext(null);
-const STORAGE_KEY = "guyohalake_portfolio_v2_real_about_v5";
+const STORAGE_KEY = "guyohalake_portfolio_v2_photos_v6";
 
 export const PortfolioProvider = ({ children }) => {
   const [isEditMode, setIsEditMode] = useState(false);
