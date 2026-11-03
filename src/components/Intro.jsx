@@ -4,8 +4,11 @@ import { TypeAnimation } from "react-type-animation";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import FadeInSection from "./FadeInSection";
 import AsciiPortrait from "./AsciiPortrait";
+import { usePortfolio } from "../context/PortfolioContext";
 
 const Intro = () => {
+  const { profile } = usePortfolio();
+
   return (
     <div id="intro">
       <div className="intro-simulation">
@@ -27,9 +30,9 @@ const Intro = () => {
         </div>
         <FadeInSection>
           <div className="intro-desc">
-            Forward Deployed Engineer specialized in Cloud Infrastructure (Azure & AWS) and AI/ML Agent Systems as my main focus. I build and deploy production solutions—integrating autonomous LLM workflows, robust DevOps pipelines, and enterprise systems to solve real-world operational challenges.
+            {profile.introDesc}
           </div>
-          <a href="mailto:guyohalakeofficial@gmail.com" className="intro-contact">
+          <a href={`mailto:${profile.email}`} className="intro-contact">
             <EmailRoundedIcon />
             {" Say hi!"}
           </a>

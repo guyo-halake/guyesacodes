@@ -1,17 +1,20 @@
 import React from "react";
 import "../styles/About.css";
 import FadeInSection from "./FadeInSection";
+import { usePortfolio } from "../context/PortfolioContext";
 
 const About = () => {
+  const { profile } = usePortfolio();
+
   const one = (
     <p>
-      I am a <b>Forward Deployed Software Engineer</b> working across full-stack software development, cloud infrastructure, and applied AI agents. I build modern web applications and APIs, automate deployments, and integrate intelligence into both new and existing business systems, workflows, and data pipelines.
+      {profile.aboutParagraphOne}
     </p>
   );
 
   const two = (
     <p>
-      My focus is taking AI beyond isolated demos by connecting language models and autonomous agents directly to real business tools and production infrastructure. I work best where code meets real-world constraints, shipping reliable solutions that teams actually run on.
+      {profile.aboutParagraphTwo}
     </p>
   );
 
@@ -70,7 +73,7 @@ const About = () => {
             </div>
           </div>
           <div className="about-image">
-            <img alt="Guyo Halake" src={"/assets/me2.jpg"} />
+            <img alt="Guyo Halake" src={profile.avatarImage || "/assets/me2.jpg"} />
           </div>
         </div>
       </FadeInSection>

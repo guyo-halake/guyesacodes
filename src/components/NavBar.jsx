@@ -50,8 +50,9 @@ const NavBar = () => {
       expanded={expanded}
       onToggle={(isExpanded) => setExpanded(isExpanded)}
     >
-      <Container>
+      <Container className="d-flex align-items-center justify-content-between">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" onSelect={() => setExpanded(false)}>
             <Nav.Link href="/#intro">Home</Nav.Link>
@@ -60,7 +61,7 @@ const NavBar = () => {
             <Nav.Link href="/#projects">Projects</Nav.Link>
             <Nav.Link href="/#hardware-projects">Hardware</Nav.Link>
           </Nav>
-          <Nav className="ms-auto align-items-center" onSelect={() => setExpanded(false)}>
+          <Nav className="ms-auto align-items-center social-icons-nav" onSelect={() => setExpanded(false)}>
             <Nav.Link href="mailto:guyohalakeofficial@gmail.com" title="Email me">
               <EmailRoundedIcon style={{ fontSize: 20 }} />
             </Nav.Link>
@@ -77,25 +78,31 @@ const NavBar = () => {
             <Nav.Link href="https://medium.com/@guyo-halake" target="_blank" title="Medium">
               <BorderColorIcon style={{ fontSize: 20 }} />
             </Nav.Link>
-
-            {/* Light / Dark Mode Toggle */}
-            <div className="theme-toggle-container">
-              <button
-                type="button"
-                className="theme-toggle-btn"
-                onClick={toggleTheme}
-                aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-                title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-              >
-                {theme === "dark" ? (
-                  <LightModeRoundedIcon sx={{ fontSize: 20 }} />
-                ) : (
-                  <DarkModeRoundedIcon sx={{ fontSize: 20 }} />
-                )}
-              </button>
-            </div>
           </Nav>
         </Navbar.Collapse>
+
+        {/* ALWAYS-VISIBLE Theme Switcher (Never collapsed, works across all viewports) */}
+        <div className="theme-toggle-container">
+          <button
+            type="button"
+            className="theme-toggle-btn"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+            title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+          >
+            {theme === "dark" ? (
+              <>
+                <LightModeRoundedIcon sx={{ fontSize: 18 }} />
+                <span className="theme-toggle-label">Light</span>
+              </>
+            ) : (
+              <>
+                <DarkModeRoundedIcon sx={{ fontSize: 18 }} />
+                <span className="theme-toggle-label">Dark</span>
+              </>
+            )}
+          </button>
+        </div>
       </Container>
     </Navbar>
   );
