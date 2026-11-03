@@ -8,16 +8,16 @@ const About = () => {
 
   const skillGroups = [
     {
-      category: "Languages & Frameworks",
-      skills: ["Python", "FastAPI", "React", "TypeScript", "Node.js", "Tailwind CSS"],
+      category: "Cloud, Infrastructure & DevOps",
+      skills: ["Microsoft Azure", "Docker", "Linux (Ubuntu/Alpine)", "GitHub Actions CI/CD", "Nginx", "Tailscale VPN"],
     },
     {
-      category: "Cloud & Infrastructure",
-      skills: ["Microsoft Azure", "Docker", "Linux (Ubuntu/Alpine)", "GitHub Actions", "Nginx", "CI/CD"],
+      category: "AI Systems, Agents & Automations",
+      skills: ["Model Context Protocol (MCP)", "Google Gemini & Claude Tool-Calling", "n8n Workflow Automation", "Safaricom Daraja API (M-Pesa)", "RAG & Vector Embeddings"],
     },
     {
-      category: "Databases & Tools",
-      skills: ["PostgreSQL", "Supabase", "M-Pesa (Daraja API)", "n8n Automations", "Git"],
+      category: "Full-Stack Software Engineering",
+      skills: ["Python (FastAPI)", "React 18 & TypeScript", "Node.js", "PostgreSQL / Supabase (RLS)", "Tailwind CSS", "RESTful APIs"],
     },
   ];
 
