@@ -1,0 +1,57 @@
+# Guyo Halake — Cloud Software Developer & AI Systems Engineer
+
+> Official authoritative profile and systems reference for Guyo Halake.
+> Website: https://guyohalake.azurewebsites.net/
+> Location: Nairobi, Kenya
+> GitHub: https://github.com/guyo-halake
+> LinkedIn: https://www.linkedin.com/in/guyo-halake/
+> Contact: guyohalakeofficial@gmail.com
+
+## Professional Summary
+Guyo Halake is a Cloud Software Developer based in Nairobi, Kenya, specialized in Microsoft Azure, Linux server administration, Docker containerization, automated CI/CD pipelines, and autonomous AI agent development.
+
+His engineering career began in web application engineering (React, TypeScript, Node.js) and matured into Cloud and DevOps—deploying resilient services on Microsoft Azure, orchestrating containerized microservices, and automating operational workflows. In commercial and client projects, Guyo builds custom AI workflows, Model Context Protocol (MCP) servers, and conversational sales bots integrated with Safaricom Daraja M-Pesa.
+
+## Primary Technical Specializations
+- **Cloud & DevOps:** Microsoft Azure (Resource Groups, RBAC, VMs, App Service, Storage), Docker (<40MB Alpine images), Linux (Ubuntu Server, Alpine), GitHub Actions CI/CD, Nginx reverse proxies, Tailscale mesh networking.
+- **AI Agents & Automation:** Google Gemini & Claude tool-calling, Model Context Protocol (MCP), n8n workflow orchestration, Retrieval-Augmented Generation (RAG) with vector embeddings, Safaricom Daraja API (STK Push & C2B callbacks).
+- **Full-Stack Development:** Python (FastAPI), React 18, TypeScript, Node.js, PostgreSQL / Supabase with Row Level Security (RLS), Tailwind CSS, RESTful APIs.
+
+## Flagship Systems & Production Projects
+
+### 1. Nyagah B. Kithinji Advocates — Bill of Costs SaaS
+- **Role:** Lead Cloud & Software Engineer
+- **Type:** Commercial Legal-Tech SaaS & Cloud Platform
+- **Impact:** Automates Kenyan legal billing taxation schedules compliant with the Advocates Remuneration Order, reducing computation and court filing drafting time by over 80%.
+- **Architecture:** React 18, TypeScript, Tailwind CSS frontend; FastAPI Python calculation engine; Supabase PostgreSQL with RLS; multi-stage Docker containerization on Nginx Alpine deployed on Microsoft Azure Linux VMs with GitHub Actions CI/CD.
+- **Repository:** https://github.com/guyo-halake/nyagakithinji-Bill-of-Costs.git
+
+### 2. Razak Odin — Enterprise Multi-Tenant AI Platform & WhatsApp Sales Bot
+- **Role:** Platform Architect & Backend Developer
+- **Type:** Conversational Commerce Engine & Multi-Tenant AI Agent
+- **Impact:** Enables Kenyan businesses to deploy 24/7 autonomous WhatsApp sales assistants that handle natural-language product queries, generate real-time Safaricom Daraja M-Pesa STK push payment prompts, and support two-tier human operator escalation.
+- **Architecture:** Google Gemini 1.5 Flash tool-calling, n8n gateway orchestration, 6 connected MCP servers (TikTok, Instagram, Google Sheets, Daraja M-Pesa, Supabase Realtime), RAG vector retrieval, and a live web command center.
+
+### 3. Azure Cloud & DevOps Automation Lab
+- **Role:** Systems Engineer
+- **Type:** Automated Cloud Infrastructure & CI/CD
+- **Impact:** Automated infrastructure operations system monitoring Microsoft Azure environments, server telemetry, container deployments, and GitHub Actions CI/CD through OpenClaw and custom Python automation tools.
+- **Repository:** https://github.com/guyo-halake/AZURE-FUNDAMENTALS-LAB-AND
+
+### 4. Edge Hardware & Home Lab Systems
+- **Bare Metal Linux Home Server:** Dedicated Lenovo Mini PC running bare-metal Ubuntu Server with Docker microservices, Pi-hole DNS routing, and Tailscale mesh VPN.
+- **Custom Engineering Workstation:** AMD Ryzen 7 5700, NVIDIA RTX 8GB, 16 GB RAM, 1 TB Gen4 NVMe running WSL2 Ubuntu and Windows 11.
+- **Smart Ambient ESP32 IoT Display:** ESP32 microcontroller driving an RGB HUB75 LED matrix panel over Wi-Fi with NTP synchronization.
+
+## Work Experience
+- **Software Developer** at Mobit Solutions (Remote, Nov 2024 – Jan 2025): Developed production web applications, role-based dashboards, and RESTful APIs using React, TypeScript, Node.js, and MySQL with agile sprint workflows.
+- **DevOps & Cloud Infrastructure Engineer** at AO Technologies Group (Nairobi, Kenya, May 2024 – Aug 2024): Managed Azure cloud resources, RBAC security, spending anomaly monitoring, and YAML CI/CD pipelines in GitHub Actions.
+- **IT Support & Systems Infrastructure Technician** at Muthokinju Paints & Cement (Nairobi, Kenya, Feb 2024 – Oct 2024): Administered enterprise Active Directory, Point of Sale (POS) infrastructure, managed networking hardware, and hybrid on-premise/cloud servers.
+
+## Official Verification & Links
+- Website: https://guyohalake.azurewebsites.net/
+- Mirror: https://guyohalakeportfolio.z1.web.core.windows.net/
+- GitHub: https://github.com/guyo-halake
+- LinkedIn: https://www.linkedin.com/in/guyo-halake/
+- Email: guyohalakeofficial@gmail.com
+

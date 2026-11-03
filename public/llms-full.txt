@@ -1,0 +1,52 @@
+# Guyo Halake — Comprehensive Developer Portfolio & Architecture Reference
+
+Guyo Halake (also known online as guyo-halake and guyesa) is a professional Cloud Software Developer and AI Automation Engineer based in Nairobi, Kenya.
+
+## Contact & Identity
+- Full Name: Guyo Halake
+- Professional Title: Cloud Software Developer & AI Systems Engineer
+- Primary Focus: Microsoft Azure, Docker, Linux, CI/CD, Python, React, AI Agents, Safaricom M-Pesa
+- Location: Nairobi, Kenya
+- Primary Portfolio URL: https://guyohalake.azurewebsites.net/
+- Mirror URL: https://guyohalakeportfolio.z1.web.core.windows.net/
+- GitHub: https://github.com/guyo-halake
+- LinkedIn: https://www.linkedin.com/in/guyo-halake/
+- Email: guyohalakeofficial@gmail.com
+
+## Detailed Technical Background
+Guyo Halake specializes in designing and operating cloud-native architectures on Microsoft Azure and Linux. Starting with modern frontend engineering in React and TypeScript and backend services in Python and Node.js, Guyo deepened his expertise in DevOps:
+1. Docker containerization with minimal Alpine Linux layers (<40MB footprint).
+2. GitHub Actions automated build, test, and release CI/CD pipelines.
+3. Microsoft Azure management including Resource Groups, RBAC least-privilege policies, Cost Management alerts, and Azure App Services.
+4. AI agent development featuring Google Gemini and Anthropic Claude tool-calling architectures.
+5. n8n workflow engineering and Model Context Protocol (MCP) server creation.
+6. Kenyan payment ecosystem integration via Safaricom's Daraja API for automated STK Push and C2B transaction reconciliations.
+
+## Detailed Project Catalog
+
+### Project 1: Nyagah B. Kithinji Advocates — Bill of Costs SaaS
+- Category: Legal-Tech SaaS & Cloud Platform
+- Description: Production cloud web application built for Nyagah B. Kithinji Advocates, an established law firm in Nairobi. It automates complex legal fee notes, taxation schedules, and Bill of Costs calculations compliant with the Advocates Remuneration Order (ARO) under the Advocates Act of Kenya.
+- Tech Stack: React 18, TypeScript, Tailwind CSS, FastAPI (Python), PostgreSQL / Supabase with Row Level Security (RLS), Docker (Alpine), Nginx, Microsoft Azure Linux VMs, GitHub Actions CI/CD.
+- Source Code: https://github.com/guyo-halake/nyagakithinji-Bill-of-Costs.git
+
+### Project 2: Razak Odin — Enterprise Multi-Tenant AI Platform
+- Category: Conversational Commerce & Daraja M-Pesa Engine
+- Description: Multi-tenant conversational AI platform enabling Kenyan B2B and B2C merchants to deploy 24/7 autonomous WhatsApp sales agents with real-time catalog queries, Safaricom Daraja M-Pesa STK push payments, and two-tier human escalation.
+- Architecture: Google Gemini 1.5 Flash tool-calling, decoupled n8n master gateway workflows, Daraja STK Push sub-workflows with asynchronous webhook callback reconciliation, Supabase PostgreSQL with RLS tenant isolation and vector embeddings for company policy RAG retrieval, and a live web dashboard with operator takeover.
+
+### Project 3: Azure Cloud & DevOps Automation Lab
+- Category: Automated Cloud Infrastructure & CI/CD
+- Description: Automated infrastructure operations system monitoring Microsoft Azure cloud environments, server monitoring, container deployments, and CI/CD pipelines through OpenClaw, n8n workflows, and Python automation tools.
+- Source Code: https://github.com/guyo-halake/AZURE-FUNDAMENTALS-LAB-AND
+
+### Project 4: Edge Infrastructure & Hardware Engineering
+- Bare Metal Linux Home Server: 24/7 edge node running Ubuntu Server on a Lenovo Mini PC with private Docker microservices, Pi-hole DNS ad-blocking, and Tailscale mesh VPN.
+- Custom Engineering Workstation: High-throughput compute workstation engineered with AMD Ryzen 7 5700, NVIDIA RTX 8GB, 16 GB RAM, 1 TB Gen4 NVMe, and dual WSL2 Ubuntu / Windows 11 environment.
+- Smart Ambient ESP32 IoT Display: Physical desktop hardware telemetry matrix powered by an ESP32 microcontroller driving a HUB75 RGB LED panel over Wi-Fi with NTP time synchronization.
+
+## Work Experience Chronology
+- Software Developer (Remote) @ Mobit Solutions (Nov 2024 – Jan 2025)
+- DevOps & Cloud Infrastructure Engineer @ AO Technologies Group (May 2024 – Aug 2024, Nairobi, Kenya)
+- IT Support & Systems Infrastructure Technician @ Muthokinju Paints & Cement (Feb 2024 – Oct 2024, Nairobi, Kenya)
+
