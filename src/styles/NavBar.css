@@ -108,3 +108,43 @@
     padding: 6px 10px;
   }
 }
+
+/* Direct Admin Link in Navbar */
+.nav-admin-direct-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--light-navy);
+  border: 1px solid var(--card-border);
+  color: var(--green-bright) !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: 'NTR', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  box-shadow: var(--navy-shadow);
+}
+
+.nav-admin-direct-btn:hover {
+  background: var(--green-tint);
+  border-color: var(--green-bright);
+  transform: translateY(-1px);
+}
+
+.admin-nav-pill {
+  color: var(--green-bright) !important;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-admin-label {
+    display: none;
+  }
+  .nav-admin-direct-btn {
+    padding: 6px 10px;
+  }
+}
