@@ -1,0 +1,317 @@
+/* ===== Floating Live Visual Builder Dock ===== */
+.live-builder-dock {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  font-family: "NTR", -apple-system, sans-serif;
+}
+
+/* Floating Trigger Pill */
+.builder-trigger-pill {
+  background: var(--light-navy);
+  border: 1px solid var(--green-bright);
+  color: var(--green-bright);
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "NTR", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.builder-trigger-pill:hover {
+  background: var(--green-tint);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.8);
+}
+
+/* Active Floating Dock */
+.builder-active-bar {
+  background: var(--light-navy);
+  border: 1px solid var(--green-bright);
+  border-radius: 16px;
+  padding: 16px 20px;
+  width: 580px;
+  max-width: calc(100vw - 32px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
+  animation: slideUpDock 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.builder-active-bar.bar-collapsed {
+  width: auto;
+  padding: 10px 16px;
+}
+
+@keyframes slideUpDock {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.builder-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.builder-title-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--lightest-slate);
+  font-size: 16px;
+}
+
+.builder-pulse-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--green-bright);
+  box-shadow: 0 0 10px var(--green-bright);
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.8; }
+}
+
+.builder-header-btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.builder-icon-btn {
+  background: transparent;
+  border: 1px solid var(--divider);
+  color: var(--slate);
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.builder-exit-btn {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #ef4444;
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.builder-bar-content {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--divider);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.builder-sections-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.builder-row-label {
+  font-size: 13px;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.builder-chips-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.section-chip {
+  padding: 4px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: "NTR", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.section-chip.chip-visible {
+  background: var(--green-tint);
+  border: 1px solid var(--green-bright);
+  color: var(--green-bright);
+}
+
+.section-chip.chip-hidden {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+  opacity: 0.75;
+}
+
+.builder-actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.builder-tips {
+  font-size: 13px;
+  color: var(--slate);
+}
+
+.builder-action-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.builder-reset-btn {
+  background: transparent;
+  border: 1px solid var(--slate);
+  color: var(--slate);
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.builder-save-btn {
+  background: var(--green-bright);
+  border: none;
+  color: #020c1b;
+  padding: 6px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.builder-save-btn.saved-success {
+  background: #22c55e;
+  color: #fff;
+}
+
+/* ===== Inline Editable Styles ===== */
+[contenteditable="true"] {
+  outline: 1.5px dashed var(--green-bright) !important;
+  outline-offset: 4px;
+  cursor: text;
+  border-radius: 4px;
+  transition: outline-color 0.2s ease, background 0.2s ease;
+}
+
+[contenteditable="true"]:hover {
+  background: var(--green-tint);
+}
+
+[contenteditable="true"]:focus {
+  outline: 2px solid var(--green-bright) !important;
+  background: var(--green-tint);
+}
+
+/* Card Builder Controls overlay */
+.builder-card-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  display: flex;
+  gap: 6px;
+  background: var(--light-navy);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.builder-ctrl-btn {
+  background: transparent;
+  border: none;
+  color: var(--slate);
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-family: "NTR", sans-serif;
+  transition: all 0.2s;
+}
+
+.builder-ctrl-btn:hover {
+  background: var(--navy);
+  color: var(--lightest-slate);
+}
+
+.builder-ctrl-btn.btn-hide {
+  color: #ef4444;
+}
+
+.builder-ctrl-btn.btn-show {
+  color: var(--green-bright);
+}
+
+/* Add New Project/Hardware Placeholder Card */
+.add-new-card-placeholder {
+  border: 2px dashed var(--card-border) !important;
+  background: transparent !important;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: all 0.25s ease;
+  padding: 24px;
+  text-align: center;
+}
+
+.add-new-card-placeholder:hover {
+  border-color: var(--green-bright) !important;
+  background: var(--green-tint) !important;
+  transform: translateY(-4px);
+}
+
+.add-new-card-placeholder span {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--green-bright);
+}

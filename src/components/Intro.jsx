@@ -7,7 +7,7 @@ import AsciiPortrait from "./AsciiPortrait";
 import { usePortfolio } from "../context/PortfolioContext";
 
 const Intro = () => {
-  const { profile } = usePortfolio();
+  const { profile, isEditMode, updateProfileField } = usePortfolio();
 
   return (
     <div id="intro">
@@ -29,7 +29,13 @@ const Intro = () => {
           <span className="intro-cursor">|</span>
         </div>
         <FadeInSection>
-          <div className="intro-desc">
+          <div
+            className="intro-desc"
+            contentEditable={isEditMode}
+            suppressContentEditableWarning={true}
+            onBlur={(e) => updateProfileField("introDesc", e.currentTarget.textContent)}
+            title={isEditMode ? "Click to edit intro text" : undefined}
+          >
             {profile.introDesc}
           </div>
           <a href={`mailto:${profile.email}`} className="intro-contact">

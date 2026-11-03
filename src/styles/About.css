@@ -155,3 +155,23 @@
 .about-description b {
   color: var(--lightest-slate);
 }
+
+/* Builder Avatar Change Button */
+.builder-avatar-change-btn {
+  display: block;
+  margin-top: 10px;
+  background: var(--light-navy);
+  border: 1px dashed var(--green-bright);
+  color: var(--green-bright);
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'NTR', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.builder-avatar-change-btn:hover {
+  background: var(--green-tint);
+}

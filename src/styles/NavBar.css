@@ -133,6 +133,13 @@
   transform: translateY(-1px);
 }
 
+.nav-admin-direct-btn.active-edit {
+  background: var(--green-bright);
+  color: #0a192f !important;
+  border-color: var(--green-bright);
+  box-shadow: 0 0 14px rgba(100, 255, 218, 0.4);
+}
+
 .admin-nav-pill {
   color: var(--green-bright) !important;
   font-weight: 700;

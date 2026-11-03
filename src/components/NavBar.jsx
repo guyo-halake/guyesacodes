@@ -8,11 +8,14 @@ import BorderColorIcon from "@mui/icons-material/BorderColor";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 import TuneRoundedIcon from "@mui/icons-material/TuneRounded";
+import { usePortfolio } from "../context/PortfolioContext";
 import "../styles/NavBar.css";
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
   const location = useLocation();
+  const { isEditMode, toggleEditMode } = usePortfolio();
+
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("portfolio_theme") || "dark";
   });
@@ -65,10 +68,24 @@ const NavBar = () => {
             <Nav.Link href="/#experience">Experience</Nav.Link>
             <Nav.Link href="/#projects">Projects</Nav.Link>
             <Nav.Link href="/#hardware-projects">Hardware</Nav.Link>
-            <Nav.Link as={Link} to="/admin" className="admin-nav-pill">
-              <TuneRoundedIcon sx={{ fontSize: 16, marginRight: "4px" }} />
-              Admin CMS
-            </Nav.Link>
+            {!isAdminPage ? (
+              <Nav.Link
+                as="button"
+                className="admin-nav-pill"
+                onClick={() => {
+                  toggleEditMode();
+                  setExpanded(false);
+                }}
+                style={{ background: "transparent", border: "none", textAlign: "left", cursor: "pointer" }}
+              >
+                <TuneRoundedIcon sx={{ fontSize: 16, marginRight: "4px" }} />
+                {isEditMode ? "Exit Visual Editor" : "Edit Page (Live Builder)"}
+              </Nav.Link>
+            ) : (
+              <Nav.Link as={Link} to="/" className="admin-nav-pill">
+                Back to Site
+              </Nav.Link>
+            )}
           </Nav>
           <Nav className="ms-auto align-items-center social-icons-nav" onSelect={() => setExpanded(false)}>
             <Nav.Link href="mailto:guyohalakeofficial@gmail.com" title="Email me">
@@ -90,12 +107,23 @@ const NavBar = () => {
           </Nav>
         </Navbar.Collapse>
 
-        {/* ALWAYS-VISIBLE Action Controls: Admin Button + Theme Switcher */}
+        {/* ALWAYS-VISIBLE Action Controls: Live Visual Editor Toggle + Theme Switcher */}
         <div className="d-flex align-items-center gap-2">
-          {!isAdminPage && (
-            <Link to="/admin" className="nav-admin-direct-btn" title="Open Website Admin CMS">
+          {!isAdminPage ? (
+            <button
+              type="button"
+              className={`nav-admin-direct-btn ${isEditMode ? "active-edit" : ""}`}
+              onClick={toggleEditMode}
+              title={isEditMode ? "Exit In-Page Visual Editor" : "Turn On In-Page Visual Editor"}
+            >
               <TuneRoundedIcon sx={{ fontSize: 16 }} />
-              <span className="nav-admin-label">Admin CMS</span>
+              <span className="nav-admin-label">
+                {isEditMode ? "Exit Editor" : "Edit Page"}
+              </span>
+            </button>
+          ) : (
+            <Link to="/" className="nav-admin-direct-btn" title="Back to site">
+              <span className="nav-admin-label">Back to Site</span>
             </Link>
           )}
 

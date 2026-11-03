@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/admin/AdminDashboard.css";
 import { usePortfolio } from "../../context/PortfolioContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import VisibilityRoundedIcon from "@mui/icons-material/VisibilityRounded";
 import VisibilityOffRoundedIcon from "@mui/icons-material/VisibilityOffRounded";
 import EditRoundedIcon from "@mui/icons-material/EditRounded";
@@ -30,8 +30,10 @@ const AdminDashboard = () => {
     resetToDefaults,
     exportDataJSON,
     importDataJSON,
+    setIsEditMode,
   } = usePortfolio();
 
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("sections"); // "sections" | "projects" | "hardware" | "profile" | "sync"
   const [editingProject, setEditingProject] = useState(null);
   const [editingHardware, setEditingHardware] = useState(null);
@@ -79,7 +81,28 @@ const AdminDashboard = () => {
           <span className="admin-badge">v2 Admin</span>
         </div>
 
-        <div className="admin-header-actions">
+        <div className="admin-header-actions" style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+          <button
+            type="button"
+            className="admin-tab-btn"
+            style={{
+              background: "var(--green-bright)",
+              color: "#0a192f",
+              fontWeight: 700,
+              borderRadius: "20px",
+              padding: "8px 16px",
+              border: "none",
+              cursor: "pointer",
+              boxShadow: "0 0 12px rgba(100, 255, 218, 0.4)",
+            }}
+            onClick={() => {
+              setIsEditMode(true);
+              localStorage.setItem("portfolio_edit_mode", "true");
+              navigate("/");
+            }}
+          >
+            ⚡ Switch to Live Visual Builder on Site
+          </button>
           {notification && (
             <div className="admin-notification">
               <CheckCircleRoundedIcon sx={{ fontSize: 16 }} />
