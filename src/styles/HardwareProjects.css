@@ -1,6 +1,7 @@
 #hardware-projects {
   margin: auto;
-  max-width: 1000px;
+  max-width: min(1420px, 94vw);
+  width: 100%;
   padding: 80px 0;
 }
 

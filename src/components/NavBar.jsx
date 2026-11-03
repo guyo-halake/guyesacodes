@@ -16,8 +16,9 @@ const NavBar = () => {
   const location = useLocation();
   const { isEditMode, toggleEditMode } = usePortfolio();
 
+  // Default theme is Light mode
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("portfolio_theme") || "dark";
+    return localStorage.getItem("portfolio_theme") || "light";
   });
   const scrollPos = useRef(0);
 
@@ -68,7 +69,16 @@ const NavBar = () => {
             <Nav.Link href="/#experience">Experience</Nav.Link>
             <Nav.Link href="/#projects">Projects</Nav.Link>
             <Nav.Link href="/#hardware-projects">Hardware</Nav.Link>
-            {!isAdminPage ? (
+
+            {/* Admin link ONLY shows if user is explicitly on /admin */}
+            {isAdminPage && (
+              <Nav.Link as={Link} to="/" className="admin-nav-pill">
+                Back to Site
+              </Nav.Link>
+            )}
+
+            {/* In Edit Mode (activated from /admin), show quick exit */}
+            {isEditMode && !isAdminPage && (
               <Nav.Link
                 as="button"
                 className="admin-nav-pill"
@@ -79,14 +89,11 @@ const NavBar = () => {
                 style={{ background: "transparent", border: "none", textAlign: "left", cursor: "pointer" }}
               >
                 <TuneRoundedIcon sx={{ fontSize: 16, marginRight: "4px" }} />
-                {isEditMode ? "Exit Visual Editor" : "Edit Page (Live Builder)"}
-              </Nav.Link>
-            ) : (
-              <Nav.Link as={Link} to="/" className="admin-nav-pill">
-                Back to Site
+                Exit Visual Editor
               </Nav.Link>
             )}
           </Nav>
+
           <Nav className="ms-auto align-items-center social-icons-nav" onSelect={() => setExpanded(false)}>
             <Nav.Link href="mailto:guyohalakeofficial@gmail.com" title="Email me">
               <EmailRoundedIcon style={{ fontSize: 20 }} />
@@ -107,24 +114,24 @@ const NavBar = () => {
           </Nav>
         </Navbar.Collapse>
 
-        {/* ALWAYS-VISIBLE Action Controls: Live Visual Editor Toggle + Theme Switcher */}
+        {/* ALWAYS-VISIBLE Controls: Theme Switcher (No public admin buttons) */}
         <div className="d-flex align-items-center gap-2">
-          {!isAdminPage ? (
-            <button
-              type="button"
-              className={`nav-admin-direct-btn ${isEditMode ? "active-edit" : ""}`}
-              onClick={toggleEditMode}
-              title={isEditMode ? "Exit In-Page Visual Editor" : "Turn On In-Page Visual Editor"}
-            >
-              <TuneRoundedIcon sx={{ fontSize: 16 }} />
-              <span className="nav-admin-label">
-                {isEditMode ? "Exit Editor" : "Edit Page"}
-              </span>
-            </button>
-          ) : (
+          {isAdminPage && (
             <Link to="/" className="nav-admin-direct-btn" title="Back to site">
               <span className="nav-admin-label">Back to Site</span>
             </Link>
+          )}
+
+          {isEditMode && !isAdminPage && (
+            <button
+              type="button"
+              className="nav-admin-direct-btn active-edit"
+              onClick={toggleEditMode}
+              title="Exit Visual Editor"
+            >
+              <TuneRoundedIcon sx={{ fontSize: 16 }} />
+              <span className="nav-admin-label">Exit Editor</span>
+            </button>
           )}
 
           <div className="theme-toggle-container">

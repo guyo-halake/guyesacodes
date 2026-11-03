@@ -2,12 +2,10 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 import { initialPortfolioData } from "../data/portfolioData";
 
 const PortfolioContext = createContext(null);
-const STORAGE_KEY = "guyohalake_portfolio_v2_odin_live";
+const STORAGE_KEY = "guyohalake_portfolio_v2_odin_live_v3";
 
 export const PortfolioProvider = ({ children }) => {
-  const [isEditMode, setIsEditMode] = useState(() => {
-    return localStorage.getItem("portfolio_edit_mode") === "true";
-  });
+  const [isEditMode, setIsEditMode] = useState(false);
 
   const [data, setData] = useState(() => {
     try {

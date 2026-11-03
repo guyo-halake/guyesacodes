@@ -27,24 +27,14 @@ const LiveVisualToolbar = () => {
     setTimeout(() => setSavedBadge(false), 2500);
   };
 
-  return (
-    <aside className={`live-builder-dock ${isEditMode ? "mode-active" : "mode-idle"}`} aria-label="Visual Builder Dock">
-      {/* Trigger floating button when idle */}
-      {!isEditMode && (
-        <button
-          type="button"
-          className="builder-trigger-pill"
-          onClick={toggleEditMode}
-          title="Turn on Live Visual Builder"
-        >
-          <TuneRoundedIcon sx={{ fontSize: 18 }} />
-          <span>Edit Page</span>
-        </button>
-      )}
+  // Only render when isEditMode is active (accessed via /admin)
+  if (!isEditMode) {
+    return null;
+  }
 
-      {/* Floating Toolbar Dock when Edit Mode is active */}
-      {isEditMode && (
-        <div className={`builder-active-bar ${collapsed ? "bar-collapsed" : ""}`}>
+  return (
+    <aside className="live-builder-dock mode-active" aria-label="Visual Builder Dock">
+      <div className={`builder-active-bar ${collapsed ? "bar-collapsed" : ""}`}>
           <div className="builder-bar-header">
             <div className="builder-title-badge">
               <span className="builder-pulse-dot" />
@@ -133,7 +123,6 @@ const LiveVisualToolbar = () => {
             </div>
           )}
         </div>
-      )}
     </aside>
   );
 };
