@@ -4,24 +4,54 @@
   max-width: 1000px;
 }
 
+.joblist-header-box {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .joblist-job-title {
-  font-family: "NTR", sans-serif;
-  font-size: 28px;
-  font-weight: bold;
+  font-family: var(--font-heading, "Calibre", "Inter", sans-serif);
+  font-size: 24px;
+  font-weight: 700;
   color: var(--lightest-slate);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.joblist-company-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 18px;
+  font-family: "NTR", sans-serif;
 }
 
 .joblist-job-company {
   font-family: "NTR", sans-serif;
-  font-size: 28px;
+  font-size: 19px;
   color: var(--green-bright);
-  font-weight: bold;
+  font-weight: 600;
+  text-decoration: none;
+}
+.joblist-job-company:hover {
+  text-decoration: underline;
+}
+
+.joblist-job-location {
+  font-family: "NTR", sans-serif;
+  font-size: 16px;
+  color: var(--slate);
 }
 
 .joblist-duration {
-  font-family: "NTR", sans-serif;
-  font-size: 18px;
+  font-family: "SF Mono", "Fira Code", monospace;
+  font-size: 13px;
+  letter-spacing: 0.5px;
   color: var(--slate);
+  margin-top: 2px;
 }
 
 #vertical-tabpanel {
@@ -78,10 +108,11 @@ ul {
 }
 
 .job-description {
-  padding-top: 24px;
-  max-width: 650px;
+  padding-top: 14px;
+  max-width: 680px;
   font-family: "NTR", sans-serif;
-  font-size: 20px;
+  font-size: 19px;
+  line-height: 1.5;
 }
 
 .job-description a,
@@ -104,11 +135,11 @@ ul {
   }
 
   .joblist-job-title {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .joblist-job-company {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 

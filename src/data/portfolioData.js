@@ -1,13 +1,13 @@
 export const initialPortfolioData = {
   profile: {
     greeting: "hi, guyo here.",
-    headline: "Guyo Halake · Software & Cloud Engineer",
+    headline: "Guyo Halake · Software & Cloud Developer",
     introDesc:
-      "I'm a software and cloud engineer based in Nairobi, Kenya. I design and build production web applications, autonomous AI platforms, and cloud systems on Microsoft Azure. Currently engineering legal SaaS software and multi-tenant AI systems with real-time M-Pesa payment workflows.",
+      "I'm a software and cloud developer based in Nairobi, Kenya. I build web applications, backend APIs, and automations that help businesses run smoother. Most of my work involves Python, React, Docker, and Microsoft Azure.",
     aboutParagraphOne:
-      "I build software and cloud systems that solve real business problems. Over the past few years, my work has spanned cloud infrastructure on Microsoft Azure, Linux server administration, and full-stack software development. Whether writing backend APIs in Python and Node.js or setting up automated CI/CD deployment pipelines, I focus on building resilient, maintainable systems.",
+      "I am a Cloud Software Developer specialized in Microsoft Azure. Over the past few years, my work has grown from building web applications with React and JavaScript to Cloud and DevOps—where I containerize those applications with Docker, build automated CI/CD pipelines, and deploy and monitor them on Azure. Whether writing backend APIs in Python and Node.js or managing Linux servers, I focus on building resilient, maintainable systems that just work.",
     aboutParagraphTwo:
-      "My recent work includes engineering a production legal-tech SaaS for Nyagah B. Kithinji Advocates to automate complex Kenyan legal fee notes and taxation schedules, and architecting Odin—an enterprise multi-tenant AI platform featuring WhatsApp integration, 6 connected MCP servers, RAG knowledge retrieval, and real-time Safaricom Daraja M-Pesa STK push execution.",
+      "In my freelance and project work, I focus heavily on AI agents and workflow automation. Using n8n, custom Python scripts, RAG, and MCP (Model Context Protocol) integrations, I build intelligent workflows that eliminate repetitive manual tasks and automate real business operations—from legal billing SaaS for law firms to WhatsApp customer bots with real-time M-Pesa payments.",
     email: "guyohalakeofficial@gmail.com",
     github: "https://github.com/guyo-halake",
     linkedin: "https://www.linkedin.com/in/guyo-halake/",
