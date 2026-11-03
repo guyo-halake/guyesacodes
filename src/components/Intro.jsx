@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Intro.css";
 import { TypeAnimation } from "react-type-animation";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FadeInSection from "./FadeInSection";
 import AsciiPortrait from "./AsciiPortrait";
 import { usePortfolio } from "../context/PortfolioContext";
@@ -28,6 +29,17 @@ const Intro = () => {
           {" here."}
           <span className="intro-cursor">|</span>
         </div>
+
+        <div
+          className="intro-role-badge"
+          contentEditable={isEditMode}
+          suppressContentEditableWarning={true}
+          onBlur={(e) => updateProfileField("headline", e.currentTarget.textContent)}
+          title={isEditMode ? "Click to edit professional headline" : undefined}
+        >
+          {profile.headline || "Guyo Halake · Cloud Software Engineer"}
+        </div>
+
         <FadeInSection>
           <div
             className="intro-desc"
@@ -38,10 +50,41 @@ const Intro = () => {
           >
             {profile.introDesc}
           </div>
-          <a href={`mailto:${profile.email}`} className="intro-contact">
-            <EmailRoundedIcon />
-            {" Say hi!"}
-          </a>
+
+          <div className="intro-actions-row">
+            <a href={`mailto:${profile.email}`} className="intro-contact">
+              <EmailRoundedIcon sx={{ fontSize: 18 }} />
+              <span>Email Me</span>
+            </a>
+
+            <a
+              href="https://wa.me/254700000000?text=Hi%20Guyo,%20saw%20your%20cloud%20software%20portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="intro-contact btn-whatsapp"
+              title="Chat directly on WhatsApp"
+              onClick={(e) => {
+                const phone = window.prompt(
+                  "Chat with Guyo on WhatsApp. Enter your number or confirm:",
+                  "254"
+                );
+                if (phone && phone.trim() !== "254") {
+                  window.open(
+                    `https://wa.me/${phone.replace(/[^0-9]/g, "")}?text=Hi%20Guyo,%20saw%20your%20cloud%20software%20portfolio`,
+                    "_blank"
+                  );
+                }
+                e.preventDefault();
+              }}
+            >
+              <WhatsAppIcon sx={{ fontSize: 18 }} />
+              <span>WhatsApp</span>
+            </a>
+
+            <a href="#projects" className="intro-contact btn-projects">
+              <span>View Systems ↓</span>
+            </a>
+          </div>
         </FadeInSection>
       </div>
     </div>
