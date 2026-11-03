@@ -6,36 +6,18 @@ import { usePortfolio } from "../context/PortfolioContext";
 const About = () => {
   const { profile, isEditMode, updateProfileField } = usePortfolio();
 
-  const skills = [
+  const skillGroups = [
     {
-      category: "Cloud & DevOps",
-      items: [
-        "Microsoft Azure (VMs, App Services, Blob)",
-        "Docker & Container Architecture",
-        "Linux Server Administration (Ubuntu / Alpine)",
-        "GitHub Actions CI/CD Automation",
-        "Nginx & Reverse Proxies",
-      ],
+      category: "Languages & Frameworks",
+      skills: ["Python", "FastAPI", "React", "TypeScript", "Node.js", "Tailwind CSS"],
     },
     {
-      category: "AI Agents & Practical Automations",
-      items: [
-        "Google Gemini & Claude Tool-Calling",
-        "n8n Autonomous Workflow Orchestration",
-        "Model Context Protocol (MCP)",
-        "Safaricom Daraja API (M-Pesa STK Push)",
-        "RAG & Vector Embeddings",
-      ],
+      category: "Cloud & Infrastructure",
+      skills: ["Microsoft Azure", "Docker", "Linux (Ubuntu/Alpine)", "GitHub Actions", "Nginx", "CI/CD"],
     },
     {
-      category: "Full-Stack Software Engineering",
-      items: [
-        "FastAPI & Python System Services",
-        "React 18 & TypeScript",
-        "PostgreSQL & Supabase (RLS)",
-        "Tailwind CSS & Responsive UI",
-        "RESTful APIs & Webhook Security",
-      ],
+      category: "Databases & Tools",
+      skills: ["PostgreSQL", "Supabase", "M-Pesa (Daraja API)", "n8n Automations", "Git"],
     },
   ];
 
@@ -45,6 +27,7 @@ const About = () => {
         <div className="section-header">
           <span className="section-title">/ about</span>
         </div>
+
         <div className="about-content">
           <div className="about-description">
             <p
@@ -65,21 +48,25 @@ const About = () => {
               {profile.aboutParagraphTwo}
             </p>
 
-            <div className="skills-grid">
-              {skills.map((group, i) => (
-                <FadeInSection key={i} delay={(i + 1) * 100 + "ms"}>
-                  <div className="skill-group">
-                    <div className="skill-group-title">{group.category}</div>
-                    <ul className="tech-stack">
-                      {group.items.map((item, j) => (
-                        <li key={j}>{item}</li>
-                      ))}
-                    </ul>
+            {/* Redesigned Minimalist Skills Badges */}
+            <div className="skills-container">
+              <div className="skills-section-heading">Technologies I work with:</div>
+              {skillGroups.map((group, i) => (
+                <div key={i} className="skill-category-block">
+                  <div className="skill-category-label">{group.category}</div>
+                  <div className="skill-pills-wrap">
+                    {group.skills.map((skill, j) => (
+                      <span key={j} className="skill-chip">
+                        <span className="skill-chip-dot" />
+                        {skill}
+                      </span>
+                    ))}
                   </div>
-                </FadeInSection>
+                </div>
               ))}
             </div>
           </div>
+
           <div className="about-image">
             <img alt="Guyo Halake" src={profile.avatarImage || "/assets/me2.jpg"} />
             {isEditMode && (

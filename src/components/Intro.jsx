@@ -37,7 +37,7 @@ const Intro = () => {
           onBlur={(e) => updateProfileField("headline", e.currentTarget.textContent)}
           title={isEditMode ? "Click to edit professional headline" : undefined}
         >
-          {profile.headline || "Guyo Halake · Cloud Software Engineer"}
+          {profile.headline || "Guyo Halake · Software & Cloud Developer"}
         </div>
 
         <FadeInSection>
@@ -54,11 +54,11 @@ const Intro = () => {
           <div className="intro-actions-row">
             <a href={`mailto:${profile.email}`} className="intro-contact">
               <EmailRoundedIcon sx={{ fontSize: 18 }} />
-              <span>Email Me</span>
+              <span>Say Hello</span>
             </a>
 
             <a
-              href="https://wa.me/254700000000?text=Hi%20Guyo,%20saw%20your%20cloud%20software%20portfolio"
+              href="https://wa.me/254700000000?text=Hi%20Guyo,%20saw%20your%20portfolio"
               target="_blank"
               rel="noopener noreferrer"
               className="intro-contact btn-whatsapp"
@@ -70,7 +70,7 @@ const Intro = () => {
                 );
                 if (phone && phone.trim() !== "254") {
                   window.open(
-                    `https://wa.me/${phone.replace(/[^0-9]/g, "")}?text=Hi%20Guyo,%20saw%20your%20cloud%20software%20portfolio`,
+                    `https://wa.me/${phone.replace(/[^0-9]/g, "")}?text=Hi%20Guyo,%20saw%20your%20portfolio`,
                     "_blank"
                   );
                 }
@@ -82,7 +82,7 @@ const Intro = () => {
             </a>
 
             <a href="#projects" className="intro-contact btn-projects">
-              <span>View Systems ↓</span>
+              <span>View Projects ↓</span>
             </a>
           </div>
         </FadeInSection>
