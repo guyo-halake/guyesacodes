@@ -11,7 +11,45 @@
   --sans: "Funnel Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --mono: "Martian Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Tactical Color Palette */
+  /* Tactical Color Palette · LIGHT MODE (DEFAULT) */
+  --bg-deep: #EDEDE7;
+  --bg-surface: #E3E7DE;
+  --bg-card: #F7F9F5;
+  --bg-card-hover: #FFFFFF;
+  
+  --border-hairline: rgba(18, 24, 20, 0.12);
+  --border-accent: rgba(21, 128, 61, 0.35);
+  --border-warning: rgba(180, 83, 9, 0.35);
+
+  --text-primary: #121814;
+  --text-secondary: #445147;
+  --text-muted: #6B786E;
+  --text-heading: #121814;
+
+  --c2-green: #15803D;
+  --c2-green-glow: rgba(21, 128, 61, 0.2);
+  --c2-green-dim: #166534;
+
+  --c2-amber: #B45309;
+  --c2-red: #DC2626;
+  --c2-blue: #0284C7;
+
+  --hdr-bg: rgba(237, 237, 231, 0.94);
+  --hero-bg: radial-gradient(circle at 80% 20%, rgba(21, 128, 61, 0.09) 0%, transparent 60%),
+             linear-gradient(to bottom, #EDEDE7, #E3E7DE);
+  --grid-line: rgba(18, 24, 20, 0.05);
+  --track-bg: rgba(18, 24, 20, 0.08);
+  --tag-bg: rgba(18, 24, 20, 0.05);
+
+  --tactical-moss: #1E2E25;
+  --tactical-board: #121A15;
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+}
+
+/* Dark Mode Overrides (when toggled) */
+[data-theme="dark"], body.dark {
   --bg-deep: #070908;
   --bg-surface: #0E1210;
   --bg-card: #141916;
@@ -24,6 +62,7 @@
   --text-primary: #F0F3F0;
   --text-secondary: #9BA59D;
   --text-muted: #647067;
+  --text-heading: #FFFFFF;
 
   --c2-green: #22C55E;
   --c2-green-glow: rgba(34, 197, 94, 0.25);
@@ -33,11 +72,12 @@
   --c2-red: #EF4444;
   --c2-blue: #38BDF8;
 
-  --tactical-moss: #1E2E25;
-  --tactical-board: #121A15;
-
-  --radius-xs: 2px;
-  --radius-sm: 4px;
+  --hdr-bg: rgba(7, 9, 8, 0.92);
+  --hero-bg: radial-gradient(circle at 80% 20%, rgba(30, 46, 37, 0.35) 0%, transparent 60%),
+             linear-gradient(to bottom, #070908, #0E1210);
+  --grid-line: rgba(255, 255, 255, 0.03);
+  --track-bg: rgba(255, 255, 255, 0.06);
+  --tag-bg: rgba(255, 255, 255, 0.04);
 }
 
 * {
@@ -112,7 +152,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(7, 9, 8, 0.92);
+  background: var(--hdr-bg);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-hairline);
@@ -138,7 +178,7 @@ a:hover {
   letter-spacing: 0.05em;
   padding: 4px 8px;
   background: var(--c2-green);
-  color: #070908;
+  color: #FFFFFF;
   border-radius: var(--radius-xs);
   display: inline-flex;
   align-items: center;
@@ -169,7 +209,7 @@ a:hover {
   font-family: var(--mono);
   font-size: 11px;
   color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--tag-bg);
   padding: 4px 12px;
   border: 1px solid var(--border-hairline);
   border-radius: var(--radius-xs);
@@ -204,8 +244,30 @@ a:hover {
 }
 
 .hdr-nav a:hover {
-  color: #fff;
+  color: var(--text-heading);
   text-decoration: none;
+}
+
+.btn-theme-toggle {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 8px 12px;
+  border: 1px solid var(--border-hairline);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.btn-theme-toggle:hover {
+  border-color: var(--c2-green);
+  color: var(--text-heading);
 }
 
 .btn-tactical {
@@ -216,7 +278,7 @@ a:hover {
   text-transform: uppercase;
   padding: 10px 18px;
   border: 1px solid var(--c2-green);
-  background: rgba(34, 197, 94, 0.1);
+  background: rgba(21, 128, 61, 0.12);
   color: var(--c2-green);
   border-radius: var(--radius-xs);
   cursor: pointer;
@@ -228,7 +290,7 @@ a:hover {
 
 .btn-tactical:hover {
   background: var(--c2-green);
-  color: #070908;
+  color: #FFFFFF;
   box-shadow: 0 0 16px var(--c2-green-glow);
   text-decoration: none;
 }
@@ -240,9 +302,9 @@ a:hover {
 }
 
 .btn-outline:hover {
-  border-color: #fff;
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
+  border-color: var(--text-heading);
+  background: var(--tag-bg);
+  color: var(--text-heading);
 }
 
 /* Hero Section (Anduril / Lockheed Skunk Works Tone) */
@@ -251,8 +313,7 @@ a:hover {
   padding: 100px 0 110px;
   border-bottom: 1px solid var(--border-hairline);
   overflow: hidden;
-  background: radial-gradient(circle at 80% 20%, rgba(30, 46, 37, 0.35) 0%, transparent 60%),
-              linear-gradient(to bottom, #070908, #0E1210);
+  background: var(--hero-bg);
 }
 
 .hero::after {
@@ -260,8 +321,8 @@ a:hover {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
   background-size: 48px 48px;
   pointer-events: none;
 }
@@ -314,7 +375,7 @@ a:hover {
 
 .hero-title strong {
   font-weight: 800;
-  color: #FFFFFF;
+  color: var(--text-heading);
 }
 
 .hero-lead {
@@ -360,7 +421,7 @@ a:hover {
 .mission-val {
   font-size: 19px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-heading);
   letter-spacing: -0.01em;
 }
 
@@ -485,63 +546,146 @@ a:hover {
   font-weight: 700;
 }
 
-/* Flagship Platforms Showcase (Atlas, Orbit, Odin OS) */
+/* Flagship Platforms Showcase (Atlas, Orbit, Sentinel, Foundry) */
+.platforms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
 .platform-spotlight {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-bottom: 40px;
-  background: var(--bg-surface);
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  background: var(--bg-card);
   border: 1px solid var(--border-hairline);
   border-radius: var(--radius-sm);
-  padding: 48px;
+  padding: 40px;
   align-items: center;
+  transition: border-color 0.2s ease;
+}
+
+.platform-spotlight:hover {
+  border-color: var(--border-accent);
+}
+
+.platform-spotlight.reverse {
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+.platform-media-wrap {
+  position: relative;
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+  border: 1px solid var(--border-hairline);
+  background: #080A08;
+}
+
+.platform-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.platform-spotlight:hover .platform-img {
+  transform: scale(1.02);
+}
+
+.platform-media-overlay {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: #FFFFFF;
+  background: rgba(7, 9, 8, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 20px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-hairline);
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.spec-label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.spec-value {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-heading);
 }
 
 .platform-badge {
   font-family: var(--mono);
   font-size: 11px;
   color: var(--c2-green);
-  background: rgba(34, 197, 94, 0.08);
+  background: rgba(21, 128, 61, 0.08);
   padding: 4px 10px;
   border: 1px solid var(--border-accent);
   border-radius: var(--radius-xs);
   display: inline-block;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .platform-name {
-  font-size: clamp(30px, 4vw, 44px);
+  font-size: clamp(26px, 3.5vw, 36px);
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  color: var(--text-heading);
 }
 
 .platform-tagline {
-  font-size: 17px;
+  font-size: 15px;
   color: var(--c2-amber);
-  margin-bottom: 22px;
+  margin-bottom: 16px;
   font-weight: 500;
 }
 
 .platform-text {
-  font-size: 15.5px;
+  font-size: 15px;
   color: var(--text-secondary);
-  line-height: 1.65;
-  margin-bottom: 28px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .platform-bullets {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .platform-bullets li {
   display: flex;
-  gap: 12px;
-  font-size: 14.5px;
+  gap: 10px;
+  font-size: 14px;
   color: var(--text-primary);
   line-height: 1.5;
 }
@@ -549,7 +693,7 @@ a:hover {
 .platform-bullets li::before {
   content: "■";
   color: var(--c2-green);
-  font-size: 10px;
+  font-size: 9px;
   margin-top: 5px;
 }
 
@@ -649,7 +793,7 @@ a:hover {
   font-size: 19px;
   font-weight: 700;
   margin-bottom: 12px;
-  color: #fff;
+  color: var(--text-heading);
 }
 
 .eng-desc {
@@ -669,7 +813,7 @@ a:hover {
   font-family: var(--mono);
   font-size: 11px;
   padding: 3px 8px;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--tag-bg);
   border: 1px solid var(--border-hairline);
   color: var(--text-secondary);
   border-radius: var(--radius-xs);
@@ -702,7 +846,7 @@ a:hover {
   font-family: var(--mono);
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-heading);
   letter-spacing: -0.03em;
 }
 
@@ -733,7 +877,7 @@ a:hover {
 .rev-bar-track {
   flex: 1;
   height: 8px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--track-bg);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -749,7 +893,7 @@ a:hover {
   width: 45px;
   text-align: right;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-heading);
 }
 
 /* Timeline 2026 - 2035 */
@@ -777,7 +921,7 @@ a:hover {
   font-weight: 700;
   font-size: 15px;
   margin-bottom: 6px;
-  color: #fff;
+  color: var(--text-heading);
 }
 
 .timeline-text {
@@ -802,7 +946,7 @@ a:hover {
   position: relative;
   border: 1px solid var(--border-accent);
   padding: 8px;
-  background: #080A09;
+  background: var(--bg-card);
 }
 
 .dossier-avatar {
@@ -843,7 +987,7 @@ a:hover {
 
 /* Tactical Contact / C2 Dispatch Section */
 .c2-dispatch {
-  background: #050706;
+  background: var(--bg-surface);
   border-top: 1px solid var(--border-hairline);
   padding: 90px 0 100px;
 }

@@ -4,6 +4,34 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Tactical Theme Control (Default: Light Mode / Daylight)
+  const themeToggle = document.getElementById('themeToggle');
+  const themeLabel = document.getElementById('themeLabel');
+  const savedTheme = localStorage.getItem('bf-defense-theme') || 'light';
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.body.classList.add('dark');
+      if (themeLabel) themeLabel.textContent = 'TACTICAL VOID';
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      document.body.classList.remove('dark');
+      if (themeLabel) themeLabel.textContent = 'DAYLIGHT';
+    }
+    localStorage.setItem('bf-defense-theme', theme);
+  }
+
+  // Initial application (defaults to light mode)
+  applyTheme(savedTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      applyTheme(isDark ? 'light' : 'dark');
+    });
+  }
+
   // 1. Dynamic Radar Blips Animation
   const radarBox = document.querySelector('.radar-box');
   if (radarBox) {
