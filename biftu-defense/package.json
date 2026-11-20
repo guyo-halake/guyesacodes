@@ -1,0 +1,11 @@
+{
+  "name": "biftu-defense-2035",
+  "version": "2035.1.0",
+  "description": "Biftu Defense & Advanced Technologies - Sovereign Defense Systems, Autonomous Robotics, and C2 Intelligence",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

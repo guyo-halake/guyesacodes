@@ -1,0 +1,923 @@
+/* ==========================================================================
+   BIFTU DEFENSE · ADVANCED TECHNOLOGIES (2035)
+   Tactical Sovereign Defense Aesthetic
+   Palette: Void Black (#080A09), Tactical Carbon (#111512), HUD Moss (#1E2C23),
+            Radar Green (#22C55E), Warning Amber (#F59E0B), Danger Vermilion (#EF4444)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Martian+Mono:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --sans: "Funnel Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --mono: "Martian Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Tactical Color Palette */
+  --bg-deep: #070908;
+  --bg-surface: #0E1210;
+  --bg-card: #141916;
+  --bg-card-hover: #1A221E;
+  
+  --border-hairline: rgba(255, 255, 255, 0.1);
+  --border-accent: rgba(34, 197, 94, 0.3);
+  --border-warning: rgba(245, 158, 11, 0.35);
+
+  --text-primary: #F0F3F0;
+  --text-secondary: #9BA59D;
+  --text-muted: #647067;
+
+  --c2-green: #22C55E;
+  --c2-green-glow: rgba(34, 197, 94, 0.25);
+  --c2-green-dim: #15803D;
+
+  --c2-amber: #F59E0B;
+  --c2-red: #EF4444;
+  --c2-blue: #38BDF8;
+
+  --tactical-moss: #1E2E25;
+  --tactical-board: #121A15;
+
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: var(--sans);
+  font-size: 15.5px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--c2-green);
+}
+
+.wrap {
+  max-width: 1220px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 4vw, 44px);
+}
+
+.tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c2-green);
+  font-weight: 600;
+}
+
+.mono {
+  font-family: var(--mono);
+}
+
+/* Watermark Notice Banner (Future-State Scenario) */
+.scenario-banner {
+  background: rgba(245, 158, 11, 0.08);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25);
+  padding: 8px 0;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--c2-amber);
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.scenario-banner strong {
+  font-weight: 700;
+}
+
+/* Header (Tactical C2 Cockpit Style) */
+.hdr {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7, 9, 8, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.hdr .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.hdr-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hdr-badge {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 4px 8px;
+  background: var(--c2-green);
+  color: #070908;
+  border-radius: var(--radius-xs);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hdr-logo-text {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.hdr-logo-text span {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.hdr-telemetry {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 4px 12px;
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-xs);
+}
+
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--c2-green);
+  box-shadow: 0 0 8px var(--c2-green);
+  animation: radar-pulse 2s infinite ease-in-out;
+}
+
+@keyframes radar-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.85); }
+}
+
+.hdr-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.hdr-nav a {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.02em;
+  transition: color 0.15s;
+}
+
+.hdr-nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-tactical {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 10px 18px;
+  border: 1px solid var(--c2-green);
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--c2-green);
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.btn-tactical:hover {
+  background: var(--c2-green);
+  color: #070908;
+  box-shadow: 0 0 16px var(--c2-green-glow);
+  text-decoration: none;
+}
+
+.btn-outline {
+  border-color: var(--border-hairline);
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.btn-outline:hover {
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+/* Hero Section (Anduril / Lockheed Skunk Works Tone) */
+.hero {
+  position: relative;
+  padding: 100px 0 110px;
+  border-bottom: 1px solid var(--border-hairline);
+  overflow: hidden;
+  background: radial-gradient(circle at 80% 20%, rgba(30, 46, 37, 0.35) 0%, transparent 60%),
+              linear-gradient(to bottom, #070908, #0E1210);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+
+.hero-telemetry-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-hairline);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.hero-content {
+  max-width: 980px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-tagline {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c2-green);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-tagline::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--c2-green);
+  display: inline-block;
+}
+
+.hero-title {
+  font-size: clamp(38px, 6vw, 68px);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  margin-bottom: 28px;
+}
+
+.hero-title strong {
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.hero-lead {
+  font-size: clamp(17px, 2vw, 21px);
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 840px;
+  margin-bottom: 40px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Strategic Mission Band */
+.mission-band {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-hairline);
+  padding: 40px 0;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.mission-item {
+  border-left: 1px solid var(--c2-green);
+  padding-left: 20px;
+}
+
+.mission-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.mission-val {
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.mission-sub {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* Section Shared */
+.section {
+  padding: 90px 0;
+  border-bottom: 1px solid var(--border-hairline);
+  position: relative;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-hairline);
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.section-tag {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c2-green);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.section-title {
+  font-size: clamp(28px, 4.5vw, 42px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.section-desc {
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  max-width: 640px;
+  margin-top: 8px;
+}
+
+/* The Five Principal Divisions */
+.divisions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.division-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: 36px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.division-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-accent);
+  transform: translateY(-4px);
+}
+
+.division-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--c2-green);
+  letter-spacing: 0.12em;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.division-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+  line-height: 1.25;
+}
+
+.division-desc {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.division-capabilities {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-hairline);
+}
+
+.division-capabilities li {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.division-capabilities li::before {
+  content: "+";
+  color: var(--c2-green);
+  font-weight: 700;
+}
+
+/* Flagship Platforms Showcase (Atlas, Orbit, Odin OS) */
+.platform-spotlight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: 48px;
+  align-items: center;
+}
+
+.platform-badge {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--c2-green);
+  background: rgba(34, 197, 94, 0.08);
+  padding: 4px 10px;
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-xs);
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.platform-name {
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.platform-tagline {
+  font-size: 17px;
+  color: var(--c2-amber);
+  margin-bottom: 22px;
+  font-weight: 500;
+}
+
+.platform-text {
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 28px;
+}
+
+.platform-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.platform-bullets li {
+  display: flex;
+  gap: 12px;
+  font-size: 14.5px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.platform-bullets li::before {
+  content: "■";
+  color: var(--c2-green);
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+/* Tactical Radar Screen Mockup */
+.radar-box {
+  background: #060907;
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-sm);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.radar-sweep {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 260px;
+  height: 260px;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.radar-sweep::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, transparent 60%, rgba(34, 197, 94, 0.25) 100%);
+  animation: sweep-spin 4s linear infinite;
+}
+
+@keyframes sweep-spin {
+  to { transform: rotate(360deg); }
+}
+
+.radar-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dashed rgba(34, 197, 94, 0.15);
+  border-radius: 50%;
+}
+
+.radar-ring.r1 { width: 140px; height: 140px; }
+.radar-ring.r2 { width: 200px; height: 200px; }
+
+.radar-hdr {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--c2-green);
+  z-index: 2;
+}
+
+.radar-ping {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #22C55E;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #22C55E;
+}
+
+.radar-coords {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Engineering & Manufacturing Capabilities */
+.eng-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.eng-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-hairline);
+  padding: 32px 28px;
+  border-radius: var(--radius-sm);
+}
+
+.eng-title {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.eng-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.eng-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.eng-tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 3px 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-hairline);
+  color: var(--text-secondary);
+  border-radius: var(--radius-xs);
+}
+
+/* Financial & Scale Model (2035 Scenario) */
+.financial-model-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-sm);
+  padding: 48px;
+}
+
+.fin-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.fin-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fin-val {
+  font-family: var(--mono);
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.03em;
+}
+
+.fin-lbl {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Revenue Composition Chart (Bar Representation) */
+.rev-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rev-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.rev-lbl {
+  width: 280px;
+  color: var(--text-secondary);
+}
+
+.rev-bar-track {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.rev-bar-fill {
+  height: 100%;
+  background: var(--c2-green);
+  border-radius: 4px;
+}
+
+.rev-pct {
+  font-family: var(--mono);
+  width: 45px;
+  text-align: right;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Timeline 2026 - 2035 */
+.timeline-track {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.timeline-step {
+  border-top: 2px solid var(--c2-green);
+  padding-top: 18px;
+}
+
+.timeline-year {
+  font-family: var(--mono);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--c2-green);
+  margin-bottom: 8px;
+}
+
+.timeline-milestone {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.timeline-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Leadership Dossier */
+.dossier-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  padding: 48px;
+  border-radius: var(--radius-sm);
+  align-items: center;
+}
+
+.dossier-avatar-frame {
+  position: relative;
+  border: 1px solid var(--border-accent);
+  padding: 8px;
+  background: #080A09;
+}
+
+.dossier-avatar {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  filter: contrast(105%) brightness(95%);
+  display: block;
+}
+
+.dossier-badge {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--c2-green);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.dossier-name {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.dossier-role {
+  font-size: 16px;
+  color: var(--c2-amber);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.dossier-bio {
+  font-size: 15.5px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Tactical Contact / C2 Dispatch Section */
+.c2-dispatch {
+  background: #050706;
+  border-top: 1px solid var(--border-hairline);
+  padding: 90px 0 100px;
+}
+
+.dispatch-box {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  padding: 48px;
+  border-radius: var(--radius-sm);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.dispatch-hdr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-hairline);
+  padding-bottom: 18px;
+  margin-bottom: 28px;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.dispatch-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.dispatch-desc {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.dispatch-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Footer */
+.defense-ftr {
+  padding: 32px 0;
+  border-top: 1px solid var(--border-hairline);
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--text-muted);
+  background: var(--bg-deep);
+}
+
+.defense-ftr .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .divisions-grid, .mission-grid, .eng-grid, .fin-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+  .platform-spotlight, .dossier-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 28px;
+  }
+  .timeline-track {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hdr-nav {
+    display: none;
+  }
+}
