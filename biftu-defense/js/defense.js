@@ -4,29 +4,31 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 0. Tactical Theme Control (Default: Light Mode / Daylight)
+  // 0. Tactical Theme Control (Strict Light Mode Default)
   const themeToggle = document.getElementById('themeToggle');
   const themeLabel = document.getElementById('themeLabel');
-  const savedTheme = localStorage.getItem('bf-defense-theme') || 'light';
 
   function applyTheme(theme) {
     if (theme === 'dark') {
       document.documentElement.setAttribute('data-theme', 'dark');
       document.body.classList.add('dark');
       if (themeLabel) themeLabel.textContent = 'TACTICAL VOID';
+      localStorage.setItem('bf-defense-theme', 'dark');
     } else {
       document.documentElement.removeAttribute('data-theme');
       document.body.classList.remove('dark');
       if (themeLabel) themeLabel.textContent = 'DAYLIGHT';
+      localStorage.setItem('bf-defense-theme', 'light');
     }
-    localStorage.setItem('bf-defense-theme', theme);
   }
 
-  // Initial application (defaults to light mode)
-  applyTheme(savedTheme);
+  // Force Light Mode as initial default unless explicitly toggled in active session
+  const storedTheme = sessionStorage.getItem('bf-defense-theme-active') ? localStorage.getItem('bf-defense-theme') : 'light';
+  applyTheme(storedTheme === 'dark' ? 'dark' : 'light');
 
   if (themeToggle) {
     themeToggle.addEventListener('click', () => {
+      sessionStorage.setItem('bf-defense-theme-active', 'true');
       const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
       applyTheme(isDark ? 'light' : 'dark');
     });

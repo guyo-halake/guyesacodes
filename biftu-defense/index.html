@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BIFTU · Autonomous Defense Systems & Advanced Engineering</title>
   <meta name="description" content="Biftu develops autonomous uncrewed systems, command-and-control software, and secure edge hardware for national defense and critical infrastructure.">
-  <link rel="stylesheet" href="css/defense.css">
+  <link rel="stylesheet" href="css/defense.css?v=2035.4">
 </head>
 <body>
 
@@ -120,94 +120,82 @@
         <div class="tag">ACTIVE SYSTEMS</div>
       </div>
 
-      <div class="platforms-list">
+      <div class="platforms-grid">
         <!-- Platform 01: Atlas C2 -->
-        <article class="platform-spotlight">
-          <div>
-            <span class="platform-badge">SYSTEM 01 // COMMAND & CONTROL</span>
-            <h3 class="platform-name">Atlas C2 Platform</h3>
-            <div class="platform-tagline">Multi-Domain Situational Awareness & Sensor Fusion Console</div>
+        <article class="platform-card">
+          <div class="platform-media-wrap">
+            <div class="platform-media-overlay">
+              <span>SYSTEM 01 // ATLAS C2</span>
+              <span>LIVE TELEMETRY: OK</span>
+            </div>
+            <img src="assets/img/atlas_c2.jpg" alt="Biftu Atlas C2 Tactical Operations Center Console" class="platform-img" loading="lazy">
+          </div>
+
+          <div class="platform-body">
+            <span class="platform-badge">COMMAND &amp; CONTROL</span>
+            <h3 class="platform-name">Atlas Operations Console</h3>
+            <div class="platform-tagline">Multi-Domain Situational Awareness &amp; Sensor Fusion</div>
 
             <p class="platform-text">
-              Atlas networks radar, electro-optical cameras, acoustic sensors, and uncrewed vehicle feeds into a single operational display. Field commanders receive real-time track classification and vector overlays without routing data through commercial cloud networks.
+              Atlas correlates synthetic aperture radar, electro-optical optics, acoustic sensors, and uncrewed vehicle telemetry into a single operational map. Commanders obtain real-time target tracking and airspace awareness without foreign cloud dependencies.
             </p>
 
             <ul class="platform-bullets">
-              <li>
-                <strong>Integrated Sensor Fusion:</strong> Correlates disparate sensor feeds into unified target tracks automatically.
-              </li>
-              <li>
-                <strong>Air-Gapped Operation:</strong> Runs on hardened local computing infrastructure with zero external data leakage.
-              </li>
-              <li>
-                <strong>Deterministic Response:</strong> Sub-second alert generation for perimeter breaches and route deviations.
-              </li>
+              <li>Automatic correlation of multi-sensor data into unified tracks.</li>
+              <li>Air-gapped execution on local high-security silicon.</li>
+              <li>Sub-second anomaly alert generation for perimeter corridors.</li>
             </ul>
 
             <div class="spec-grid">
               <div class="spec-item">
                 <span class="spec-label">Deployment Format</span>
-                <span class="spec-value">Mobile TOC / Fixed Command</span>
+                <span class="spec-value">Mobile TOC / Command Bunker</span>
               </div>
               <div class="spec-item">
-                <span class="spec-label">Inference Processing</span>
-                <span class="spec-value">Dual TPU / RISC-V Neural Core</span>
+                <span class="spec-label">Inference Latency</span>
+                <span class="spec-value">&lt; 120 ms Local Neural TPU</span>
               </div>
               <div class="spec-item">
-                <span class="spec-label">Input Bandwidth</span>
-                <span class="spec-value">Up to 40 Gbps Local Mesh</span>
+                <span class="spec-label">Network Throughput</span>
+                <span class="spec-value">40 Gbps Distributed Mesh</span>
               </div>
               <div class="spec-item">
-                <span class="spec-label">Encryption</span>
-                <span class="spec-value">Level-4 Hardware Crypto</span>
+                <span class="spec-label">Cryptographic Standard</span>
+                <span class="spec-value">Level-4 Hardware Root-of-Trust</span>
               </div>
             </div>
-          </div>
-
-          <div class="platform-media-wrap">
-            <div class="platform-media-overlay">
-              <span>BIFTU ATLAS · TOC CONSOLE</span>
-              <span>LIVE TELEMETRY: OK</span>
-            </div>
-            <img src="assets/img/atlas_c2.jpg" alt="Biftu Atlas C2 Tactical Operations Center Console" class="platform-img" loading="lazy">
           </div>
         </article>
 
         <!-- Platform 02: Orbit UAV -->
-        <article class="platform-spotlight reverse">
+        <article class="platform-card">
           <div class="platform-media-wrap">
             <div class="platform-media-overlay">
-              <span>BIFTU ORBIT · HIGH-ALTITUDE UAV</span>
+              <span>SYSTEM 02 // ORBIT UAV</span>
               <span>STATUS: FLIGHT READY</span>
             </div>
             <img src="assets/img/orbit_uav.jpg" alt="Biftu Orbit Autonomous Long-Endurance Reconnaissance UAV" class="platform-img" loading="lazy">
           </div>
 
-          <div>
-            <span class="platform-badge">SYSTEM 02 // AUTONOMOUS RECONNAISSANCE</span>
-            <h3 class="platform-name">Orbit UAV</h3>
-            <div class="platform-tagline">Long-Endurance Autonomous Airborne Reconnaissance</div>
+          <div class="platform-body">
+            <span class="platform-badge">AUTONOMOUS AEROSPACE</span>
+            <h3 class="platform-name">Orbit Reconnaissance UAV</h3>
+            <div class="platform-tagline">Long-Endurance Solar Autonomous Airborne Platform</div>
 
             <p class="platform-text">
-              Orbit is a carbon-composite uncrewed aircraft built for persistent border monitoring and critical energy corridor patrol. High-efficiency solar cells embedded into the wings extend electric flight loiter to 36 continuous hours.
+              Orbit is a carbon-composite uncrewed aircraft engineered for persistent border monitoring and critical energy corridor surveillance. High-efficiency solar cells embedded into the wings extend continuous electric flight loiter up to 36 hours.
             </p>
 
             <ul class="platform-bullets">
-              <li>
-                <strong>Persistent Loiter:</strong> Ultra-low wing loading and solar recharging support day-and-night patrol cycles.
-              </li>
-              <li>
-                <strong>Self-Healing Mesh Radio:</strong> Acts as an airborne communication relay node for ground teams and vehicles.
-              </li>
-              <li>
-                <strong>Autonomous Navigation:</strong> Operates reliably through GPS-denied environments using optical ground tracking.
-              </li>
+              <li>Continuous 36-hour loiter for day-and-night patrol duty.</li>
+              <li>Acts as a high-bandwidth airborne mesh communications relay.</li>
+              <li>GPS-denied navigation via real-time optical terrain matching.</li>
             </ul>
 
             <div class="spec-grid">
               <div class="spec-item">
-                <span class="spec-label">Loiter Endurance</span>
-                <span class="spec-value">Up to 36 Hours</span>
+                <span class="spec-label">Flight Endurance</span>
+                <span class="spec-value">Up to 36 Hours Continuous</span>
               </div>
               <div class="spec-item">
                 <span class="spec-label">Operational Radius</span>
@@ -218,7 +206,7 @@
                 <span class="spec-value">14 kg Modular Pod</span>
               </div>
               <div class="spec-item">
-                <span class="spec-label">Sensor Suite</span>
+                <span class="spec-label">Sensor Payload</span>
                 <span class="spec-value">HD MWIR Thermal + 4K Optical</span>
               </div>
             </div>
@@ -226,26 +214,28 @@
         </article>
 
         <!-- Platform 03: Sentinel UGV -->
-        <article class="platform-spotlight">
-          <div>
-            <span class="platform-badge">SYSTEM 03 // UNMANNED GROUND VEHICLE</span>
-            <h3 class="platform-name">Sentinel UGV</h3>
-            <div class="platform-tagline">Autonomous Ground Vehicle for Perimeter Security</div>
+        <article class="platform-card">
+          <div class="platform-media-wrap">
+            <div class="platform-media-overlay">
+              <span>SYSTEM 03 // SENTINEL UGV</span>
+              <span>ARMOR: LEVEL-3 · PATROL ACTIVE</span>
+            </div>
+            <img src="assets/img/sentinel_ugv.jpg" alt="Biftu Sentinel Autonomous Unmanned Ground Vehicle" class="platform-img" loading="lazy">
+          </div>
+
+          <div class="platform-body">
+            <span class="platform-badge">GROUND ROBOTICS</span>
+            <h3 class="platform-name">Sentinel Patrol UGV</h3>
+            <div class="platform-tagline">All-Terrain Autonomous Ground Rover for Perimeter Security</div>
 
             <p class="platform-text">
-              Sentinel is a tracked, all-terrain autonomous ground rover built to patrol remote industrial facilities, oil pipelines, and sensitive sovereign borders. It navigates rugged terrain autonomously, logging anomalies and alerting central command.
+              Sentinel is a tracked, all-terrain autonomous rover designed to patrol high-security perimeters, pipelines, and remote sovereign borders. It identifies unauthorized breaches autonomously and returns to automated charging stations when depleted.
             </p>
 
             <ul class="platform-bullets">
-              <li>
-                <strong>All-Terrain Mobility:</strong> Continuous rubber tracks climb 45-degree inclines, wet mud, and rock beds.
-              </li>
-              <li>
-                <strong>360-Degree Sensing:</strong> Solid-state LiDAR, stereo optical cameras, and infrared optics identify perimeter incursions.
-              </li>
-              <li>
-                <strong>Failsafe Autonomous Return:</strong> Automatic return-to-base and automated inductive charging docking.
-              </li>
+              <li>All-terrain rubber tracks traverse 45° inclines and rugged rock.</li>
+              <li>360-degree solid-state LiDAR and thermal night vision.</li>
+              <li>Autonomous return-to-base and automated inductive recharge.</li>
             </ul>
 
             <div class="spec-grid">
@@ -254,75 +244,61 @@
                 <span class="spec-value">18 Hours per Charge</span>
               </div>
               <div class="spec-item">
-                <span class="spec-label">Top Speed</span>
-                <span class="spec-value">35 km/h All-Terrain</span>
+                <span class="spec-label">Max Speed</span>
+                <span class="spec-value">35 km/h Off-Road</span>
               </div>
               <div class="spec-item">
-                <span class="spec-label">Chassis Protection</span>
-                <span class="spec-value">IP68 Weather / Ballistic Composite</span>
+                <span class="spec-label">Chassis Rating</span>
+                <span class="spec-value">IP68 Weatherproof / Ballistic Composite</span>
               </div>
               <div class="spec-item">
-                <span class="spec-label">Navigation</span>
+                <span class="spec-label">Navigation Logic</span>
                 <span class="spec-value">3D LiDAR SLAM + Optical Flow</span>
               </div>
             </div>
           </div>
-
-          <div class="platform-media-wrap">
-            <div class="platform-media-overlay">
-              <span>BIFTU SENTINEL · PATROL UGV</span>
-              <span>ARMOR: LEVEL-3 · PERIMETER ACTIVE</span>
-            </div>
-            <img src="assets/img/sentinel_ugv.jpg" alt="Biftu Sentinel Autonomous Unmanned Ground Vehicle" class="platform-img" loading="lazy">
-          </div>
         </article>
 
         <!-- Platform 04: Hardware Foundry -->
-        <article class="platform-spotlight reverse" id="foundry">
+        <article class="platform-card" id="foundry">
           <div class="platform-media-wrap">
             <div class="platform-media-overlay">
-              <span>NAIROBI SMT FACILITY</span>
-              <span>16-LAYER FABRICATION · CLASS 1000</span>
+              <span>FACILITY 04 // SMT FOUNDRY</span>
+              <span>CLASS 1000 CLEANROOM · NAIROBI</span>
             </div>
             <img src="assets/img/foundry_pcb.jpg" alt="Biftu Electronics Cleanroom SMT PCB Assembly" class="platform-img" loading="lazy">
           </div>
 
-          <div>
-            <span class="platform-badge">SYSTEM 04 // DOMESTIC MANUFACTURING</span>
+          <div class="platform-body">
+            <span class="platform-badge">DOMESTIC FOUNDRY</span>
             <h3 class="platform-name">Indigenous Hardware Foundry</h3>
-            <div class="platform-tagline">Multi-Layer Electronics Fabrication & Hardened Microcontrollers</div>
+            <div class="platform-tagline">Multi-Layer Electronics Fabrication &amp; Hardened Microcontrollers</div>
 
             <p class="platform-text">
-              Biftu operates domestic electronics manufacturing in Nairobi. By controlling circuit schematic design, multi-layer printed circuit board assembly, and microcontroller firmware internally, systems remain free of untrusted third-party silicon backdoors.
+              Biftu operates domestic electronics manufacturing in Nairobi. By engineering schematic layouts, multi-layer circuit boards, and deterministic microcontrollers in-house, hardware remains completely free of third-party supply-chain vulnerabilities.
             </p>
 
             <ul class="platform-bullets">
-              <li>
-                <strong>Automated SMT Assembly:</strong> High-precision pick-and-place robotics with automated optical inspection (AOI).
-              </li>
-              <li>
-                <strong>Hardened RTOS Firmware:</strong> Deterministic real-time operating code authored in Rust and modern C.
-              </li>
-              <li>
-                <strong>Environmental Hardening:</strong> Conformal coating protects circuits against tropical humidity, salt fog, and dust.
-              </li>
+              <li>Automated high-speed SMT pick-and-place with optical inspection.</li>
+              <li>Hardened real-time operating firmware authored in Rust and C.</li>
+              <li>Conformal coating protection against tropical humidity and dust.</li>
             </ul>
 
             <div class="spec-grid">
               <div class="spec-item">
                 <span class="spec-label">PCB Layer Count</span>
-                <span class="spec-value">Up to 16 Layers High-Speed</span>
+                <span class="spec-value">Up to 16 Layers High-Frequency</span>
               </div>
               <div class="spec-item">
-                <span class="spec-label">Placement Accuracy</span>
-                <span class="spec-value">±15 Microns</span>
+                <span class="spec-label">Placement Tolerance</span>
+                <span class="spec-value">±15 Microns Precision</span>
               </div>
               <div class="spec-item">
-                <span class="spec-label">Operating Temperature</span>
+                <span class="spec-label">Thermal Limits</span>
                 <span class="spec-value">-40°C to +85°C Industrial</span>
               </div>
               <div class="spec-item">
-                <span class="spec-label">Compliance</span>
+                <span class="spec-label">Compliance Code</span>
                 <span class="spec-value">MIL-STD-810H &amp; IPC-A-610 Class 3</span>
               </div>
             </div>
@@ -536,6 +512,6 @@
     </div>
   </footer>
 
-  <script src="js/defense.js"></script>
+  <script src="js/defense.js?v=2035.4"></script>
 </body>
 </html>

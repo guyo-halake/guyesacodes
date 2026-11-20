@@ -546,78 +546,145 @@ a:hover {
   font-weight: 700;
 }
 
-/* Flagship Platforms Showcase (Atlas, Orbit, Sentinel, Foundry) */
-.platforms-list {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
+/* Flagship Platforms Showcase (2x2 Balanced Grid - Words Lead, Imagery Subdued) */
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
 }
 
-.platform-spotlight {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 48px;
+.platform-card {
   background: var(--bg-card);
   border: 1px solid var(--border-hairline);
   border-radius: var(--radius-sm);
-  padding: 40px;
-  align-items: center;
-  transition: border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.2, 0, 0, 1);
 }
 
-.platform-spotlight:hover {
+.platform-card:hover {
+  background: var(--bg-card-hover);
   border-color: var(--border-accent);
-}
-
-.platform-spotlight.reverse {
-  grid-template-columns: 0.95fr 1.05fr;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
 }
 
 .platform-media-wrap {
   position: relative;
-  border-radius: var(--radius-xs);
+  height: 220px;
   overflow: hidden;
-  border: 1px solid var(--border-hairline);
-  background: #080A08;
+  background: #0B0E0C;
+  border-bottom: 1px solid var(--border-hairline);
 }
 
 .platform-img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: contrast(102%) brightness(96%);
+  transition: transform 0.4s ease;
 }
 
-.platform-spotlight:hover .platform-img {
-  transform: scale(1.02);
+.platform-card:hover .platform-img {
+  transform: scale(1.03);
 }
 
 .platform-media-overlay {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  right: 12px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
   display: flex;
   justify-content: space-between;
   font-family: var(--mono);
-  font-size: 10.5px;
+  font-size: 10px;
   color: #FFFFFF;
-  background: rgba(7, 9, 8, 0.7);
-  backdrop-filter: blur(8px);
-  padding: 4px 10px;
+  background: rgba(8, 11, 9, 0.75);
+  backdrop-filter: blur(6px);
+  padding: 4px 8px;
   border-radius: var(--radius-xs);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  pointer-events: none;
+  letter-spacing: 0.04em;
+}
+
+.platform-body {
+  padding: 28px 26px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.platform-badge {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--c2-green);
+  background: rgba(21, 128, 61, 0.08);
+  padding: 3px 8px;
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-xs);
+  display: inline-block;
+  margin-bottom: 12px;
+  align-self: flex-start;
+  font-weight: 600;
+}
+
+.platform-name {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+  color: var(--text-heading);
+  line-height: 1.2;
+}
+
+.platform-tagline {
+  font-size: 14px;
+  color: var(--c2-amber);
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.platform-text {
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.platform-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.platform-bullets li {
+  display: flex;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--text-primary);
+  line-height: 1.45;
+}
+
+.platform-bullets li::before {
+  content: "■";
+  color: var(--c2-green);
+  font-size: 8px;
+  margin-top: 5px;
 }
 
 .spec-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px 20px;
-  margin-top: 24px;
-  padding-top: 20px;
+  gap: 10px 16px;
+  padding-top: 16px;
   border-top: 1px solid var(--border-hairline);
+  background: rgba(18, 24, 20, 0.02);
+  margin: 0 -26px -24px;
+  padding: 16px 26px 20px;
 }
 
 .spec-item {
@@ -628,73 +695,17 @@ a:hover {
 
 .spec-label {
   font-family: var(--mono);
-  font-size: 10.5px;
+  font-size: 10px;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .spec-value {
   font-family: var(--mono);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--text-heading);
-}
-
-.platform-badge {
-  font-family: var(--mono);
-  font-size: 11px;
-  color: var(--c2-green);
-  background: rgba(21, 128, 61, 0.08);
-  padding: 4px 10px;
-  border: 1px solid var(--border-accent);
-  border-radius: var(--radius-xs);
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.platform-name {
-  font-size: clamp(26px, 3.5vw, 36px);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  margin-bottom: 8px;
-  color: var(--text-heading);
-}
-
-.platform-tagline {
-  font-size: 15px;
-  color: var(--c2-amber);
-  margin-bottom: 16px;
-  font-weight: 500;
-}
-
-.platform-text {
-  font-size: 15px;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.platform-bullets {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.platform-bullets li {
-  display: flex;
-  gap: 10px;
-  font-size: 14px;
-  color: var(--text-primary);
-  line-height: 1.5;
-}
-
-.platform-bullets li::before {
-  content: "■";
-  color: var(--c2-green);
-  font-size: 9px;
-  margin-top: 5px;
 }
 
 /* Tactical Radar Screen Mockup */
@@ -1050,10 +1061,10 @@ a:hover {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .divisions-grid, .mission-grid, .eng-grid, .fin-metrics-grid {
+  .platforms-grid, .divisions-grid, .mission-grid, .eng-grid, .fin-metrics-grid {
     grid-template-columns: 1fr;
   }
-  .platform-spotlight, .dossier-card {
+  .dossier-card {
     grid-template-columns: 1fr;
     gap: 28px;
     padding: 28px;
