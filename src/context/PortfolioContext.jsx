@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
 import { initialPortfolioData } from "../data/portfolioData";
 
 const PortfolioContext = createContext(null);
@@ -6,7 +6,11 @@ const STORAGE_KEY = "guyohalake_portfolio_v2_photos_v6";
 
 export const PortfolioProvider = ({ children }) => {
   const [isEditMode, setIsEditMode] = useState(false);
+  const [recruiterMode, setRecruiterMode] = useState(false);
+  const [dbSynced, setDbSynced] = useState(false);
+  const [telemetry, setTelemetry] = useState(null);
 
+  // Primary state initialized from local cache or code defaults
   const [data, setData] = useState(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -27,6 +31,67 @@ export const PortfolioProvider = ({ children }) => {
 
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
 
+  // Hydrate from SQLite database on mount
+  useEffect(() => {
+    let isMounted = true;
+    const fetchRemoteData = async () => {
+      try {
+        const res = await fetch("/api/portfolio");
+        if (!res.ok) return;
+        const result = await res.json();
+        if (result.success && result.data && isMounted) {
+          setData(result.data);
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(result.data));
+          setDbSynced(true);
+        } else if (result.source === "default") {
+          // Database is clean: push current baseline to DB
+          fetch("/api/portfolio", {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ data }),
+          }).catch(() => {});
+        }
+      } catch (err) {
+        console.warn("API unreachable, falling back to local storage cache:", err);
+      }
+    };
+
+    const fetchTelemetry = async () => {
+      try {
+        const res = await fetch("/api/telemetry");
+        if (res.ok) {
+          const t = await res.json();
+          if (isMounted) setTelemetry(t);
+        }
+      } catch (e) {}
+    };
+
+    fetchRemoteData();
+    fetchTelemetry();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  // Sync to backend SQLite DB helper
+  const syncToDatabase = useCallback(async (nextState) => {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(nextState));
+      const res = await fetch("/api/portfolio", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: nextState }),
+      });
+      if (res.ok) {
+        setDbSynced(true);
+        setHasUnsavedChanges(false);
+      }
+    } catch (err) {
+      console.warn("Failed to sync to database, saved locally:", err);
+    }
+  }, []);
+
   // Toggle visual builder edit mode
   const toggleEditMode = () => {
     setIsEditMode((prev) => {
@@ -36,11 +101,15 @@ export const PortfolioProvider = ({ children }) => {
     });
   };
 
-  // Immediate save to persistence
-  const saveAllChanges = () => {
+  // Toggle Recruiter Brief / Dossier Mode
+  const toggleRecruiterMode = () => {
+    setRecruiterMode((prev) => !prev);
+  };
+
+  // Immediate save to persistence (local + DB)
+  const saveAllChanges = async () => {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-      setHasUnsavedChanges(false);
+      await syncToDatabase(data);
       return true;
     } catch (e) {
       console.error("Save error", e);
@@ -52,6 +121,7 @@ export const PortfolioProvider = ({ children }) => {
   const resetAllToDefaults = () => {
     localStorage.removeItem(STORAGE_KEY);
     setData(initialPortfolioData);
+    syncToDatabase(initialPortfolioData);
     setHasUnsavedChanges(false);
   };
 
@@ -62,10 +132,9 @@ export const PortfolioProvider = ({ children }) => {
         ...prev,
         profile: { ...prev.profile, [key]: value },
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   // Section toggle
@@ -78,10 +147,9 @@ export const PortfolioProvider = ({ children }) => {
           [sectionKey]: !prev.sectionVisibility[sectionKey],
         },
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   // Projects actions
@@ -93,10 +161,9 @@ export const PortfolioProvider = ({ children }) => {
           p.id === id ? { ...p, visible: !p.visible } : p
         ),
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   const updateProject = (id, fields) => {
@@ -107,10 +174,9 @@ export const PortfolioProvider = ({ children }) => {
           p.id === id ? { ...p, ...fields } : p
         ),
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   const addProject = (newProj) => {
@@ -130,10 +196,9 @@ export const PortfolioProvider = ({ children }) => {
         ...prev,
         projects: [...prev.projects, item],
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   const deleteProject = (id) => {
@@ -142,10 +207,9 @@ export const PortfolioProvider = ({ children }) => {
         ...prev,
         projects: prev.projects.filter((p) => p.id !== id),
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   // Hardware actions
@@ -157,10 +221,9 @@ export const PortfolioProvider = ({ children }) => {
           h.id === id ? { ...h, visible: !h.visible } : h
         ),
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   const updateHardware = (id, fields) => {
@@ -171,10 +234,9 @@ export const PortfolioProvider = ({ children }) => {
           h.id === id ? { ...h, ...fields } : h
         ),
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   const addHardware = (newHw) => {
@@ -193,10 +255,9 @@ export const PortfolioProvider = ({ children }) => {
         ...prev,
         hardware: [...prev.hardware, item],
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   const deleteHardware = (id) => {
@@ -205,10 +266,9 @@ export const PortfolioProvider = ({ children }) => {
         ...prev,
         hardware: prev.hardware.filter((h) => h.id !== id),
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   // Aliases for bulk operations or Admin dashboard compatibility
@@ -218,10 +278,9 @@ export const PortfolioProvider = ({ children }) => {
         ...prev,
         profile: { ...prev.profile, ...newProfile },
       };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      syncToDatabase(next);
       return next;
     });
-    setHasUnsavedChanges(true);
   };
 
   const saveProject = (proj) => {
@@ -253,8 +312,7 @@ export const PortfolioProvider = ({ children }) => {
       const parsed = JSON.parse(jsonString);
       if (parsed && typeof parsed === "object") {
         setData(parsed);
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
-        setHasUnsavedChanges(false);
+        syncToDatabase(parsed);
         return true;
       }
     } catch (e) {
@@ -270,6 +328,11 @@ export const PortfolioProvider = ({ children }) => {
         isEditMode,
         setIsEditMode,
         toggleEditMode,
+        recruiterMode,
+        setRecruiterMode,
+        toggleRecruiterMode,
+        dbSynced,
+        telemetry,
         profile: data.profile,
         sectionVisibility: data.sectionVisibility,
         projects: data.projects,

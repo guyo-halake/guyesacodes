@@ -49,20 +49,10 @@ const tabSx = (isMobile) => ({
   "&:hover": { color: "var(--green-bright)", backgroundColor: "var(--green-tint)" },
 });
 
-// ─── Work Experience ────────────────────────────────────────────────────────
+// ─── Work Experience Ordered: DevOps Intern -> Muthokinju -> Mobit ────────
 const workExperience = {
-  "Mobit Solutions": {
-    role: "Software Developer",
-    company: "Mobit Solutions",
-    period: "Nov 2024 – Jan 2025",
-    location: "Remote",
-    bullets: [
-      "Engineered production web applications and RESTful backend services using React, TypeScript, Node.js, and MySQL—implementing complex data-driven forms, role-based dashboards, and multi-tenant business logic.",
-      "Collaborated with an agile remote engineering team using Jira for sprint planning and GitHub for pull request workflows, feature branching, and peer code reviews.",
-    ],
-  },
-  "AO Technologies Group": {
-    role: "DevOps & Cloud Infrastructure Engineer",
+  "AO Technologies (DevOps)": {
+    role: "DevOps & Cloud Infrastructure Engineer (Intern)",
     company: "AO Technologies Group",
     period: "May 2024 – Aug 2024",
     location: "Nairobi, Kenya",
@@ -75,7 +65,7 @@ const workExperience = {
     ],
   },
   "Muthokinju Paints & Cement": {
-    role: "IT Support & Systems Infrastructure Technician",
+    role: "IT Support & Systems Infrastructure Technician (Intern)",
     company: "Muthokinju Paints & Cement",
     period: "Feb 2024 – Oct 2024",
     location: "Nairobi, Kenya",
@@ -85,6 +75,16 @@ const workExperience = {
       "Deployed and configured commercial-grade networking infrastructure including managed switches, commercial access points, and CCTV surveillance systems across headquarters and branch sites.",
       "Monitored and administered hybrid infrastructure spanning physical on-premise servers and cloud VMs—executing routine uptime checks, disk health audits, and backup verification.",
       "Triaged and resolved IT service tickets from multi-department users including logistics coordinators, warehouse supervisors, and finance officers, consistently meeting resolution SLAs.",
+    ],
+  },
+  "Mobit Solutions": {
+    role: "Software Developer",
+    company: "Mobit Solutions",
+    period: "Nov 2024 – Jan 2025",
+    location: "Remote",
+    bullets: [
+      "Engineered production web applications and RESTful backend services using React, TypeScript, Node.js, and MySQL—implementing complex data-driven forms, role-based dashboards, and multi-tenant business logic.",
+      "Collaborated with an agile remote engineering team using Jira for sprint planning and GitHub for pull request workflows, feature branching, and peer code reviews.",
     ],
   },
 };

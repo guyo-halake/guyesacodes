@@ -115,6 +115,22 @@
   outline: none;
 }
 
+.intro-contact.btn-recruiter {
+  background-color: #0284c7 !important;
+  color: #ffffff !important;
+  border-color: #0284c7 !important;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+  cursor: pointer;
+}
+
+.intro-contact.btn-recruiter:hover {
+  background-color: #0369a1 !important;
+  border-color: #0369a1 !important;
+  color: #ffffff !important;
+  transform: translateY(-3px);
+}
+
 .intro-contact.btn-whatsapp {
   border-color: #22c55e;
   color: #22c55e !important;

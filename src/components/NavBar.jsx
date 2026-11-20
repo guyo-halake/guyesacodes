@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import BorderColorIcon from "@mui/icons-material/BorderColor";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
@@ -64,11 +62,10 @@ const NavBar = () => {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto" onSelect={() => setExpanded(false)}>
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link href="/#about">About</Nav.Link>
             <Nav.Link href="/#experience">Experience</Nav.Link>
-            <Nav.Link href="/#projects">Projects</Nav.Link>
-            <Nav.Link href="/#hardware-projects">Hardware</Nav.Link>
+            <Nav.Link href="/#projects">Ai and Automations</Nav.Link>
+            <Nav.Link href="/#hardware-projects">Cloud and Software</Nav.Link>
 
             {/* Admin link ONLY shows if user is explicitly on /admin */}
             {isAdminPage && (
@@ -95,18 +92,8 @@ const NavBar = () => {
           </Nav>
 
           <Nav className="ms-auto align-items-center social-icons-nav" onSelect={() => setExpanded(false)}>
-            <Nav.Link href="mailto:guyohalakeofficial@gmail.com" title="Email me">
-              <EmailRoundedIcon style={{ fontSize: 20 }} />
-            </Nav.Link>
             <Nav.Link href="https://github.com/guyo-halake" target="_blank" title="GitHub">
               <GitHubIcon style={{ fontSize: 19 }} />
-            </Nav.Link>
-            <Nav.Link
-              href="https://www.linkedin.com/in/guyo-halake/"
-              target="_blank"
-              title="LinkedIn"
-            >
-              <LinkedInIcon style={{ fontSize: 21 }} />
             </Nav.Link>
             <Nav.Link href="https://medium.com/@guyo-halake" target="_blank" title="Medium">
               <BorderColorIcon style={{ fontSize: 20 }} />
@@ -114,7 +101,7 @@ const NavBar = () => {
           </Nav>
         </Navbar.Collapse>
 
-        {/* ALWAYS-VISIBLE Controls: Theme Switcher (No public admin buttons) */}
+        {/* ALWAYS-VISIBLE Controls: Theme Switcher Only */}
         <div className="d-flex align-items-center gap-2">
           {isAdminPage && (
             <Link to="/" className="nav-admin-direct-btn" title="Back to site">

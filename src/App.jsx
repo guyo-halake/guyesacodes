@@ -9,6 +9,8 @@ import NavBar from "./components/NavBar";
 import SidebarNav from "./components/SidebarNav";
 import LiveVisualToolbar from "./components/admin/LiveVisualToolbar";
 import AdminDashboard from "./components/admin/AdminDashboard";
+import RecruiterBrief from "./components/RecruiterBrief";
+import BiftuView from "./components/biftu/BiftuView";
 import { PortfolioProvider, usePortfolio } from "./context/PortfolioContext";
 import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
@@ -48,6 +50,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<MainPortfolio />} />
+          <Route path="/biftu" element={<BiftuView />} />
           <Route path="/admin" element={<AdminDashboard />} />
         </Routes>
       </div>

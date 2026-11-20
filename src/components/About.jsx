@@ -6,18 +6,14 @@ import { usePortfolio } from "../context/PortfolioContext";
 const About = () => {
   const { profile, isEditMode, updateProfileField } = usePortfolio();
 
-  const skillGroups = [
+  const techRows = [
     {
-      category: "Cloud, Infrastructure & DevOps",
-      skills: ["Microsoft Azure", "Docker", "Linux (Ubuntu/Alpine)", "GitHub Actions CI/CD", "Nginx", "Tailscale VPN"],
+      label: "AI & Automations",
+      skills: ["Tool calling LLMs", "RAG and Vector Databases", "n8n workflow automations", "MCP"],
     },
     {
-      category: "AI Systems, Agents & Automations",
-      skills: ["Model Context Protocol (MCP)", "Google Gemini & Claude Tool-Calling", "n8n Workflow Automation", "Safaricom Daraja API (M-Pesa)", "RAG & Vector Embeddings"],
-    },
-    {
-      category: "Full-Stack Software Engineering",
-      skills: ["Python (FastAPI)", "React 18 & TypeScript", "Node.js", "PostgreSQL / Supabase (RLS)", "Tailwind CSS", "RESTful APIs"],
+      label: "Software & Cloud",
+      skills: ["Python", "React and TypeScript", "JavaScript", "AWS (EC2, S3)", "Docker"],
     },
   ];
 
@@ -30,32 +26,26 @@ const About = () => {
 
         <div className="about-content">
           <div className="about-description">
-            <p
-              contentEditable={isEditMode}
-              suppressContentEditableWarning={true}
-              onBlur={(e) => updateProfileField("aboutParagraphOne", e.currentTarget.textContent)}
-              title={isEditMode ? "Click to edit paragraph 1" : undefined}
-            >
-              {profile.aboutParagraphOne}
-            </p>
+            {profile.aboutParagraphOne && (
+              <p
+                contentEditable={isEditMode}
+                suppressContentEditableWarning={true}
+                onBlur={(e) => updateProfileField("aboutParagraphOne", e.currentTarget.textContent)}
+                title={isEditMode ? "Click to edit paragraph" : undefined}
+              >
+                {profile.aboutParagraphOne}
+              </p>
+            )}
 
-            <p
-              contentEditable={isEditMode}
-              suppressContentEditableWarning={true}
-              onBlur={(e) => updateProfileField("aboutParagraphTwo", e.currentTarget.textContent)}
-              title={isEditMode ? "Click to edit paragraph 2" : undefined}
-            >
-              {profile.aboutParagraphTwo}
-            </p>
-
-            {/* Redesigned Minimalist Skills Badges */}
-            <div className="skills-container">
-              <div className="skills-section-heading">Technologies I work with:</div>
-              {skillGroups.map((group, i) => (
-                <div key={i} className="skill-category-block">
-                  <div className="skill-category-label">{group.category}</div>
+            {/* Clean Tech Stack Section */}
+            <div className="skills-container" style={{ marginTop: "16px" }}>
+              <div className="skills-section-heading" style={{ fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>
+                Tech Stack
+              </div>
+              {techRows.map((row, i) => (
+                <div key={i} className="skill-category-block" style={{ marginBottom: "14px" }}>
                   <div className="skill-pills-wrap">
-                    {group.skills.map((skill, j) => (
+                    {row.skills.map((skill, j) => (
                       <span key={j} className="skill-chip">
                         <span className="skill-chip-dot" />
                         {skill}

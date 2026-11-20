@@ -1,0 +1,432 @@
+:root {
+  --biftu-paper: #EDEDE7;
+  --biftu-paper-2: #E3E4DD;
+  --biftu-ink: #151815;
+  --biftu-ink-2: #3C413C;
+  --biftu-gauge: #6F756F;
+  --biftu-rule: #C9CCC4;
+  --biftu-board: #22362E;
+  --biftu-on-board: #E8E9E2;
+  --biftu-limit: #BF3B2A;
+  --biftu-font-sans: "Funnel Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --biftu-font-mono: "Martian Mono", monospace;
+}
+
+.biftu-container {
+  background-color: var(--biftu-paper);
+  color: var(--biftu-ink);
+  font-family: var(--biftu-font-sans);
+  min-height: 100vh;
+  line-height: 1.55;
+}
+
+.biftu-wrap {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 3.5vw, 40px);
+}
+
+.biftu-mono-lab {
+  font-family: var(--biftu-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--biftu-gauge);
+}
+
+/* Header */
+.biftu-hdr {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: color-mix(in srgb, var(--biftu-paper) 92%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--biftu-rule);
+}
+
+.biftu-hdr-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.biftu-brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--biftu-ink);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+}
+
+.biftu-logo-bracket {
+  font-family: var(--biftu-font-mono);
+  color: var(--biftu-limit);
+  font-weight: 400;
+  font-size: 18px;
+  transition: transform 0.25s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.biftu-brand:hover .biftu-logo-bracket {
+  transform: translateX(6px);
+}
+
+.biftu-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.biftu-nav-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--biftu-font-sans);
+  font-size: 15px;
+  color: var(--biftu-ink-2);
+  padding: 6px 4px;
+  transition: color 0.15s;
+}
+
+.biftu-nav-link:hover, .biftu-nav-link.active {
+  color: var(--biftu-ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Buttons */
+.biftu-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 16px;
+  border: 1px solid var(--biftu-ink);
+  background: transparent;
+  color: var(--biftu-ink);
+  font-family: var(--biftu-font-sans);
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all 0.15s;
+}
+
+.biftu-btn small {
+  font-size: 11px;
+  color: var(--biftu-gauge);
+}
+
+.biftu-btn-fill {
+  background: var(--biftu-ink);
+  color: var(--biftu-paper);
+}
+
+.biftu-btn-fill small {
+  color: color-mix(in srgb, var(--biftu-paper) 70%, transparent);
+}
+
+.biftu-btn-fill:hover {
+  background: var(--biftu-board);
+}
+
+/* Sections */
+.biftu-sec {
+  padding-block: clamp(64px, 8vw, 100px);
+  border-top: 1px solid var(--biftu-rule);
+}
+
+.biftu-sec-hdr {
+  margin-bottom: 40px;
+}
+
+.biftu-sec-hdr h2 {
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.biftu-sec-hdr p {
+  color: var(--biftu-ink-2);
+  font-size: 18px;
+  max-width: 65ch;
+}
+
+/* Hero */
+.biftu-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.biftu-h1 {
+  font-size: clamp(34px, 4.5vw, 52px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+
+.biftu-hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Ledger */
+.biftu-ledger {
+  background: var(--biftu-paper-2);
+  border: 1px solid var(--biftu-rule);
+  padding: 24px;
+}
+
+.biftu-ledger-hdr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--biftu-rule);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.biftu-ledger-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-block: 10px;
+  border-bottom: 1px solid color-mix(in srgb, var(--biftu-rule) 50%, transparent);
+  font-size: 14.5px;
+}
+
+.biftu-ix {
+  font-family: var(--biftu-font-mono);
+  font-size: 11px;
+  color: var(--biftu-gauge);
+  margin-right: 12px;
+}
+
+.biftu-rel-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.biftu-badge {
+  font-family: var(--biftu-font-mono);
+  font-size: 9.5px;
+  padding: 2px 6px;
+  background: var(--biftu-limit);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.biftu-rel-date {
+  font-family: var(--biftu-font-mono);
+  font-size: 12px;
+  color: var(--biftu-gauge);
+}
+
+/* Statement */
+.biftu-statement-text {
+  font-size: clamp(26px, 3.8vw, 44px);
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin-bottom: 40px;
+}
+
+.biftu-dual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.biftu-box {
+  background: var(--biftu-paper-2);
+  border: 1px solid var(--biftu-rule);
+  padding: 28px;
+}
+
+.biftu-box p {
+  font-size: 17px;
+  margin-top: 10px;
+  color: var(--biftu-ink-2);
+}
+
+.biftu-stat-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.biftu-stat-row strong {
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--biftu-ink);
+}
+
+/* 6 Tabs Grid */
+.biftu-tabs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.biftu-panel-preview {
+  background: var(--biftu-board);
+  color: var(--biftu-on-board);
+  padding: 32px;
+  border: 1px solid var(--biftu-rule);
+}
+
+.biftu-panel-preview h3 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-block: 16px 24px;
+  color: #fff;
+}
+
+.biftu-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.biftu-feature-item {
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.biftu-bullet {
+  color: var(--biftu-limit);
+}
+
+.biftu-tabs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.biftu-tab-item {
+  text-align: left;
+  background: var(--biftu-paper-2);
+  border: 1px solid var(--biftu-rule);
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.biftu-tab-item:hover, .biftu-tab-item.active {
+  background: #fff;
+  border-color: var(--biftu-ink);
+}
+
+.biftu-tab-top {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.biftu-tab-item p {
+  font-size: 14px;
+  color: var(--biftu-ink-2);
+  margin-bottom: 8px;
+}
+
+.biftu-tab-item small {
+  font-family: var(--biftu-font-mono);
+  font-size: 11px;
+  color: var(--biftu-gauge);
+}
+
+/* Leaderboard */
+.biftu-leaderboard {
+  border: 1px solid var(--biftu-rule);
+}
+
+.biftu-leaderboard-hdr {
+  display: grid;
+  grid-template-columns: 60px 1fr 120px 140px;
+  padding: 12px 20px;
+  background: var(--biftu-paper-2);
+  border-bottom: 1px solid var(--biftu-rule);
+  font-family: var(--biftu-font-mono);
+  font-size: 11px;
+  color: var(--biftu-gauge);
+}
+
+.biftu-leaderboard-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 120px 140px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--biftu-rule);
+  align-items: center;
+  font-size: 15px;
+}
+
+.biftu-leaderboard-row.top-rank {
+  background: color-mix(in srgb, var(--biftu-limit) 8%, transparent);
+  font-weight: 600;
+}
+
+.biftu-score {
+  font-family: var(--biftu-font-mono);
+  font-weight: 700;
+}
+
+.biftu-ci {
+  font-family: var(--biftu-font-mono);
+  font-size: 13px;
+  color: var(--biftu-gauge);
+}
+
+/* Metrics & Roles */
+.biftu-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.biftu-metric-val {
+  font-size: 38px;
+  font-weight: 300;
+  margin-block: 10px;
+}
+
+.biftu-roles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.biftu-role-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer */
+.biftu-ftr {
+  border-top: 1px solid var(--biftu-rule);
+  padding-block: 28px;
+}
+
+.biftu-ftr-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  .biftu-hero-grid, .biftu-dual-grid, .biftu-tabs-grid, .biftu-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
