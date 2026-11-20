@@ -1,0 +1,51 @@
+/* ConstraintBench example tasks v2: a 2D drawing per domain with a leader line to the task title (18 Nov 2026) */
+.tk{container-type:inline-size;--tk-soft:var(--rule-2,#DBDDD6);--tk-face:var(--paper-2,#E3E4DD);--tk-red:var(--limit,#BF3B2A)}
+.tk-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;padding:0}
+.tk-tab{position:relative;overflow:hidden;appearance:none;border:1px solid var(--rule);background:none;color:var(--ink-2);font-family:var(--mono);font-stretch:87.5%;font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:9px 12px 8px;border-radius:2px;cursor:pointer;display:inline-flex;gap:8px;align-items:center;line-height:1}
+.tk-tab .tk-n{color:var(--gauge)}
+.tk-tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.tk-tab[aria-selected="true"] .tk-n{color:inherit;opacity:.6}
+.tk-tab:focus-visible{outline:2px solid var(--tk-red);outline-offset:2px}
+.tk-bar{position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--tk-red);transform:scaleX(0);transform-origin:0 50%;pointer-events:none}
+.tk-body{display:grid;grid-template-columns:minmax(0,1fr);transition:opacity .28s ease}
+.tk.is-out .tk-body{opacity:0}
+.tk-stage svg{display:block;width:100%;height:auto;overflow:visible}
+.tk-side{padding:6px 0 0;min-height:7.6em}
+.tk-h{margin:0;font-family:var(--sans);font-weight:300;font-size:clamp(22px,6.4cqw,30px);line-height:1.12;letter-spacing:-.02em;color:var(--ink);text-wrap:balance}
+.tk-sub{margin:12px 0 0;font-family:var(--mono);font-stretch:87.5%;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gauge)}
+.tk-ll{display:none}
+@container (min-width:700px){
+  .tk-body{grid-template-columns:minmax(0,64fr) minmax(0,36fr)}
+  .tk-side{min-height:0;padding:calc(var(--y,80) * .1cqw - 1.8cqw) 0 0 .9cqw}
+  .tk-h{font-size:3.2cqw}
+  .tk-sub{margin-top:1.3cqw}
+  .tk-ll{display:inline}
+}
+/* drawing */
+.tk svg text{font-family:var(--mono);font-stretch:87.5%;letter-spacing:.06em}
+.tk .l{fill:none;stroke:var(--ink-2);stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}
+.tk .lt{fill:none;stroke:var(--gauge);stroke-width:1.2;stroke-linejoin:round;stroke-linecap:round}
+.tk .ls{fill:none;stroke:var(--tk-soft);stroke-width:1}
+.tk .cl{fill:var(--tk-soft);stroke:none}
+.tk .fb{fill:color-mix(in srgb,var(--ink) 22%,var(--paper));stroke:none}
+.tk .f{fill:var(--tk-face);stroke:var(--ink-2);stroke-width:1.5;stroke-linejoin:round}
+.tk .fp{fill:var(--paper);stroke:var(--ink-2);stroke-width:1.5;stroke-linejoin:round}
+.tk .fi{fill:var(--ink);stroke:var(--ink);stroke-width:1}
+.tk .fr{fill:var(--tk-red);stroke:var(--tk-red);stroke-width:1}
+.tk .r{fill:none;stroke:var(--tk-red);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.tk .rd{fill:none;stroke:var(--tk-red);stroke-width:1.5;stroke-dasharray:6 5}
+.tk .ld{fill:none;stroke:var(--tk-red);stroke-width:1.3;stroke-linejoin:round}
+.tk .ink{fill:none;stroke:var(--ink);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.tk .t{fill:var(--gauge)}
+.tk .ti{fill:var(--ink)}
+.tk .tr{fill:var(--tk-red)}
+.tk .t2{fill:var(--ink-2)}
+.tk .th{paint-order:stroke;stroke:var(--paper);stroke-width:5px;stroke-linejoin:round}
+@container (max-width:520px){
+  .tk-stage svg text{font-size:17px}
+  .tk-stage svg text.th{font-size:20px}
+  .tk-tab{font-size:11px;padding:8px 10px 7px}
+}
+
+.bench-tk{margin:36px 0 34px}
+.bench-tk>.lab{display:block;margin-bottom:14px}

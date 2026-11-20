@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.log
+*.tmp
+*.mp4
+biftu_deploy.zip
+deploy.zip
+__pycache__/
+.DS_Store

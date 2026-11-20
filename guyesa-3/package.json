@@ -1,0 +1,11 @@
+{
+  "name": "guyesa-3-portfolio",
+  "version": "3.0.0",
+  "description": "Guyo Halake - Personal Engineering Portfolio in Biftu Precision Neo-Brutalist Theme",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

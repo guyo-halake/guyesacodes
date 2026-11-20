@@ -1,0 +1,11 @@
+{
+  "name": "biftu-enterprise-site",
+  "version": "1.0.0",
+  "description": "Biftu - Autonomous AI Agent Solutions & Enterprise Automation Infrastructure",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

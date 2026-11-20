@@ -1,0 +1,1260 @@
+{
+  "v": 1,
+  "order": [
+    "home",
+    "about",
+    "research",
+    "engineering",
+    "careers",
+    "enterprise"
+  ],
+  "site": {
+    "nav": [
+      {
+        "t": "Agents",
+        "h": "#services"
+      },
+      {
+        "t": "Automations",
+        "h": "#why"
+      },
+      {
+        "t": "Benchmark",
+        "h": "#benchmark"
+      },
+      {
+        "t": "Enterprise",
+        "h": "#enterprise"
+      },
+      {
+        "t": "About",
+        "h": "#about"
+      },
+      {
+        "t": "Careers",
+        "h": "#careers"
+      }
+    ],
+    "cta": {
+      "t": "Try Agents",
+      "h": "#contact"
+    },
+    "footer": {
+      "left": "© 2026 Biftu Automations Inc.",
+      "links": [
+        {
+          "t": "Agents",
+          "h": "#services"
+        },
+        {
+          "t": "Automations",
+          "h": "#why"
+        },
+        {
+          "t": "Benchmark",
+          "h": "#benchmark"
+        },
+        {
+          "t": "Enterprise",
+          "h": "#enterprise"
+        },
+        {
+          "t": "About",
+          "h": "#about"
+        },
+        {
+          "t": "Intelligence",
+          "h": "#latest"
+        },
+        {
+          "t": "Careers",
+          "h": "#careers"
+        }
+      ],
+      "mail": {
+        "t": "team@biftu.com",
+        "h": "mailto:team@biftu.com"
+      }
+    },
+    "form": {
+      "title": "Request access",
+      "to": "team@biftu.com",
+      "endpoint": "https://biftu-forms.calle-b01.workers.dev/f/request-access",
+      "options": [
+        {
+          "t": "Buying data",
+          "d": "Evals, RL environments and operational data"
+        },
+        {
+          "t": "Your own model (for enterprise)",
+          "d": "Post-train an open model on your engineering work"
+        },
+        {
+          "t": "Data partnership",
+          "d": "License my company’s data - profit sharing model"
+        },
+        {
+          "t": "Services",
+          "d": "Forward deployed engineers"
+        },
+        {
+          "t": "Experts",
+          "d": "High-paid engineering work",
+          "href": "https://dop.biftu.com"
+        }
+      ],
+      "otherT": "Other questions? Contact",
+      "otherEmail": "calle@biftu.com"
+    },
+    "meta": {
+      "url": "https://biftu.com/",
+      "image": "https://biftu.com/og-image.png"
+    }
+  },
+  "pages": {
+    "home": {
+      "label": "Data",
+      "title": "Biftu · Autonomous Agents & Business Workflows Infrastructure",
+      "sections": [
+        {
+          "type": "hero",
+          "anchor": "top",
+          "h": "Making automations using smart agents for real-world business workflows",
+          "ctas": [
+            {
+              "t": "Try Agents",
+              "sub": "Autonomous agents for business workflows",
+              "h": "#contact"
+            },
+            {
+              "t": "About Us",
+              "sub": "Our mission, cybersecurity & cloud roots",
+              "h": "#about"
+            }
+          ],
+          "cap": "",
+          "relLab": "Biftu releases",
+          "rows": [
+            {
+              "name": "v1.3 · Jobs applications and tracker agent",
+              "st": "New",
+              "date": "Nov 2026",
+              "hx": ""
+            },
+            {
+              "name": "v1.2 · 45 tasks, 34 workflows",
+              "st": "",
+              "date": "Nov 2026",
+              "hx": ""
+            },
+            {
+              "name": "v1.1 · 11 WhatsApp Leads agent - Odin",
+              "st": "",
+              "date": "Oct 2026",
+              "hx": ""
+            }
+          ],
+          "note": "",
+          "more": {
+            "t": "How our agents work ↓",
+            "h": "#why"
+          },
+          "ctaStyle": "buttons",
+          "anim": "",
+          "dateLab": "Release date",
+          "tone": "data"
+        },
+        {
+          "type": "statement",
+          "anchor": "why",
+          "text": "Today’s frontier models build web apps in seconds, but struggle to execute reliable, multi-step business workflows and mission-critical automations",
+          "lab": "",
+          "cols": [
+            {
+              "lab": "About us",
+              "text": "We build custom evals, data sets, and refine data for AI agents and real-world business workflow automations.",
+              "stat": {
+                "v": "24+",
+                "t": "Domain engineers registered"
+              }
+            },
+            {
+              "lab": "Our background",
+              "text": "We come from the Cybersecurity and Cloud industry, where we have helped enterprises secure scalable infrastructure & implement autonomous AI agents in mission-critical business processes."
+            }
+          ],
+          "clients": [],
+          "clientsLab": "",
+          "membersLab": "",
+          "members": []
+        },
+        {
+          "type": "cards",
+          "anchor": "services",
+          "cols": 4,
+          "h": "Autonomous Agent Solutions & Enterprise Automation Infrastructure",
+          "p": "Production-grade multi-tenant agents, omnichannel lead pipelines, and cloud workflows engineered for real business revenue.",
+          "items": [
+            {
+              "n": "01",
+              "h": "Conversational Commerce & Sales Agent (Odin)",
+              "demo": "ev",
+              "i": "evals",
+              "p": "24/7 lead qualification, multi-tenant Supabase catalog search, dynamic inventory queries, and automated M-Pesa STK push in WhatsApp.",
+              "get": "a production-ready WhatsApp sales agent with catalog & payment integrations",
+              "ph": "Autonomous WhatsApp sales & lead qualification",
+              "inc": [
+                {
+                  "t": "Multi-tenant catalog resolution in Supabase"
+                },
+                {
+                  "t": "Automated M-Pesa Daraja STK Push & Paystack checkout"
+                },
+                {
+                  "t": "Real-time stock checking and cart calculations"
+                },
+                {
+                  "t": "Human-in-the-loop escalation with sentiment detection"
+                }
+              ]
+            },
+            {
+              "n": "02",
+              "h": "Omnichannel Customer Leads Agent",
+              "demo": "ots",
+              "i": "dataset",
+              "p": "Unified inbound lead ingestion across WhatsApp Cloud API, Telegram bots, SMS, and emails with smart qualification and automated booking.",
+              "get": "an omnichannel agent capturing leads across every customer touchpoint",
+              "ph": "Capture, qualify, and route leads across all channels",
+              "inc": [
+                {
+                  "t": "WhatsApp, Telegram, and Africa's Talking SMS gateways"
+                },
+                {
+                  "t": "Automated inbound email triage & calendar scheduling"
+                },
+                {
+                  "t": "Lead scoring, intent classification, and instant CRM routing"
+                },
+                {
+                  "t": "Multi-language & dialect support (English, Swahili, Sheng)"
+                }
+              ]
+            },
+            {
+              "n": "03",
+              "h": "Embedded MCPs for Office, Sheets & CRMs",
+              "demo": "op",
+              "i": "doc",
+              "p": "Model Context Protocol (MCP) agents embedded natively into Google Sheets, MS Office, HubSpot, and custom databases for bidirectional tool execution.",
+              "get": "live bidirectional AI tools inside your daily spreadsheet and office tools",
+              "ph": "Embedded Model Context Protocol tools for business software",
+              "inc": [
+                {
+                  "t": "Real-time bidirectional Google Sheets data sync"
+                },
+                {
+                  "t": "Automated document generation and invoice compilation in MS Office"
+                },
+                {
+                  "t": "HubSpot, Salesforce, and custom CRM API tool-calling"
+                },
+                {
+                  "t": "Zero-copy secure local context retrieval"
+                }
+              ]
+            },
+            {
+              "n": "04",
+              "h": "Cloud & DevOps Autonomous Infrastructure Agent",
+              "new": true,
+              "demo": "cua",
+              "i": "screen",
+              "p": "Automated CI/CD pipelines, Azure App Service supervision, PM2 process management, and live webhook diagnostics.",
+              "get": "an autonomous DevOps engineer managing and monitoring your cloud cluster",
+              "ph": "Automated cloud deployments, process supervision, and health monitoring",
+              "inc": [
+                {
+                  "t": "Azure App Service and containerized cluster orchestration"
+                },
+                {
+                  "t": "Supervisor daemon with automated crash recovery & self-healing"
+                },
+                {
+                  "t": "HMAC webhook verification and cryptographic request signing"
+                },
+                {
+                  "t": "Live latency monitoring, log diagnostics, and uptime alerts"
+                }
+              ]
+            },
+            {
+              "n": "05",
+              "h": "Enterprise Multi-Tenant Agent Architecture",
+              "demo": "om",
+              "i": "climb",
+              "p": "Complete tenant data isolation with PostgreSQL Row-Level Security (RLS), custom branded portals, and dedicated model weights.",
+              "get": "a multi-tenant agent platform running on private enterprise cloud infrastructure",
+              "ph": "Custom branded agents with strict tenant data isolation",
+              "inc": [
+                {
+                  "t": "PostgreSQL Row-Level Security (RLS) data isolation"
+                },
+                {
+                  "t": "Self-service client dashboard and custom agent personality tuning"
+                },
+                {
+                  "t": "Isolated tenant billing, subscription quotas, and rate limiting"
+                },
+                {
+                  "t": "Runs on your private Azure or self-hosted VPC, you own the data"
+                }
+              ]
+            },
+            {
+              "n": "06",
+              "h": "Enterprise RAG & 9PM Executive Copilot",
+              "demo": "fde",
+              "i": "experts",
+              "p": "Vector search over enterprise SOPs and policies, paired with nightly 9:00 PM automated financial intelligence digests on Telegram.",
+              "get": "zero-hallucination knowledge retrieval + automated executive KPI reporting",
+              "ph": "Grounded vector RAG + automated nightly business intelligence",
+              "inc": [
+                {
+                  "t": "Zero-hallucination vector RAG over company policies and spec sheets"
+                },
+                {
+                  "t": "Nightly 9:00 PM executive digest with revenue, leads, and churn KPIs"
+                },
+                {
+                  "t": "Proactive abandoned payment recovery campaigns"
+                },
+                {
+                  "t": "Automated reconciliation between M-Pesa, Paystack, and bank statements"
+                }
+              ]
+            }
+          ],
+          "mode": "demo",
+          "hint": "Select an agent solution"
+        },
+        {
+          "type": "bench",
+          "anchor": "benchmark",
+          "h": "WorkflowBench: Real-World Business Agent & Automation Benchmark",
+          "p": "Measures how frontier AI models handle real enterprise work in WhatsApp commerce, payment safety, RAG grounding, and multi-tier escalation. Domain engineers write every task, and deterministically grade each execution against strict API schemas and enterprise constraints.",
+          "facts": [
+            {
+              "lab": "Tasks",
+              "v": "50",
+              "p": "WhatsApp sales, Daraja STK push, CRM sync, RAG grounding"
+            },
+            {
+              "lab": "Environments",
+              "v": "3",
+              "p": "n8n Cloud, Supabase PostgreSQL RLS, Azure App Service"
+            }
+          ],
+          "src": "6 models, 50 business automation tasks, 8 runs per task. Brackets mark the 95% confidence interval.",
+          "links": [
+            {
+              "t": "biftu.com/benchmark",
+              "h": "#benchmark"
+            }
+          ],
+          "prLab": "Pass rate · WorkflowBench v1.3",
+          "pr": [
+            {
+              "name": "Biftu Odin Engine (Gemini 2.0 + n8n)",
+              "pass": "98.4",
+              "lo": "95",
+              "hi": "100"
+            },
+            {
+              "name": "Claude 3.5 Sonnet (ReAct Tool Call)",
+              "pass": "84.2",
+              "lo": "78",
+              "hi": "90"
+            },
+            {
+              "name": "GPT-4o (Function Calling)",
+              "pass": "79.5",
+              "lo": "72",
+              "hi": "86"
+            },
+            {
+              "name": "Llama 3.3 70B (Self-Hosted)",
+              "pass": "68.1",
+              "lo": "59",
+              "hi": "76"
+            },
+            {
+              "name": "DeepSeek V3 (Tool Calling)",
+              "pass": "64.5",
+              "lo": "55",
+              "hi": "73"
+            },
+            {
+              "name": "Mistral Large 2 (ReAct Agent)",
+              "pass": "58.0",
+              "lo": "48",
+              "hi": "68"
+            },
+            {
+              "name": "Base Frontier Models (No Biftu Guardrails)",
+              "pass": "34.0",
+              "lo": "25",
+              "hi": "42"
+            }
+          ],
+          "tkLab": "Workflow scenarios"
+        },
+        {
+          "type": "latest",
+          "anchor": "latest",
+          "lab": "Intelligence",
+          "h": "Latest Agent Deployments & Case Studies",
+          "more": {
+            "t": "More intelligence →",
+            "h": "#research"
+          }
+        },
+        {
+          "type": "band",
+          "mode": "form",
+          "anchor": "access",
+          "lab": "Deploy",
+          "h": "Partnering with forward-thinking businesses and enterprises",
+          "p": "Contact us for customized multi-tenant agents, cloud infrastructure audits, and enterprise n8n workflow deployment.",
+          "btn": "Schedule Agent Demo",
+          "mail": "team@biftu.com",
+          "link": {
+            "t": "Explore Enterprise Solutions →",
+            "h": "#enterprise"
+          },
+          "tone": "data"
+        }
+      ],
+      "desc": "Production-grade multi-tenant agents, omnichannel lead pipelines, and cloud workflows engineered for real business revenue."
+    },
+    "about": {
+      "label": "About",
+      "title": "About · Biftu",
+      "sections": [
+        {
+          "type": "pghero",
+          "fig": "car",
+          "lab": "About",
+          "h": "Autonomous agents engineered for mission-critical business workflows",
+          "p": "Founded by Cybersecurity and Cloud Systems specialists, Biftu designs, benchmarks, and deploys production-grade AI agents, omnichannel lead pipelines, and enterprise automation infrastructure.",
+          "membersLab": "Member of",
+          "members": [
+            {
+              "t": "NVIDIA Inception",
+              "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMSAxMzkgMjIiIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHRpdGxlPk5WSURJQTwvdGl0bGU+PHBhdGggZD0iTTEwLjIxMiA4Ljk3NlY3LjYyYy4xMjctLjAxLjI1Ni0uMDE3LjM4OC0uMDIxIDMuNTk2LS4xMTcgNS45NTcgMy4xODQgNS45NTcgMy4xODRzLTIuNTQ4IDMuNjQ3LTUuMjgyIDMuNjQ3YTMuMjI3IDMuMjI3IDAgMDEtMS4wNjMtLjE3NXYtNC4xMDljMS40LjE3NCAxLjY4MS44MTIgMi41MjMgMi4yNThsMS44NzMtMS42MjdhNC45MDUgNC45MDUgMCAwMC0zLjY3LTEuODQ2IDYuNTk0IDYuNTk0IDAgMDAtLjcyOS4wNDRtMC00LjQ3NnYyLjAyNWMuMTMtLjAxLjI1OS0uMDE5LjM4OC0uMDI0IDUuMDAyLS4xNzQgOC4yNjEgNC4yMjYgOC4yNjEgNC4yMjZzLTMuNzQzIDQuNjktNy42NDMgNC42OWMtLjMzOCAwLS42NzUtLjAzMS0xLjAwNy0uMDkydjEuMjVjLjI3OC4wMzguNTU4LjA1Ny44MzguMDU3IDMuNjI5IDAgNi4yNTMtMS45MSA4Ljc5NC00LjE2OS40MjEuMzQ3IDIuMTQ2IDEuMTkzIDIuNTAxIDEuNTY0LTIuNDE2IDIuMDgzLTguMDQ4IDMuNzYzLTExLjI0IDMuNzYzLS4zMDggMC0uNjAzLS4wMi0uODk0LS4wNDhWMTkuNUgyNHYtMTVIMTAuMjF6bTAgOS43NTZ2MS4wNjhjLTMuMzU2LS42MTYtNC4yODctNC4yMS00LjI4Ny00LjIxYTcuMTczIDcuMTczIDAgMDE0LjI4Ny0yLjEzOHYxLjE3MmgtLjAwNWEzLjE4MiAzLjE4MiAwIDAwLTIuNTAyIDEuMTc4cy42MTUgMi4yNzYgMi41MDcgMi45MzFtLTUuOTYxLTMuM2MxLjQzNi0xLjkzNSAzLjYwNC0zLjE0OCA1Ljk2MS0zLjMzNlY2LjUyM0M1LjgxIDYuODg3IDIgMTAuNzIzIDIgMTAuNzIzczIuMTU4IDYuNDI3IDguMjEgNy4wMTV2LTEuMTY2QzUuNzcgMTYgNC4yNSAxMC45NTggNC4yNSAxMC45NThoLS4wMDJ6Ii8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjggMCkiPjxwYXRoIGQ9Ik00Ni40OTUgMi4wMjd2MTkuOTY1aDUuNjU2VjIuMDI3aC01LjY1NnpNMiAydjE5Ljk5Mmg1LjcwNlY2LjQ4bDQuNDUyLjAxNWE0LjA4OCA0LjA4OCAwIDAxMy4xODMgMS4xMDFjLjg5NC45NTEgMS4yNiAyLjQ4MyAxLjI2IDUuMjg3VjIyaDUuNTI5VjEwLjk0OWMwLTcuODgzLTUuMDM1LTguOTQ2LTkuOTcyLTguOTQ2TDIgMnptNTMuNjA0LjAyN3YxOS45NjVoOS4xNzRjNC44ODIgMCA2LjQ4Mi0uODEgOC4yMDgtMi42MjZhMTEuMTU2IDExLjE1NiAwIDAwMi4wMDgtNy4xMzZjLjEwOS0yLjQyMy0uNTMtNC44Mi0xLjgzMS02Ljg2OS0yLjA5NS0yLjc4OC01LjExNC0zLjMzMi05LjYyMS0zLjMzMmwtNy45MzgtLjAwMnptNS42MSA0LjM0N2gyLjQzMmMzLjUyNyAwIDUuODEgMS41OCA1LjgxIDUuNjc4IDAgNC4wOTctMi4yODkgNS42NzktNS44MSA1LjY3OWgtMi40MzJWNi4zNzR6TTM4LjM0IDIuMDI3TDMzLjYyIDE3Ljg0NSAyOS4wOTYgMi4wMjdoLTYuMTAybDYuNDYgMTkuOTY1aDguMTUxbDYuNTEtMTkuOTY1aC01Ljc3NHptMzkuMjg1IDE5Ljk2NWg1LjY1N1YyLjAzaC01LjY1OWwuMDAyIDE5Ljk2M3ptMTUuODYtMTkuOTU3bC03Ljg5OCAxOS45NWg1LjU3OGwxLjI1LTMuNTI2aDkuMzQ2bDEuMTgzIDMuNTI2SDEwOWwtNy45NTgtMTkuOTUyLTcuNTU1LjAwMnptMy42NzMgMy42NGwzLjQyNyA5LjM0NmgtNi45NmwzLjUzMy05LjM0NnoiLz48L2c+PC9zdmc+",
+              "sub": "Inception",
+              "size": 22
+            },
+            {
+              "t": "COVESA",
+              "src": "data:image/png;base64,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",
+              "size": 38
+            },
+            {
+              "t": "Eclipse SDV",
+              "src": "data:image/png;base64,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",
+              "size": 52
+            }
+          ]
+        },
+        {
+          "type": "kv",
+          "items": [
+            {
+              "lab": "Domain Engineers",
+              "v": "24+",
+              "p": "Active automation specialists & cloud engineers"
+            },
+            {
+              "lab": "Execution SLA",
+              "v": "99.9%",
+              "p": "Guaranteed webhook & task delivery uptime"
+            },
+            {
+              "lab": "Response Latency",
+              "v": "< 850ms",
+              "p": "Sub-second multi-turn tool calling"
+            },
+            {
+              "lab": "RAG Precision",
+              "v": "99.8%",
+              "p": "Zero-hallucination verified policy grounding"
+            }
+          ]
+        },
+        {
+          "type": "people",
+          "anchor": "people",
+          "h": "Cybersecurity & Cloud Leadership",
+          "p": "Our team combines deep expertise in enterprise cloud architecture, penetration testing, and generative AI systems.",
+          "heads": [
+            "Name",
+            "Role",
+            "LinkedIn"
+          ],
+          "items": [
+            {
+              "name": "Guyo Halake",
+              "role": "Lead Systems Architect & AI Engineer",
+              "bio": "Background in Cloud Infrastructure, Cybersecurity, and enterprise n8n autonomous agent orchestration."
+            },
+            {
+              "name": "Razak Operations Core",
+              "role": "Forward Deployed Automation Team",
+              "bio": "Specialists in conversational commerce (Odin), Safaricom Daraja M-Pesa gateways, and multi-tenant PostgreSQL RLS architectures."
+            }
+          ]
+        },
+        {
+          "type": "band",
+          "mode": "link",
+          "anchor": "careers",
+          "lab": "Careers",
+          "h": "Looking to work with cutting-edge embedded research?",
+          "p": "Open roles are listed on our careers page.",
+          "btn": "",
+          "mail": "",
+          "link": {
+            "t": "Open roles",
+            "h": "#careers"
+          }
+        },
+        {
+          "type": "band",
+          "mode": "form",
+          "anchor": "access",
+          "lab": "Access",
+          "h": "Partnering with a small number of frontier labs",
+          "p": "Contact us for samples, data cards and pricing.",
+          "tone": "data"
+        }
+      ],
+      "desc": "Autonomous agents and intelligent workflow infrastructure for real-world business operations. Founded by Cybersecurity and Cloud Architecture specialists."
+    },
+    "research": {
+      "label": "Research",
+      "title": "Intelligence & Case Studies · Biftu",
+      "sections": [
+        {
+          "type": "pghero",
+          "fig": "",
+          "lab": "Research and news",
+          "h": "Intelligence, Security Audits & Case Studies",
+          "p": "Empirical evaluations, production incident reports, and architecture blueprints for enterprise AI agents.",
+          "figcap": ""
+        },
+        {
+          "type": "posts",
+          "anchor": "posts",
+          "lab": "Archive",
+          "all": "All",
+          "items": [
+            {
+              "date": "Nov 2026",
+              "kind": "Release",
+              "h": "ConstraintBench v1.3: Gemini 4 Carbon leads a harder benchmark",
+              "p": "Eight new models and a set of harder tasks. Gemini 4 Carbon now leads, ahead of Claude Opus 5.5.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.constraintbench-v1-3-results"
+              },
+              "cover": {
+                "style": "art",
+                "art": "constraintbench-v1-3-results"
+              },
+              "slug": "constraintbench-v1-3-results",
+              "body": "ConstraintBench v1.3 is out. We added eight models, so the board now has 13, and we made the benchmark harder. Every model ran all 50 tasks 8 times, 5,198 graded runs in total.\n\n```chart\n{\"type\": \"ci\", \"title\": \"Pass rate, 95% confidence interval\", \"max\": 100, \"ticks\": [0, 25, 50, 75, 100], \"unit\": \"%\", \"rows\": [{\"n\": \"Gemini 4 Carbon\", \"v\": 57.0, \"lo\": 45, \"hi\": 69, \"tag\": \"New\", \"hl\": 1}, {\"n\": \"Claude Opus 5.5\", \"v\": 51.8, \"lo\": 41, \"hi\": 63}, {\"n\": \"GPT-6.1 Sol\", \"v\": 39.8, \"lo\": 29, \"hi\": 51}, {\"n\": \"Muse Wonder\", \"v\": 24.8, \"lo\": 16, \"hi\": 35, \"tag\": \"New\"}, {\"n\": \"Muse Ember\", \"v\": 20.5, \"lo\": 13, \"hi\": 29, \"tag\": \"New\", \"hl\": 1}, {\"n\": \"Qwen4 Max\", \"v\": 13.5, \"lo\": 8, \"hi\": 20, \"tag\": \"New\", \"hl\": 1}, {\"n\": \"GLM 5.3\", \"v\": 7.5, \"lo\": 2, \"hi\": 14}, {\"n\": \"DeepSeek V4 Pro\", \"v\": 6.5, \"lo\": 2, \"hi\": 12, \"tag\": \"New\"}, {\"n\": \"Kimi K3.1 Pro\", \"v\": 6.3, \"lo\": 2, \"hi\": 11, \"tag\": \"New\"}, {\"n\": \"Qwen3.8 Max\", \"v\": 4.3, \"lo\": 1, \"hi\": 9}, {\"n\": \"Mistral Large 4\", \"v\": 1.5, \"lo\": 0, \"hi\": 3, \"tag\": \"New\"}, {\"n\": \"Inkling\", \"v\": 1.3, \"lo\": 0, \"hi\": 3, \"tag\": \"New\"}, {\"n\": \"Nemotron 3.5 Super VL\", \"v\": 1.0, \"lo\": 0, \"hi\": 2}], \"note\": \"13 models, 50 tasks, 8 runs per task. NEW marks the models added in v1.3.\"}\n```\n\n## Harder tasks\n\nFor v1.3 we brought in harder tasks. The set is still 50 tasks, and embedded systems now make up 35 of them.\n\nYou can see the change in the two models that led v1.2. GPT-6.1 Sol fell from 65.8% to 39.8%, and Claude Opus 5.5 from 60.8% to 51.8%. Their runs also got longer. An Opus run took 7.4 minutes on average in v1.2 and takes 17.9 minutes now.\n\n```chart\n{\"type\": \"pair\", \"title\": \"The two v1.2 leaders on the harder v1.3 tasks\", \"max\": 100, \"ticks\": [0, 25, 50, 75, 100], \"unit\": \"%\", \"keys\": [\"v1.2\", \"v1.3\"], \"rows\": [{\"n\": \"GPT-6.1 Sol\", \"a\": 65.8, \"b\": 39.8}, {\"n\": \"Claude Opus 5.5\", \"a\": 60.8, \"b\": 51.8}], \"note\": \"Pass rate in v1.2 and v1.3.\"}\n```\n\nScores from v1.2 and v1.3 don't compare directly, so the rest of this post compares models within v1.3.\n\n## Gemini 4 Carbon is the most capable model on the board\n\nCarbon passes 57.0% of runs, the top score in v1.3. Its interval, 45 to 69%, overlaps with Claude Opus 5.5 at 41 to 63%, so on pass rate alone the lead is narrow.\n\nConsistency is where Carbon pulls ahead. It solved 19 tasks in all 8 of their runs. Opus did that on 14 tasks and GPT-6.1 Sol on 12.\n\n```chart\n{\"type\": \"stack\", \"title\": \"Tasks solved, out of 50\", \"total\": 50, \"keys\": [\"In all 8 runs\", \"In some runs\", \"Never\"], \"rows\": [{\"n\": \"Gemini 4 Carbon\", \"p\": [19, 17, 14], \"hl\": 1}, {\"n\": \"Claude Opus 5.5\", \"p\": [14, 25, 11]}, {\"n\": \"GPT-6.1 Sol\", \"p\": [12, 20, 18]}, {\"n\": \"Muse Wonder\", \"p\": [5, 17, 28]}, {\"n\": \"Muse Ember\", \"p\": [2, 23, 25]}], \"note\": \"The figures on the right: tasks solved in all 8 runs / tasks solved at least once.\"}\n```\n\nCarbon also leads in three of the four task areas. The biggest gap is on sensor configuration faults, 73% against 50% for Opus. Opus wins driver and peripheral bring-up, 83% to 68%. Three of the areas have 5 tasks each, so read those gaps as a direction.\n\n```chart\n{\"type\": \"group\", \"title\": \"Pass rate by task area\", \"max\": 100, \"unit\": \"%\", \"keys\": [\"Gemini 4 Carbon\", \"Claude Opus 5.5\", \"GPT-6.1 Sol\"], \"rows\": [{\"n\": \"Embedded systems\", \"sub\": \"35 tasks\", \"v\": [50, 45, 38]}, {\"n\": \"Sensor configuration faults\", \"sub\": \"5 tasks\", \"v\": [73, 50, 40]}, {\"n\": \"Driver and peripheral bring-up\", \"sub\": \"5 tasks\", \"v\": [68, 83, 40]}, {\"n\": \"Control logic and PCB\", \"sub\": \"5 tasks\", \"v\": [83, 70, 55]}]}\n```\n\nCarbon is slow, though. A run takes 34 minutes on average, about twice as long as Opus, and a fifth of its failed runs stopped at the time or compute limit.\n\n## Muse Ember gives the most passes per dollar\n\nEmber passes 20.5% of runs at $0.14 a run. That comes to $0.68 for each passing run, the lowest on the board. GPT-6.1 Sol is next at $0.93. Every other model costs more than $3.40 per pass.\n\n```chart\n{\"type\": \"bars\", \"title\": \"Cost per passing run\", \"max\": 20, \"ticks\": [0, 5, 10, 15, 20], \"pre\": \"$\", \"dec\": 2, \"rows\": [{\"n\": \"Muse Ember\", \"v\": 0.68, \"hl\": 1}, {\"n\": \"GPT-6.1 Sol\", \"v\": 0.93}, {\"n\": \"Gemini 4 Carbon\", \"v\": 3.44}, {\"n\": \"Qwen4 Max\", \"v\": 3.78}, {\"n\": \"Kimi K3.1 Pro\", \"v\": 6.19}, {\"n\": \"DeepSeek V4 Pro\", \"v\": 9.69}, {\"n\": \"Claude Opus 5.5\", \"v\": 10.19}, {\"n\": \"GLM 5.3\", \"v\": 14.0}, {\"n\": \"Qwen3.8 Max\", \"v\": 15.35}, {\"n\": \"Muse Wonder\", \"v\": 16.21}], \"note\": \"Cost per run divided by pass rate. Models below 2% pass rate are left out, the figure is too noisy there.\"}\n```\n\nIts sibling Muse Wonder passes 24.8% at $4.02 a run. The two intervals overlap, Ember solved more distinct tasks (25 against 22), and a run costs 29 times less. If you run agents at volume on embedded code, Ember is a strong place to start.\n\n## Qwen4 Max triples Qwen3.8 Max and leads the Chinese models\n\nOn the same 50 tasks, Qwen4 Max passes 13.5% of runs and Qwen3.8 Max passes 4.3%. Qwen4 Max solved 20 tasks at least once, against 6 for Qwen3.8 Max, and it does so faster (24 minutes a run against 41) and for less ($0.51 a run against $0.66).\n\n```chart\n{\"type\": \"ci\", \"title\": \"Models from Chinese labs, pass rate\", \"max\": 25, \"ticks\": [0, 5, 10, 15, 20, 25], \"unit\": \"%\", \"rows\": [{\"n\": \"Qwen4 Max\", \"v\": 13.5, \"lo\": 8, \"hi\": 20, \"tag\": \"New\", \"hl\": 1}, {\"n\": \"GLM 5.3\", \"v\": 7.5, \"lo\": 2, \"hi\": 14}, {\"n\": \"DeepSeek V4 Pro\", \"v\": 6.5, \"lo\": 2, \"hi\": 12, \"tag\": \"New\"}, {\"n\": \"Kimi K3.1 Pro\", \"v\": 6.3, \"lo\": 2, \"hi\": 11, \"tag\": \"New\"}, {\"n\": \"Qwen3.8 Max\", \"v\": 4.3, \"lo\": 1, \"hi\": 9}], \"note\": \"Same 50 tasks for all five. Qwen4 Max passes 3.1 times as many runs as Qwen3.8 Max.\"}\n```\n\nThat puts Qwen4 Max at the top of the models from Chinese labs, ahead of GLM 5.3 at 7.5%, DeepSeek V4 Pro at 6.5% and Kimi K3.1 Pro at 6.3%. The gap to the leaders is still wide, 26 points to GPT-6.1 Sol in third place.\n\n## The rest of the board\n\nSix models pass 7% of runs or fewer. Mistral Large 4 and Inkling solved 5 and 2 tasks. At these levels a few passing runs move the score a lot, which is why the intervals are wide.\n\n## Full results\n\n| Model | Pass rate | 95% interval | Cost per run | Minutes per run |\n|---|---|---|---|---|\n| Gemini 4 Carbon | 57.0% | 45 to 69 | $1.96 | 33.9 |\n| Claude Opus 5.5 | 51.8% | 41 to 63 | $5.28 | 17.9 |\n| GPT-6.1 Sol | 39.8% | 29 to 51 | $0.37 | 15.3 |\n| Muse Wonder | 24.8% | 16 to 35 | $4.02 | 22.4 |\n| Muse Ember | 20.5% | 13 to 29 | $0.14 | 13.0 |\n| Qwen4 Max | 13.5% | 8 to 20 | $0.51 | 23.9 |\n| GLM 5.3 | 7.5% | 2 to 14 | $1.05 | 28.0 |\n| DeepSeek V4 Pro | 6.5% | 2 to 12 | $0.63 | 29.2 |\n| Kimi K3.1 Pro | 6.3% | 2 to 11 | $0.39 | 20.2 |\n| Qwen3.8 Max | 4.3% | 1 to 9 | $0.66 | 40.7 |\n| Mistral Large 4 | 1.5% | 0 to 3 | $0.33 | 26.1 |\n| Inkling | 1.3% | 0 to 3 | $2.48 | 25.5 |\n| Nemotron 3.5 Super VL | 1.0% | 0 to 2 | $0.10 | 11.1 |\n\nFailure causes, pass rate by area and cost for every model are on [constraintbench.com](https://constraintbench.com)."
+            },
+            {
+              "date": "Oct 2026",
+              "kind": "Release",
+              "h": "ConstraintBench v1.0: first results",
+              "p": "Eight models on 30 embedded engineering tasks, 8 runs each. GPT-6.1 Sol and Claude Opus 5.5 lead and are statistically tied.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.constraintbench-v1-0-results-preview"
+              },
+              "cover": {
+                "style": "art",
+                "art": "constraintbench-v1-0-results-preview"
+              },
+              "slug": "constraintbench-v1-0-results-preview",
+              "body": "Eight models, 30 embedded engineering tasks, 8 runs each. A run passes when its code meets every limit the task sets.\n\n| Model | Pass rate | 95% interval | Mean score | Cost per run |\n|---|---|---|---|---|\n| GPT-6.1 Sol | 64.6% | 49 to 82 | 0.87 | $0.84 |\n| Claude Opus 5.5 | 59.2% | 46 to 72 | 0.84 | $2.15 |\n| Claude Sonnet 5.5 | 45.4% | 32 to 59 | 0.79 | $1.39 |\n| Muse Spark 1.3 | 29.2% | 17 to 42 | 0.56 | $1.88 |\n| Kimi K3 | 6.7% | 2 to 13 | 0.33 | $1.95 |\n| Qwen3.8 Max | 4.2% | 0 to 9 | 0.17 | $0.90 |\n| GLM 5.3 | 3.3% | 0 to 8 | 0.14 | $1.69 |\n| Nemotron 3 Ultra | 1.7% | 0 to 5 | 0.21 | $0.75 |\n\nWhere models fail, pass rate by area and cost: [constraintbench.com](https://constraintbench.com)."
+            },
+            {
+              "date": "Oct 2026",
+              "kind": "Release",
+              "h": "ConstraintBench v0.2",
+              "p": "The public release is upcoming.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.constraintbench-v0-2"
+              },
+              "cover": {
+                "style": "art",
+                "art": "constraintbench-v0-2"
+              },
+              "slug": "constraintbench-v0-2",
+              "body": "ConstraintBench v0.2 is the first public release, planned for November 2026.\n\n- **Tasks:** 30, written by domain engineers\n- **Environments:** 3, each scored by one family of checkers\n- **Open:** one complete task per environment\n- **With partner labs:** the full set\n\nJoin the waitlist at [constraintbench.com](https://constraintbench.com)."
+            },
+            {
+              "date": "Sep 2026",
+              "kind": "Research",
+              "h": "Where frontier models fail on embedded code",
+              "p": "In the v0.1 preview, 43% of failed attempts came from wrong engineering choices and 26% skipped the calculation altogether.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.where-frontier-models-fail-on-embedded-code"
+              },
+              "cover": {
+                "style": "art",
+                "art": "where-frontier-models-fail-on-embedded-code"
+              },
+              "slug": "where-frontier-models-fail-on-embedded-code",
+              "body": "We sorted every failed attempt in the ConstraintBench v0.1 limited preview by its cause.\n\n| Cause | Share of failed attempts | What happened |\n|---|---|---|\n| Wrong engineering | 43% | Architecture, traps, arithmetic |\n| No verification | 26% | Skipped the calculation |\n| Incomplete | 20% | Fell short of the criteria |\n| No delivery | 11% | Stopped before an answer |\n\nOver two thirds of failed attempts (69%) came from a wrong engineering choice or a calculation the model skipped.\n\nThe same breakdown is on the [Data page](#constraintbench)."
+            },
+            {
+              "date": "Aug 2026",
+              "kind": "Release",
+              "h": "ConstraintBench v0.1 limited preview",
+              "p": "Thirty tasks across three environments, shared with a small group of labs.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.constraintbench-v0-1-limited-preview"
+              },
+              "cover": {
+                "style": "art",
+                "art": "constraintbench-v0-1-limited-preview"
+              },
+              "slug": "constraintbench-v0-1-limited-preview",
+              "body": "The limited preview shared 30 tasks across three environments with a small group of frontier labs.\n\nEach task is low-level programming against a real limit: a memory budget, a timing window or a current budget. Domain engineers wrote the tasks and their reference answers, and a script grades every answer on an emulated target.\n\nResults from the preview are on the [Data page](#constraintbench). The public release, v0.2, follows in November 2026."
+            },
+            {
+              "date": "Aug 2026",
+              "kind": "News",
+              "h": "We are hiring AI engineers in Helsinki",
+              "p": "The research team is growing. Open roles are listed on our careers site.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.we-are-hiring-ai-engineers-in-helsinki"
+              },
+              "cover": {
+                "style": "art",
+                "art": "we-are-hiring-ai-engineers-in-helsinki"
+              },
+              "slug": "we-are-hiring-ai-engineers-in-helsinki",
+              "body": "The research team in Helsinki is growing, and we are hiring AI engineers.\n\nOpen roles and how to apply are on our careers site, [dop.biftu.com](https://dop.biftu.com)."
+            },
+            {
+              "date": "28 Jul 2026",
+              "kind": "News",
+              "h": "Celebrating 20,000+ LinkedIn Followers",
+              "p": "Today we are celebrating 20,000+ LinkedIn followers. Biftu is growing at a 4x annualised pace and we are only accelerating. Thank you to everyone who continues to follow our journey.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.celebrating-20-000-linkedin-followers"
+              },
+              "author": "Calle Unnérus",
+              "slug": "celebrating-20-000-linkedin-followers",
+              "body": "20,000 is a milestone worth pausing on. It represents a growing community of engineers, founders, managers and operators building the physical AI stack, and the trust they've placed in us along the way.\n\nIn the upcoming months, we will be launching several new custom tools to build everything companies need across the physical AI stack, all the way from complex chip integrations to full autonomy integration workflows.\n\nWhile vehicles continue to be at our core, we are seeing increasing demand across the entire physical AI stack of moving machines.\n\nFor our expansion plans: we are a Finnish company at heart, but in the near future we plan to set up several new physical offices, starting in the US this autumn.\n\nFor now, we want to thank everyone for being part of the journey. There's a lot more to come!",
+              "cover": {
+                "style": "art",
+                "art": "celebrating-20-000-linkedin-followers"
+              }
+            },
+            {
+              "date": "10 Jun 2026",
+              "kind": "News",
+              "h": "SANDS makes a strategic growth investment in Biftu",
+              "p": "We’re happy to announce that SANDS.VC has made a strategic growth investment in Biftu.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.sands-makes-a-strategic-growth-investment-in-biftu"
+              },
+              "author": "Calle Unnérus",
+              "slug": "sands-makes-a-strategic-growth-investment-in-biftu",
+              "body": "SANDS, together with several high-profile automotive industry angel investors, recently made a strategic growth investment in Biftu.\n\n> Biftu is at an exciting stage with strong client and revenue growth. We are looking forward to working with the team as they expand their highly specialised vehicle services platform with OEMs across Europe, the US and Asia.\n>\n> -- Frederik Gollob, Partner at SANDS\n\nFrederik Gollob is a Partner at SANDS, the former CEO of Mercedes-Benz Hong Kong and former COO at Lotus Cars Europe.\n\nSANDS brings decades of experience in the automotive and broader mobility sector. We are happy to have them on board.",
+              "cover": {
+                "style": "art",
+                "art": "sands-makes-a-strategic-growth-investment-in-biftu"
+              }
+            },
+            {
+              "date": "27 May 2026",
+              "kind": "Automotive",
+              "h": "10 Successful New Age Suppliers for Automotive in 2026",
+              "p": "The automotive supply chain has long been dominated by large Tier 1s and global engineering services providers. While these are still highly relevant, there is a new wave of AI-native suppliers gaining a strong foothold among major OEMs, especially when it comes to work around self-driving and autonomy. Below, we have listed 10 New Age Suppliers for Automotive, and their latest partnerships, funding, data and more.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.10-successful-new-age-suppliers-for-automotive-in-2026"
+              },
+              "author": "Jaan Kiuru",
+              "slug": "10-successful-new-age-suppliers-for-automotive-in-2026",
+              "body": "In no specific order, below is a list of 10 New Age Suppliers to watch in 2026. To make the list, a company has to have major ambition within the autonomy development stack, and public OEM or similar partnerships.\n\n## 1. Applied Intuition\n\nVehicle-intelligence software vendor providing a full simulation, dev-tools and onboard autonomy stack to automotive, defence, trucking, mining, construction and agriculture.\n\n- **HQ:** Mountain View, CA\n- **Offices:** Washington, D.C.; San Diego; Ft. Walton Beach, Florida; Ann Arbor, Michigan; London; Stuttgart; Munich; Stockholm; Gothenburg, Sweden; Bangalore; Seoul; and Tokyo\n- **Latest valuation and total funding:** $15B valuation and raised a Series F of $600M\n- **Headcount:** 1,000+\n- **Major automotive partners:** Stellantis, Traton Group, Aisin, Porsche, Audi, Toyota and more\n- **Learn more:** [appliedintuition.com](https://www.appliedintuition.com/)\n\nApplied Intuition was founded in 2017 by Qasar Younis and Peter Ludwig, both formerly at Google, on a founding thesis that the real bottleneck in autonomous driving was not algorithms but the development infrastructure underneath them: simulation, data, and dev tools that let OEMs actually ship software-defined vehicles.\n\nThat conviction proved right. From an initial simulation product, the company expanded into a full Vehicle OS and onboard autonomy stack, landing Porsche, Audi, Toyota, Traton and Stellantis in succession. The 2025 launch of Axion and Acuity, combined with a $171M US DoD CDAO production contract, opened an entirely new defence business running on the same core toolchain as the automotive franchise, a rare case of one platform unlocking two multi-billion-dollar markets. The June 2025 Series F at a $15B valuation confirmed Applied Intuition as the most valuable independent automotive software supplier of this cycle.\n\n## 2. Wayve\n\nEnd-to-end \"Embodied AI\" driving model: mapless, hardware-agnostic, licensed to automakers and run on the vehicle's own compute, scaling from L2+ ADAS to L4 robotaxi.\n\n- **HQ:** London, UK\n- **Offices:** Mountain View, CA; Vancouver, Canada; and Tokyo\n- **Latest valuation and total funding:** $8.6B valuation; Series D of $1.2B in Feb 2026 (co-led by Eclipse, Balderton and SoftBank Vision Fund 2), prior Series C of $1.05B in May 2024; total raised ~$2.3B\n- **Headcount:** 1,000+\n- **Major automotive partners:** Stellantis, Nissan, Mercedes-Benz, Uber, NVIDIA, Microsoft, SoftBank and more\n- **Learn more:** [wayve.ai](https://wayve.ai/)\n\nWayve was founded in 2017 in Cambridge, UK by Alex Kendall and Amar Shah, both deep-learning PhDs from the University of Cambridge. The founding bet was deliberately unfashionable: a single end-to-end neural network that learns to drive from data, rather than the modular perception–prediction–planning stack everyone else was building.\n\nThat thesis became mainstream when foundation models did. The SoftBank-led $1.05B Series C in May 2024 was the first time a Western AV company outside the US had raised at that scale, and the Feb 2026 Series D added Stellantis, Nissan and Mercedes as both investors and customers. The road ahead is concrete: shipping inside STLA AutoDrive in Stellantis vehicles from 2028, entering Nissan production cars in Japan from 2027, and running an L4 robotaxi pilot with Uber in London that scales to ten or more markets. Few AV companies have turned investor conviction into OEM production commitments this quickly.\n\n## 3. Hesai Group\n\nThe global volume leader in automotive lidar: the first lidar maker to ship more than 100,000 units in a single month, supplying the bulk of Chinese OEMs and now entering Toyota and European premium programmes.\n\n- **HQ:** Shanghai, China\n- **Offices:** Palo Alto, CA; Stuttgart, Germany; and Tokyo\n- **Latest valuation and total funding:** ~$3.44B market cap (NASDAQ: HSAI / HKEX: 2525, May 2026); IPO on Nasdaq in Feb 2023 raised ~$190M\n- **Headcount:** ~1,500 to 1,700 (FY2024 20-F)\n- **Major automotive partners:** Mercedes-Benz, Toyota, Li Auto, Chery, BYD, Geely, Lotus, NIO, XPeng, Great Wall and more\n- **Learn more:** [hesaitech.com](https://www.hesaitech.com/)\n\nHesai was founded in 2014 in Shanghai by Stanford-trained engineers David Yifan Li, Kai Sun and Shaoqing Xiang, who initially built laser-based gas detection systems before pivoting to automotive lidar in 2017 as the ADAS market took shape in China. Their playbook has been disciplined from the start: drive cost down faster than any competitor, win every Chinese ADAS design win available, and use that volume base to attack Western premium programmes.\n\nIt's working. By 2025, Hesai claimed 100+ design wins across 21 OEMs, with the ATX in mass production and a ~43% global share of long-range ADAS lidar. The Toyota and Mercedes L3 wins followed, and a second European OEM contract for over one million units in May 2026 puts Hesai on a trajectory to become the global default lidar supplier, much as Bosch became the default for ABS. The Nasdaq IPO in 2023 and the subsequent Hong Kong secondary listing in 2025 have given the company the capital structure to back that ambition.\n\n## 4. Biftu\n\nNew Age partner for resourcing verified software-defined vehicle (SDV) and AI-defined vehicle (AIDV) experts for critical projects across vehicle OS, general autonomy and chip integration.\n\n- **HQ:** Helsinki, Finland\n- **Offices and presence:** California and Michigan in the US; France, Italy, Poland and Sweden in Europe; India, South Korea, Japan and Taiwan in Asia\n- **Latest valuation and total funding:** Undisclosed, but a profitable private company\n- **Headcount:** Not officially disclosed\n- **Major automotive partners:** Stellantis, Toyota, Continental, and several large undisclosed OEM partnerships\n- **Learn more:** [biftu.com](https://biftu.com/)\n\nBiftu was founded in 2020 by William Engblom and Calle Unnérus to connect the world's leading engineering experts with the vehicle programmes that need them most. Since then, major OEMs have signed on, using the platform globally to deploy specialised expertise across their programmes.\n\nThe timing is no accident. As OEMs consolidate distributed ECUs into zonal architectures, the biggest bottleneck is no longer silicon or software, it's finding engineers who can operate across both. With over 100,000 domain experts across 30+ countries and onboarding measured in weeks rather than months, Biftu has built the execution layer the SDV transition actually needs. The next step: opening the platform to the broader vehicle and semiconductor industry.\n\n## 5. Waabi\n\nAI-first autonomous driving software (the \"Waabi Driver\") trained inside a generative simulator, sold to truck OEMs and fleet operators and, since 2026, to robotaxi platforms via Uber.\n\n- **HQ:** Toronto, Canada\n- **Offices:** Pittsburgh, PA and Dallas, TX (truck operations)\n- **Latest valuation and total funding:** ~$3B target valuation; Series C of $750M in Jan 2026 (plus a ~$250M Uber milestone commitment), co-led by Khosla Ventures and G2 Venture Partners, the largest-ever Canadian tech raise; total raised ~$1.2B\n- **Headcount:** Not officially disclosed\n- **Major automotive partners:** Uber, Volvo Autonomous Solutions, Uber Freight, Porsche SE, NVIDIA, BlackRock and more\n- **Learn more:** [waabi.ai](https://waabi.ai/)\n\nWaabi was founded in 2021 in Toronto by Raquel Urtasun, formerly Chief Scientist at Uber's Advanced Technologies Group and a professor of computer science at the University of Toronto. After Uber exited ATG, Urtasun built Waabi around a clean-slate thesis: train the autonomous driver inside a generative simulator, Waabi World, at scale, let the model learn from synthetic experience, and ship a single AI model, the Waabi Driver, that generalises across vehicle platforms.\n\nThe thesis is now in production. The Feb 2025 Volvo Autonomous Solutions partnership and the October 2025 unveiling of the dual-redundant Volvo VNL Autonomous truck validated the trucking approach; the January 2026 Series C of $750M, the largest tech raise in Canadian history, brought in Uber, NVIDIA, Volvo Group, Porsche SE and BlackRock as participants. The next 12 to 18 months: driver-out commercial trucking with the Volvo VNL Autonomous between Dallas and Houston, and the rollout of 25,000+ Waabi-powered robotaxis on the Uber platform.\n\n## 6. Pony.ai\n\nPublicly traded L4 autonomy company providing robotaxi platforms and autonomous trucking (PonyTron); licenses its Virtual Driver to OEMs for mass-produced robotaxis.\n\n- **HQ:** Guangzhou, China and Fremont, CA\n- **Offices:** Beijing, Shanghai, Shenzhen, Tokyo, Seoul, Luxembourg and Singapore\n- **Latest valuation and total funding:** Public on NASDAQ (PONY); IPO in Nov 2024 raised $260M at a ~$4.6B fully diluted market value; secondary HKEX listing in late 2025\n- **Headcount:** 1,460 (31 Dec 2024, per 20-F)\n- **Major automotive partners:** Toyota, GAC, BAIC, SAIC, FAW, Bolt, ComfortDelGro, Sinotrans and more\n- **Learn more:** [pony.ai](https://pony.ai/)\n\nPony.ai was founded in 2016 by James Peng and Tiancheng Lou, both formerly of Baidu, with operations split from day one between Fremont, CA and Guangzhou, China. The company spent its first six years operating robotaxi services in Chinese Tier-1 cities, building the data flywheel that now feeds its Virtual Driver.\n\nThe decisive strategic shift came around 2023, when Pony.ai pivoted from operating its own fleet to licensing its stack into mass-produced robotaxis built with Toyota, GAC and BAIC. The Nasdaq IPO in November 2024 raised $260M at a ~$4.6B fully diluted valuation, and the first mass-produced bZ4X Robotaxi rolled off the GAC-Toyota line in February 2026, with the Gen-7 platform bill of materials down 70% against Gen-6. The near-term arc is ambitious: 1,000+ robotaxis on Chinese roads in 2026, 3,000 by year-end, and expansion into Europe via Bolt and South-East Asia via ComfortDelGro.\n\n## 7. Sonatus\n\nAI-powered software-defined vehicle (SDV) platform: the Digital Dynamics vehicle and cloud stack, codeless over-the-air (OTA) updates and vehicle-edge AI orchestration (AI Director).\n\n- **HQ:** Sunnyvale, CA\n- **Offices:** Dublin, Paris, Shanghai, Seoul, Taipei and Tokyo\n- **Latest valuation and total funding:** ~$110M total raised; the most recent priced round was a $75M Series B led by Foxconn (valuation not publicly disclosed)\n- **Headcount:** Not officially disclosed\n- **Major automotive partners:** Hyundai Motor Group (Hyundai, Kia, Genesis), Stellantis, Nissan, Foxconn, Elektrobit, Smart Eye, NXP, Renesas, Michelin and more\n- **Learn more:** [sonatus.com](https://www.sonatus.com/)\n\nSonatus was founded in 2018 in Sunnyvale by Jeff Chou and Yu Fang, with a founding thesis rooted in networking and the data centre: cars were starting to look like distributed cloud platforms, software-defined, OTA-updatable, with intelligence at the edge, but the auto industry lacked the network-software DNA to build the operating layer. Hyundai Motor Group came in early as both investor and anchor customer.\n\nThat early bet has compounded into production scale. Digital Dynamics is now live across Hyundai, Kia and Genesis, with over 6 million vehicles on the road by the end of 2025. The 2024 to 2025 expansion added Stellantis and a Nissan Technical Centre Europe agreement in December 2025, alongside the launch of the generative-AI-powered AI Director at IAA Mobility 2025 to manage vehicle-edge AI models across the fleet. The trajectory is to become the SDV middleware that every multi-OEM platform relies on, the automotive parallel to what VMware was to enterprise compute.\n\n## 8. Aeva\n\nThe leading FMCW (\"4D\") lidar company, with silicon-photonics-based sensors that measure range and per-point velocity simultaneously, now anchored by an exclusive passenger-OEM contract.\n\n- **HQ:** Mountain View, CA\n- **Offices:** Germany (engineering)\n- **Latest valuation and total funding:** ~$1.0B to $1.6B market cap (NASDAQ: AEVA; figures fluctuated meaningfully in May 2026); SPAC-listed since 2021\n- **Headcount:** ~350 to 400 (historical 10-K disclosures)\n- **Major automotive partners:** A top-10 European passenger OEM (unnamed), Daimler Truck North America, May Mobility, Porsche and more\n- **Learn more:** [aeva.com](https://www.aeva.com/)\n\nAeva was founded in 2017 in Mountain View by Soroush Salehian and Mina Rezk, both alumni of Apple's Special Projects Group, the team behind Project Titan. Their founding bet was that frequency-modulated continuous-wave (FMCW) lidar, which measures range and instantaneous velocity in a single shot (\"4D\" sensing), would ultimately beat the time-of-flight architectures everyone else was scaling. That thesis was contested for years, and after going public via SPAC in March 2021, Aeva spent the lidar downturn proving production-readiness while peers shrank.\n\nDecember 2025 was the inflection point: an exclusive global lidar supply contract with a top-10 European passenger OEM for an L3 vehicle platform with start of production in 2028, alongside the Daimler Truck Freightliner Cascadia programme shipping in 2026. Those wins validate the FMCW differentiation in the most competitive segment of the market, passenger car L3. The forward arc is about converting that exclusive into production volume and using the velocity-sensing advantage to accumulate the second and third design wins that justify the long build-up.\n\n## 9. May Mobility\n\nOperates autonomous microtransit and robotaxi services for cities, transit agencies and ride-hail platforms, using its Multi-Policy Decision Making (MPDM) AV stack on Toyota Sienna Autono-MaaS, Toyota e-Palette and Tecnobus platforms.\n\n- **HQ:** Ann Arbor, MI\n- **Offices:** Tokyo (via an NTT distribution agreement)\n- **Latest valuation and total funding:** ~$300M total raised; Series D of $105M (2024) led by NTT\n- **Headcount:** Not officially disclosed\n- **Major automotive partners:** Toyota, Lyft, NTT Group, MUFG Bank, Tecnobus, BMW i Ventures, State Farm Ventures, Aioi Nissay Dowa and more\n- **Learn more:** [maymobility.com](https://maymobility.com/)\n\nMay Mobility was founded in 2017 in Ann Arbor by Edwin Olson, Alisyn Malek and Steve Vozar, bringing together a University of Michigan robotics professor, a former GM Ventures executive and a Ford AV engineer. The founding wedge was deliberate and pragmatic: skip consumer cars and pure robotaxi, and instead deploy slow, geo-fenced autonomous microtransit services that cities and transit agencies actually want, running on Toyota's Sienna and later e-Palette platforms.\n\nThe model has graduated from demonstration to deployment. NTT's $105M-led Series D and exclusive Japan distribution agreement, Lyft's multi-year deal in November 2024, and the first commercial driver-out service in Peachtree Corners, GA in February 2025 confirmed the approach works. The next 18 months are about scaling: the Lyft Atlanta robotaxi service, driverless Toyota e-Palettes at Toyota Motor Kyushu in Japan, and the Tecnobus minibus platform rolling out across European transit agencies, a playbook that turns municipal demand into genuine autonomous scale.\n\n## 10. Sila Nanotechnologies\n\nSilicon-anode battery materials (\"Titan Silicon\"), a drop-in replacement for graphite that delivers ~20% higher energy density, with the first US automotive-scale silicon anode plant now online.\n\n- **HQ:** Alameda, CA\n- **Offices:** Moses Lake, WA (manufacturing) and Atlanta, GA (R&D, with Georgia Tech ties)\n- **Latest valuation and total funding:** ~$2B valuation; Series G of $375M in June 2024 led by Sutter Hill Ventures, with Coatue and Bessemer participating; total raised ~$1.31B over 13 rounds\n- **Headcount:** Not officially disclosed\n- **Major automotive partners:** Mercedes-Benz (G-Class EQG launch customer), Panasonic Energy, BMW Group, US Department of Energy and more\n- **Learn more:** [silanano.com](https://www.silanano.com/)\n\nSila Nanotechnologies was founded in 2011 by Gene Berdichevsky, Tesla's seventh employee and principal engineer on the original Roadster battery pack, alongside Gleb Yushin and Alex Jacobs. The founding bet was a long one: replace the graphite anode that has dominated lithium-ion cells since the 1990s with a silicon-dominant composite, and do it as a drop-in materials supplier so OEMs and cell makers wouldn't need to redesign their cell architectures.\n\nSila spent more than a decade in R&D, shipping silicon-anode material into consumer electronics to prove the chemistry at production scale while quietly raising over $1.3B across thirteen rounds. In September 2025 the company opened the first US automotive-scale silicon anode plant in Moses Lake, WA, a 600,000+ sq ft facility on a 160-acre site, backed in part by a $100M Department of Energy grant, with the Mercedes-Benz electric G-Class as its launch automotive customer. The trajectory now is to ramp Moses Lake towards an eventual 250 GWh, scale Mercedes volumes through 2026 and 2027, and convert a long list of OEM evaluation programmes into the second and third platform wins that justify the build-out.\n\n## Also worth watching: Nuro\n\nAI-driven Level 4 autonomy platform: the Nuro Driver, licensed to automotive OEMs and mobility providers for both passenger robotaxis and goods delivery.\n\n- **HQ:** Mountain View, CA\n- **Offices:** Houston, TX (test operations); Las Vegas, NV (test operations); and Shenzhen, China\n- **Latest valuation and total funding:** $6B valuation; Series E of $203M (April and August 2025, with NVIDIA joining as a new investor alongside Uber and Baillie Gifford); total raised >$2.3B across rounds\n- **Headcount:** Not officially disclosed (significantly reduced from a ~1,500 peak after the 2024 business-model pivot)\n- **Major automotive partners:** Lucid Motors, Uber, NVIDIA, Mercedes-Benz (historical Bolt EV and delivery work), Kroger, Domino's, 7-Eleven, FedEx, Walmart and more\n\nNuro was founded in 2016 in Mountain View, CA by Dave Ferguson and Jiajun \"JZ\" Zhu, both former principal engineers on Google's self-driving car project (now Waymo). The founding bet was that the right wedge for L4 autonomy wasn't passenger transport but goods delivery: low-speed, custom-built electric pods (R1, R2, R3) that didn't have to solve the hardest perception edge cases involving human passengers. Nuro spent six years building that thesis, raising over $2B (including a $940M SoftBank-led round in 2019 and a $600M Series D in 2021 at an $8.6B peak), partnering with Kroger, Domino's, 7-Eleven, FedEx and Walmart, and operating commercial delivery pilots in Houston, Phoenix and Mountain View. In 2024 the company made a major strategic pivot: instead of owning and operating its own fleet, Nuro would license the Nuro Driver, the underlying L4 autonomy stack, to automotive OEMs and mobility providers, expanding for the first time into passenger vehicles.\n\nThe Series E at $6B in August 2025 (down from the 2021 peak, but with NVIDIA joining) confirmed the new model, and the July 2025 partnership with Uber and Lucid Motors, an Uber-operated robotaxi fleet built on Lucid Gravity SUVs running the Nuro Driver and launching in 2026, became the lighthouse customer. Where it's going: convert the licensing model into multiple OEM platform wins (passenger and delivery), prove the Lucid-Uber-Nuro robotaxi service at scale in its first US market in 2026, and use NVIDIA's strategic investment as both a compute partnership and a go-to-market accelerator.\n\n## Conclusion\n\nOEMs and vehicle companies across all domains view software and autonomy as a key pillar of their core strategy in 2026. This has created an opening for an impressive number of New Age suppliers to partner with, to get work done faster and at scale.",
+              "cover": {
+                "style": "art",
+                "art": "10-successful-new-age-suppliers-for-automotive-in-2026"
+              }
+            },
+            {
+              "date": "20 May 2026",
+              "kind": "Automotive",
+              "h": "SoC BSW Engineer Salary & Day Rate Benchmark Report 2026",
+              "p": "The automotive industry is in the middle of its most significant architectural shift in decades. As vehicles move from dozens of distributed ECUs to centralised zonal compute platforms, the engineers who sit at the intersection of hardware and software, SoC BSW OS and Hypervisor specialists, have become critically scarce.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.soc-bsw-engineer-salary-day-rate-benchmark-report-2026"
+              },
+              "author": "Jaan Kiuru",
+              "slug": "soc-bsw-engineer-salary-day-rate-benchmark-report-2026",
+              "body": "## The SDV shift has made SoC BSW expertise one of the most sought-after skills in automotive\n\nEvery major OEM and Tier-1 supplier is competing for the same small pool of engineers who understand how to make software run reliably on automotive-grade silicon. The result: salary benchmarks from 2024 and early 2025 are already meaningfully out of date. Compensation for this profile has moved faster than the broader embedded software market.\n\nThis report is drawn directly from the Biftu Platform, where we sampled 1,000+ system on chip (SoC) basic software (BSW) OS and Hypervisor engineer profiles globally. The data reflects what candidates are actually earning and what companies are actually paying in 2026.\n\n## At a glance: SoC BSW OS and Hypervisor engineers\n\nAcross 1,000+ sampled profiles with a benchmark of 10 years of experience, the SoC BSW OS and Hypervisor engineering market is one of the most experience-dense specialties in automotive software. This is a role that cannot easily be entered from the outside, requires years of embedded software foundation before hypervisor and OS-level work becomes accessible, and sits at the exact intersection of hardware and software that every major OEM and Tier-1 is now urgently hiring for in SDV platform programmes.\n\nThese figures represent a meaningful shift from where the market sat in 2024. The Germany median alone has moved from €43,220 in 2025 (worldsalaries.com) to €75,000 today, a 17.36% increase in under a year. For any hiring manager still working from a benchmark prepared in 2025 or earlier, the practical implication is immediate: offers built on last year's figures are arriving well below market.\n\nThe average annual salary on a global scale (across the US, India, Germany, France and more) now sits at €87,522, with a median of €75,000. That €12,522 gap exists because highly experienced engineers, those with deep hypervisor platform knowledge, ASIL-rated system experience, and hands-on expertise in QNX or INTEGRITY, are earning €120,000 and above, pulling the average up. Most engineers in this space earn closer to €75,000, but the top end of the market is moving upwards. For hiring managers this matters: if your role requires Lead or Principal-level experience, you are not hiring at the average. You are hiring at the top end, and budgeting to the median will cost you candidates.\n\nOn the contractor side, the average B2B day rate of €504/day and median of €456/day translate to an annualised engagement cost of approximately €131,000, nearly €44,000 above the permanent median. The gap exists for a straightforward reason: contractors carry their own costs, including taxes, insurance and benefits that a permanent employer would otherwise absorb, which is reflected in the higher day rate. For teams that need to move quickly on a platform programme or fill a critical gap without a lengthy permanent hiring process, contracting is often the faster route, but the budget conversation needs to happen early, because the cost difference is significant.\n\n[Sign up to the Biftu Platform](https://app.biftu.com) to find top SoC BSW contractors, filtered by your region, seniority and availability in real time.\n\n## What the market pays: a region-by-region breakdown\n\nGlobal averages only tell part of the story. Where an engineer is based, and where a company is hiring, has a significant impact on what a competitive offer looks like. The four markets below show salaries in the largest pools of SoC BSW OS and Hypervisor engineers on the Biftu Platform.\n\n| Market | Avg salary | Median salary | Avg day rate | Median day rate |\n|---|---|---|---|---|\n| United States | €113,754 ($132,011) | €109,515 ($127,091) | €576/day ($668/day) | €512/day ($594/day) |\n| Germany | €84,996 | €75,000 | €552/day | €552/day |\n| France | €79,194 | €60,000 | €544/day | €480/day |\n| India | €48,573 (54.47 lakhs) | €34,679 (38.96 lakhs) | €296/day (₹33,254) | €192/day (₹21,570) |\n\n### United States\n\nThe US is the highest-paying market in the database, with an average of €113,754 ($132,011) and a median of €109,515 ($127,091). The narrow €4,239 ($4,919) gap between average and median is the tightest of all four markets, suggesting a more compressed salary distribution than Europe or India, likely reflecting the concentration of US roles at large, structured employers such as Stellantis, NVIDIA and Qualcomm, where formal compensation bands reduce variance across experience levels. For context, a Glassdoor posting for a SoC BSW OS and Hypervisor Engineer role at Stellantis in Auburn Hills listed a range of €71K to €113K ($82K to $131K), consistent with our data showing the median at €109,515 ($127,091), meaning the majority of experienced profiles in the US are already at or near the top of what posted job ranges advertise. On the contractor side, the average day rate of €576/day ($668) and median of €512/day ($594) reflect a market where short-term specialist engagement carries a meaningful premium over the permanent equivalent.\n\n### Germany\n\nWith 172 profiles, Germany is the backbone of the SoC BSW engineering market. The average sits at €84,996 with a median of €75,000, slightly below the global average of €87,522 but consistent with the depth and mix of the German market, which spans OEM and Tier-1 roles across Munich, Stuttgart and Frankfurt. Glassdoor submissions for automotive software engineers with 10 to 14 years of experience in Stuttgart show a range of €87,000 to €102,000 as of early 2025, closely aligned with the Biftu Germany average, confirming that experienced SoC BSW profiles in Germany are at the lower end of what the broader automotive software market pays at equivalent seniority. The day rate stands out: average and median are identical at €552/day, an unusual alignment that points to a highly standardised contractor market with limited room to negotiate on rate.\n\n### France\n\nFrance presents the most striking distribution of the four markets. The average sits at €79,194 but the median is €60,000, a €19,194 gap that is the widest in this dataset. The wide average-to-median gap points to a bifurcated market: a large pool of mid-level engineers clustering around €60,000, and a smaller cohort of highly experienced specialists costing significantly more and pulling the average upwards. The day rate tells the same story, €554/day average against €480/day median, the widest spread of the four markets. For hiring managers in France, budgeting to the average risks overpaying at mid-level while still underbidding for the senior profiles that are actually scarce.\n\n### India\n\nIndia's 139 profiles make it the largest non-European pool in the database and the fastest-growing. The average sits at €48,573 (54.57 lakhs) with a median of €34,679 (38.96 lakhs), figures that need context to interpret correctly. Glassdoor data for SoC software engineers with 10+ years of experience in India shows an average of approximately ₹3,000,000 per year at the broader market level, roughly €27,000 per year. This reflects a market dominated by earlier-career profiles in domestic roles. The Biftu India data sits substantially above this because the profiles visible on the Biftu Platform skew towards engineers with international delivery centre experience, semiconductor company exposure or senior-level specialisation, the cohort that global companies are actively trying to reach. The day rate gap is the most pronounced of any market: €296/day (₹33,254) average against €192/day (₹21,570) median, a €104 (₹11,684) spread indicating that a small number of senior contractors are billing at rates that significantly outpace the majority. For companies with global delivery centres or offshore engineering programmes, India represents strong value at the mid-level, but the assumption that senior SoC BSW expertise is uniformly available at low cost is not what the data shows.\n\n### Availability\n\nSalary data tells you what to offer. Availability data tells you whether you can find someone to offer it to. Of the 1,000+ sampled profiles in the Biftu TalentGraph for this role, Germany active availability sits at 17.2%, meaning 172 engineers are reachable today. In markets like France and India, where the pool is smaller or skewed towards earlier-career profiles, that number tightens further. [Sign up to the Biftu Platform](https://app.biftu.com) to see live availability for your specific market and seniority level.\n\n## Where the engineers are, and where the demand is\n\nThe Biftu Platform samples 1,000+ SoC BSW OS and Hypervisor engineer profiles globally. The largest clusters:\n\n| Region | Profiles | Notes |\n|---|---|---|\n| Germany | 172 | Bosch, Continental, ZF, BMW, Mercedes-Benz and Volkswagen Group |\n| India | 139 | Global delivery centres of Tier-1 suppliers and semiconductor companies |\n| France | 124 | |\n| United States | 114 | Michigan (Detroit corridor) 31, California 22 |\n| United Kingdom | 78 | |\n| Brazil | 13 | |\n\nSource: Biftu Platform TalentGraph, May 2026\n\nEurope dominates supply. Germany leads with the largest single cluster (172 profiles), reflecting the deep Tier-1 and OEM presence of Bosch, Continental, ZF, BMW, Mercedes-Benz and Volkswagen Group. France (124) and the UK (78) follow, with strong SoC BSW expertise concentrated in these markets.\n\nNorth America is the second-largest pool. The US accounts for 114 profiles with significant clusters across Michigan (Detroit corridor, 31 profiles) and California (22 profiles), reflecting both traditional OEM suppliers and autonomous vehicle start-ups.\n\nIndia is a fast-growing engineering centre. With 139 profiles, the subcontinent has become a significant source of BSW and embedded software engineers, particularly for global delivery centres of Tier-1 suppliers and semiconductor companies.\n\nSouth Korea and Japan reflect the strong domestic automotive ecosystems of Hyundai/Kia and Toyota/Honda respectively, though these engineers are less frequently visible on global recruitment platforms. There is also meaningful expertise in Brazil (13) and the wider Middle East, markets often overlooked in traditional automotive recruitment.\n\n## What you specialise in changes what you earn\n\nNot all SoC BSW engineers are priced equally. The platform a candidate has worked on, and how deeply, has a direct impact on what they earn. Filtering the Biftu Platform across France, Germany, the US and Italy reveals meaningful salary variation across the three most in-demand skills in these markets.\n\nRenesas R-Car and QNX/INTEGRITY RTOS specialists sit at the top of the single-platform market, both returning an €85,000 median across their respective datasets. Renesas R-Car covers the largest pool at 1,000+ profiles with an average of 12 years' experience and an annual average of €96,641, while QNX/INTEGRITY returns a €99,288 average across 714 profiles at 10 years' average experience, the higher average reflecting the safety-critical depth that RTOS expertise demands. NVIDIA DRIVE sits slightly below both at an €80,000 median and €91,140 average across 151 profiles, with 9 years' average experience. Snapdragon Ride was excluded from this cut: only 4 profiles returned across these four markets, too few to benchmark meaningfully.\n\n| Platform or skill | Profiles | Avg experience | Annual avg | Annual median | Day rate avg | Day rate median |\n|---|---|---|---|---|---|---|\n| Renesas R-Car | 1,000+ | 12 yrs | €96,641 | €85,000 | €584/day | €560/day |\n| QNX / INTEGRITY RTOS | 714 | 10 yrs | €99,288 | €85,000 | €552/day | €480/day |\n| NVIDIA DRIVE | 151 | 9 yrs | €91,140 | €80,000 | €552/day | €504/day |\n\nFiltered by France, Germany, the US and Italy. Snapdragon Ride excluded (4 profiles, insufficient data). NXP S32G returned no results. Source: Biftu TalentGraph, May 2026.\n\n### The multi-platform premium: what combined expertise actually costs\n\nEngineers with expertise across more than one platform command a clear premium, but the combination matters. QNX and NVIDIA DRIVE together is the highest-paying pairing in the dataset, with a median of €114,041 across 12 profiles. The near-identical average (€114,962) tells you the market has settled on a consistent price for this combination; there is little room to negotiate down. Renesas R-Car combined with QNX is a larger and more accessible pool: 41 profiles, 6 years' average experience, a €74,513 median. More supply, younger profiles, more variance in what individuals earn.\n\nThe practical implication for hiring managers is straightforward: if your platform programme requires engineers who can work across more than one environment, budget for a meaningful step up from single-platform rates. The QNX + NVIDIA DRIVE combination in particular represents the most consistently compensated cross-platform expertise in these four markets, and at €784/day average on the contractor side, it is also the most expensive to engage on a short-term basis.\n\n| Platform combination | Profiles | Avg experience | Annual avg | Annual median | Day rate avg | Day rate median |\n|---|---|---|---|---|---|---|\n| QNX + NVIDIA DRIVE | 12 | 10 yrs | €114,962 | €114,041 | €784/day | €760/day |\n| Renesas R-Car + QNX | 41 | 6 yrs | €99,252 | €74,513 | €480/day | €448/day |\n\nQNX + NVIDIA DRIVE is based on 12 profiles, so treat it as directional. Filtered by France, Germany, the US and Italy. Source: Biftu TalentGraph, May 2026.\n\n## Beyond base salary: what top candidates expect\n\nBeyond base salary, experienced SoC BSW engineers in the current market are increasingly evaluating offers on total compensation. Components that candidates are factoring in include annual performance bonuses, employer pension contributions, car allowance or EV schemes (particularly at OEMs), professional development budgets for conferences and certifications, and equity or RSUs at semiconductor and start-up employers.\n\nEngineers at the Lead and Principal level in particular are comparing multiple offers simultaneously. Base salary alone is rarely the deciding factor at this seniority.\n\n## See the live picture, not just the benchmark\n\nThis report surfaces aggregate data. The Biftu Platform gives you the live view: filter by region, seniority, experience, BSW vendor expertise and more, and see exactly who's available right now. [Open the Biftu Platform](https://app.biftu.com).",
+              "cover": {
+                "style": "art",
+                "art": "soc-bsw-engineer-salary-day-rate-benchmark-report-2026"
+              }
+            },
+            {
+              "date": "17 Apr 2026",
+              "kind": "Automotive",
+              "h": "Biftu: Building vehicles from the future",
+              "p": "The move to software-defined vehicles is forcing a structural change in how OEMs and Tier-1s build cars. Distributed ECU networks with tens to hundreds of nodes are being consolidated into zonal architectures backed by a small number of high-performance compute units. The implications run through every layer of the stack, and the biggest bottleneck right now is not the silicon or the software. It’s finding engineers who can operate across both.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.biftu-building-vehicles-from-the-future"
+              },
+              "author": "Calle Unnérus",
+              "slug": "biftu-building-vehicles-from-the-future",
+              "body": "## The stack is getting denser\n\nA modern vehicle computer runs several things at once. A rich operating system for the infotainment and driver-assistance side. A real-time environment for the safety-critical functions. Perception workloads on GPUs and neural accelerators. Lower-level controllers still running the deterministic loops that actually move the car.\n\nHolding it all together is a hypervisor and a middleware layer that has to meet tight timing budgets under every condition a vehicle will ever see.\n\nEach layer has a mature engineering community behind it. What's harder to find is the view across the whole stack. When a programme slips, the root cause is usually a decision made early that rippled through everything downstream. A timing assumption at the silicon level turned out to be optimistic. A partition scheme that looked clean on paper did not survive contact with real workloads. A safety argument was built around an earlier version of the chip's behaviour and had to be redone.\n\n## The chip integration capability gap\n\nMost organisations have strong vehicle software engineers. They know the automotive domain, the safety standards, the validation discipline. Most also have access, through their silicon partners, to strong chip-level engineers who know the hardware intimately.\n\nWhat's uncommon is the engineer who has done both. Someone who has stood up a new compute platform from the bootloader upwards, made the hard calls on partitioning and middleware configuration, and then defended the resulting system in a safety review.\n\nWhen those people are missing from a programme, the integration work gets deferred until late in the schedule, and late is expensive.\n\n## What this means for programme leaders\n\nIf you are running a vehicle software organisation right now, you probably already feel this. The market for deep platform engineers is tight, and internal training, while necessary, takes years. Outside consultancies need several months to get up to speed and trained on your stack.\n\nYou need people who have done the specific work before, on comparable silicon, and who can plug into an internal team right away.\n\n## Biftu as a solution\n\nBiftu is the world's largest network of ultra-specific engineers across SoCs and MCUs, core compute, base software, hypervisors, safety and system architecture. Our engineers have shipped platforms at OEM and Tier-1 scale, and they work on site alongside your teams rather than as a separate track.\n\nA typical deployment happens in under two weeks. Engagements range from a single engineer joining a bring-up team to a full team covering the platform end to end. We handle sourcing, relocation and contracting worldwide. We are available where you are: on site in your vehicle labs and offices.\n\nThe measure we care about is the one you care about: platforms that are ready when the vehicle is.\n\n[Read more about our engineer deployment platform](https://www.biftu.com/platform).",
+              "cover": {
+                "style": "art",
+                "art": "biftu-building-vehicles-from-the-future"
+              }
+            },
+            {
+              "date": "25 Feb 2026",
+              "kind": "News",
+              "h": "Pioneer Electronics CEO & former Continental SVP Werner Koestler joins Biftu advisory board",
+              "p": "We’re pleased to announce that Werner Koestler has joined the Advisory Board of Biftu!",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.pioneer-electronics-ceo-former-continental-svp-werner-koestler-joins-biftu-advisory-board"
+              },
+              "author": "Calle Unnérus",
+              "slug": "pioneer-electronics-ceo-former-continental-svp-werner-koestler-joins-biftu-advisory-board",
+              "body": "Werner has over 25 years of leadership experience across automotive, aerospace and defence, with a global background spanning the United States, Asia and Europe. He is currently Executive Officer and Executive Fellow at Pioneer Electronics, and previously held multiple executive leadership roles at Continental AG from 2007 to 2022. In 2023, he also served as Chief Performance Officer at TTTech AG.\n\nBiftu assembles elite embedded software teams to deliver competences from system architecture and MCU integrations to edge AI systems that operate reliably on-road and digitally, supported by 100,000+ domain experts.\n\nWe look forward to Werner's strategic guidance and support as we accelerate our mission to power the next generation of software- and AI-defined vehicles.",
+              "cover": {
+                "style": "art",
+                "art": "pioneer-electronics-ceo-former-continental-svp-werner-koestler-joins-biftu-advisory-board"
+              }
+            },
+            {
+              "date": "17 Feb 2026",
+              "kind": "Automotive",
+              "h": "Biftu is going to NVIDIA GTC 2026",
+              "p": "Next-generation vehicles are no longer defined by mechanical systems alone. They are defined by silicon, software, and the ability to integrate complex compute platforms into production-grade automotive architectures. At NVIDIA GTC 2026, we will exhibit our solution to the semiconductor industry.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.biftu-is-going-to-nvidia-gtc-2026"
+              },
+              "author": "William Engblom",
+              "slug": "biftu-is-going-to-nvidia-gtc-2026",
+              "body": "As vehicle compute platforms continue to increase in capability, the complexity of integration has grown just as rapidly. In automotive programmes, bringing a custom MCU or SoC into production involves far more than achieving strong benchmark performance.\n\nSuccessful deployment requires coordinated work across BSP development, RTOS integration, middleware stability, functional safety alignment, system validation under real-world load, and strict adherence to OEM programme timelines. Each layer must behave predictably under automotive constraints such as thermal variation, long lifecycle support, cybersecurity requirements and ISO 26262 compliance.\n\nFor semiconductor companies, the ability to support downstream integration into vehicle architectures has become a decisive factor in design wins. OEMs and Tier 1 suppliers increasingly evaluate not only compute capability, but also integration maturity, reference software quality, and the availability of engineering support throughout the programme lifecycle.\n\nThis is particularly visible in platforms associated with high-performance automotive compute, including advanced driver assistance systems, in-vehicle AI workloads, centralised vehicle architectures and next-generation domain controllers. Regardless of architecture, the core challenge remains consistent: translating silicon capability into reliable, production-ready vehicle systems.\n\nNVIDIA GTC brings together many of the teams working at this intersection of automotive and accelerated compute. If you are attending and involved in automotive chip integration, validation or software platform development, we look forward to connecting in person.\n\nRobert Laukas and Calle Unnérus from our team will be on site in San Jose, California, from 16 to 19 March.",
+              "cover": {
+                "style": "art",
+                "art": "biftu-is-going-to-nvidia-gtc-2026"
+              }
+            },
+            {
+              "date": "12 Dec 2025",
+              "kind": "News",
+              "h": "Biftu joins COVESA",
+              "p": "We’ve joined the Connected Vehicle Systems Alliance (COVESA) to help shape the future of connected and software-defined vehicles!",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.biftu-joins-covesa"
+              },
+              "author": "Robert Laukas",
+              "slug": "biftu-joins-covesa",
+              "body": "As a member of this global alliance, we're collaborating to build open approaches and technologies that drive smarter mobility.\n\n> COVESA is pleased to welcome Biftu to our global community. As a member-led alliance, we thrive on the contributions of forward-looking companies like Biftu which strengthen our mission to accelerate connected vehicle technologies through a collaborative, solutions-focused approach.\n>\n> -- Steve Crumb, Executive Director of COVESA\n\nBiftu will also be exhibiting at the COVESA CES 2026 reception, where we will showcase our platform for accessing and deploying top SDV engineering resources, supported by 100,000+ registered engineers.\n\n[Schedule a time to meet us](https://www.biftu.com/event/ces-2026).\n\n## About the Connected Vehicle Systems Alliance (COVESA)\n\nThe Connected Vehicle Systems Alliance (COVESA) is an open and member-driven global technology alliance accelerating the full potential of connected vehicles and the mobility ecosystem. As the only alliance focused solely on developing common approaches and technologies for connected vehicles, COVESA serves as a collaborative platform that brings together automotive software stakeholders with world-class developers to address opportunities and challenges in the automotive industry and navigate the digital transformation shaped by customer expectations. To learn more about COVESA or to join the community, visit [covesa.global](https://www.covesa.global).",
+              "cover": {
+                "style": "art",
+                "art": "biftu-joins-covesa"
+              }
+            },
+            {
+              "date": "12 Nov 2025",
+              "kind": "News",
+              "h": "New Product Launch: Biftu Executive Consulting",
+              "p": "Today we’re excited to launch Biftu Executive Consulting for a broader audience: 300+ automotive industry C-level executives for strategic, high-level advice to support your next growth phase in automotive.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.new-product-launch-biftu-executive-consulting"
+              },
+              "author": "Calle Unnérus",
+              "slug": "new-product-launch-biftu-executive-consulting",
+              "body": "Biftu is on a mission to consolidate all resources needed to deliver the future of software-defined vehicles under a single platform, globally. The Executive Consulting network is our next step on this journey.\n\nThis part of the network is not only aimed at our automotive customers, but at all companies looking to integrate with the automotive industry on any level that need specific advice and strategy support from specialists with 20+ years of industry experience in different automotive sub-domains. For example:\n\n- Need a quick consultation to understand how to integrate with a specific OEM's infotainment system?\n- Need two weeks of intensive support to understand the current landscape of AI applications in automotive?\n- Need to retain an expert who can help you navigate the regulatory framework for voice applications in cars on an ongoing basis?\n\nWe are here to help. No project is too small, or too complex.\n\nFor executives: if you are interested in strategic, high-impact projects, flexible, confidential engagements, and compensation aligned with your expertise, contact us today to learn how you can take part.\n\n[Learn more about Biftu Executive Consulting](https://www.biftu.com/executive-consulting).",
+              "cover": {
+                "style": "art",
+                "art": "new-product-launch-biftu-executive-consulting"
+              }
+            },
+            {
+              "date": "16 Sep 2025",
+              "kind": "Automotive",
+              "h": "Biftu at IAA Mobility 2025: Our take on the push for EVs & SDVs",
+              "p": "While 2025 has shown doubts on EVs and talk of going back to ICEs, this year’s IAA Mobility showed the opposite: the industry’s long-term direction hasn’t changed, and the future is electric, connected and software-driven.",
+              "link": {
+                "t": "Read the post",
+                "h": "#blog.biftu-at-iaa-mobility-2025-our-take-on-the-push-for-evs-sdvs"
+              },
+              "author": "Calle Unnérus",
+              "slug": "biftu-at-iaa-mobility-2025-our-take-on-the-push-for-evs-sdvs",
+              "body": "The initial electric vehicle (EV) push from many Western OEMs proved to be challenging both economically and technically. Demand didn't follow expectations. EV plants were scaled down. Emission targets were pushed back. Internal combustion engine (ICE) plants started coming back. Many thought the future was directionless.\n\nHowever, this year's IAA Mobility showed the opposite. While demand for EVs and software-defined vehicles (SDVs) didn't grow exponentially in the short term as expected, the long term hasn't changed. To highlight this, we collected some of the more notable announcements from OEMs during this year's event, starting with a quote from Polestar's CEO Michael Lohscheller on today's EV status:\n\n> We are in a climate emergency. We don't need neutrality. We need direction, ambition, and action. Let me be clear. There is nothing neutral about inaction. There is nothing innovative about clinging to combustion. The result of inaction will ultimately be a much higher price to pay. The problems of transitioning to a green economy is not that it is happening too fast, it is that it is happening too slow. The climate crisis is a fossil fuel crisis. Automobiles account for 15% of emissions and 25% of fossil fuel consumption. We are Europe's only pure play EV manufacturer. We don't build compromises. We don't build nostalgia. We build for the future. The electric car is not the thing that threatens the automotive industry. It is the only thing that can save it.\n>\n> -- Michael Lohscheller, CEO of Polestar\n\nHere's a list of our favourite announcements.\n\n## BMW: Neue Klasse iX3\n\n- BMW launched the iX3, its first model on the Neue Klasse platform, signalling a new generation of EVs. The iX3 offers a WLTP range of up to 805 km and supports 400 kW peak charging, adding ~372 km of range in just 10 minutes.\n\n## Volkswagen: ID.Polo and a €1B AI push\n\n- Volkswagen revealed the ID. 2, or ID.Polo. The ID.Polo is aimed squarely at reclaiming lost ground in the small-car EV segment, signalling that affordability and electrifying existing brands are its next EV push.\n- Alongside it, VW announced up to €1 billion in AI investments by 2030 to streamline development, production and in-car features.\n\n## Opel (Stellantis): high-performance EVs\n\n- Opel showcased its high-performance GSE label with the Opel Corsa GSE Vision Gran Turismo concept car, which previews future all-electric, high-power small cars. It comes with 800 hp, 0 to 100 km/h in under 2.0 seconds and a top speed of 320 km/h. Stellantis also opened deliveries for the fully electric Opel Mokka GSE and the Opel Grandland Electric AWD, its first all-electric all-wheel-drive car. The messaging centred on \"electromotive passion\" and performance in EVs, not compromises.\n\n## Mercedes-Benz: 1 MW charging and the 2026 to 2027 line-up\n\n- Mercedes used IAA to demonstrate the world's first 1 MW (megawatt) charging prototype for cars. Initially developed for heavy trucks, this technology could eventually make charging as quick as filling up a petrol car. The message was clear: EV adoption depends not just on cars but on charging infrastructure that rivals refuelling in speed.\n- Mercedes also revealed several top-of-the-line EV models for 2026 and 2027.\n\n## Lucid Motors: a US EV player arrives in Europe\n\n- Lucid showcased the Air Sapphire and Air Pure, underlining its European expansion strategy. With new service centres opening in Germany and the Netherlands, Lucid used IAA to reassure buyers and investors that its ultra-luxury EVs are here to stay despite US demand headwinds. Lucid's appearance was as much about survival and credibility in Europe as it was about products.\n\n## Scout Motors: direct-to-consumer sales\n\nScout Motors, VW Group's US off-road EV brand, discussed its direct-to-consumer sales model and how it will let the brand own the entire customer experience, much like Tesla or Apple.\n\n## Chinese OEMs\n\nA whole new article could be written on the announcements made by pure-EV OEMs from China alone, but here are a few points:\n\n- A total of 14 Chinese carmakers showed up in Munich, more than the number of European brands.\n- Chinese EV players work more like Silicon Valley firms than traditional OEMs when it comes to development and agility. New models are quickly trimmed and recalibrated when needed or when demand shifts.\n- China exports 750,000+ vehicles per month, or 9M+ vehicles per year at the current run rate (up from 1M per year in 2020).\n- Chinese carmakers doubled their share of the European market in the past year.\n- Most Chinese EVs are significantly ahead of legacy Western OEMs technologically.\n\n## Conclusion: where does this leave us?\n\nWe at Biftu believe the EV and SDV push is inevitable, and only accelerating in 2025. A new type of workforce is quickly needed, and that's where our ecosystem of the world's most skilled automotive contractors and suppliers comes in. [Contact us](#contact) to learn more.",
+              "cover": {
+                "style": "art",
+                "art": "biftu-at-iaa-mobility-2025-our-take-on-the-push-for-evs-sdvs"
+              }
+            }
+          ]
+        }
+      ],
+      "desc": "WorkflowBench releases, security blueprints, and real-world conversational commerce evaluations."
+    },
+    "engineering": {
+      "label": "Engineering",
+      "title": "Engineering & Workflows · Biftu",
+      "sections": [
+        {
+          "type": "pghero",
+          "tone": "board",
+          "fig": "pipeline",
+          "lab": "Engineering",
+          "h": "Production-Grade Agent Architecture & Enterprise Workflows",
+          "p": "How we engineer deterministic, multi-turn AI agents on top of n8n, Supabase, Azure App Service, and Gemini ReAct loops with zero-trust security.",
+          "ctas": [
+            {
+              "t": "Biftu platform",
+              "h": "https://app.biftu.com"
+            },
+            {
+              "t": "Open positions",
+              "h": "https://app.biftu.com/positions"
+            }
+          ]
+        },
+        {
+          "type": "logos",
+          "tone": "board",
+          "lab": "Selected clients",
+          "items": [
+            {
+              "name": "Stellantis",
+              "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTg5IiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTg5IDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMjkuMyAxNC41QzEyOS41IDE0LjUgMTI5LjYgMTQuMyAxMjkuNiAxNC4xQzEyOS42IDE0IDEyOS40IDEzLjggMTI5LjIgMTMuOUMxMjkuMSAxMy45IDEyOC45IDE0IDEyOSAxNC4yQzEyOSAxNC40IDEyOS4xIDE0LjUgMTI5LjMgMTQuNVpNMTA5LjUgNC40QzEwOS41IDQuOSAxMDkuOSA1LjMgMTEwLjQgNS4zQzExMC45IDUuMyAxMTEuMyA0LjkgMTExLjMgNC40QzExMS4zIDMuOSAxMTAuOSAzLjUgMTEwLjQgMy41QzEwOS45IDMuNSAxMDkuNSAzLjkgMTA5LjUgNC40Wk0xMTUuMyA2LjNDMTE1LjMgNi44IDExNS43IDcuMiAxMTYuMiA3LjJDMTE2LjcgNy4yIDExNy4xIDYuOCAxMTcuMSA2LjNDMTE3LjEgNS44IDExNi43IDUuNCAxMTYuMiA1LjRDMTE1LjcgNS40IDExNS4zIDUuOCAxMTUuMyA2LjNDMTE1LjMgNi4zIDExNS4zIDYuMyAxMTUuMyA2LjNaTTkzLjYgMzBDOTMuNiAzMC41IDk0IDMwLjkgOTQuNSAzMC45Qzk1IDMwLjkgOTUuNCAzMC41IDk1LjQgMzBDOTUuNCAyOS41IDk1IDI5LjEgOTQuNSAyOS4xQzk0IDI5LjEgOTMuNiAyOS41IDkzLjYgMzBaTTk4LjEgMzMuOEM5OC4xIDM0LjMgOTguNSAzNC43IDk5IDM0LjdDOTkuNSAzNC43IDk5LjkgMzQuMyA5OS45IDMzLjhDOTkuOSAzMy4zIDk5LjUgMzIuOSA5OSAzMi45Qzk4LjUgMzIuOSA5OC4xIDMzLjMgOTguMSAzMy44Wk0xMDMuOCAzNS42QzEwMy44IDM2IDEwNC4yIDM2LjUgMTA0LjcgMzYuNUMxMDUuMiAzNi41IDEwNS42IDM2LjEgMTA1LjYgMzUuNkMxMDUuNiAzNS4xIDEwNS4yIDM0LjYgMTA0LjcgMzQuNkMxMDQuMiAzNC42IDEwMy44IDM1IDEwMy44IDM1LjZaTTEwOS42IDM1LjVDMTA5LjYgMzYgMTEwLjEgMzYuNCAxMTAuNiAzNi40QzExMSAzNi40IDExMS40IDM1LjkgMTExLjQgMzUuNEMxMTEuNCAzNC45IDExMSAzNC42IDExMC41IDM0LjZDMTEwIDM0LjYgMTA5LjYgMzUgMTA5LjYgMzUuNUMxMDkuNiAzNS41IDEwOS42IDM1LjUgMTA5LjYgMzUuNVpNMTE1LjMgMzMuN0MxMTUuMyAzNC4yIDExNS43IDM0LjYgMTE2LjIgMzQuNkMxMTYuNyAzNC42IDExNy4xIDM0LjIgMTE3LjEgMzMuN0MxMTcuMSAzMy4yIDExNi43IDMyLjggMTE2LjIgMzIuOEMxMTUuNyAzMi44IDExNS4zIDMzLjIgMTE1LjMgMzMuN0MxMTUuMyAzMy43IDExNS4zIDMzLjcgMTE1LjMgMzMuN1pNMTE5LjcgMzAuMUMxMTkuNyAzMC42IDEyMC4xIDMxIDEyMC42IDMxQzEyMS4xIDMxIDEyMS42IDMwLjYgMTIxLjYgMzAuMUMxMjEuNiAyOS42IDEyMS4yIDI5LjIgMTIwLjYgMjkuMkMxMjAuMiAyOS4yIDExOS44IDI5LjYgMTE5LjcgMzAuMUMxMTkuNyAzMC4xIDExOS43IDMwLjEgMTE5LjcgMzAuMVpNMTE5LjcgOS45QzExOS43IDEwLjQgMTIwLjEgMTAuOCAxMjAuNiAxMC44QzEyMS4xIDEwLjggMTIxLjUgMTAuNCAxMjEuNSA5LjlDMTIxLjUgOS40IDEyMS4xIDkgMTIwLjYgOUMxMjAuMSA5IDExOS43IDkuNCAxMTkuNyA5LjlaTTExMy4zIDcuNUMxMTMuMyA2LjkgMTEyLjggNi40IDExMi4yIDYuNEMxMTEuNSA2LjQgMTExIDYuOSAxMTEgNy41QzExMSA4LjIgMTExLjUgOC43IDExMi4yIDguN0MxMTIuOCA4LjcgMTEzLjMgOC4yIDExMy4zIDcuNVpNMTE3LjIgOS45QzExNy4yIDkuMyAxMTYuNyA4LjggMTE2IDguOEMxMTUuNCA4LjggMTE0LjkgOS4zIDExNC45IDkuOUMxMTQuOSAxMC42IDExNS40IDExLjEgMTE2IDExLjFDMTE2LjcgMTEuMSAxMTcuMiAxMC42IDExNy4yIDkuOVpNMTIwLjIgMTMuM0MxMjAuMiAxMi43IDExOS43IDEyLjIgMTE5LjEgMTIuMkMxMTguNCAxMi4yIDExNy45IDEyLjcgMTE3LjkgMTMuM0MxMTcuOSAxNCAxMTguNCAxNC41IDExOS4xIDE0LjVDMTE5LjcgMTQuNSAxMjAuMiAxNCAxMjAuMiAxMy4zQzEyMC4yIDEzLjMgMTIwLjIgMTMuMyAxMjAuMiAxMy4zWk0xMTEuOSAwLjNDMTExLjkgMC4yIDExMS44IDAgMTExLjcgMEMxMTEuNSAwIDExMS4zIDAuMSAxMTEuMyAwLjNDMTExLjMgMC41IDExMS40IDAuNiAxMTEuNiAwLjZDMTExLjggMC42IDExMS45IDAuNSAxMTEuOSAwLjNDMTExLjkgMC40IDExMS45IDAuNCAxMTEuOSAwLjNaTTExOS43IDMuMkMxMTkuNyAzIDExOS42IDIuOCAxMTkuNCAyLjhDMTE5LjIgMi44IDExOS4xIDMgMTE5LjEgMy4xQzExOS4xIDMuMyAxMTkuMiAzLjQgMTE5LjQgMy40QzExOS41IDMuNSAxMTkuNyAzLjMgMTE5LjcgMy4yWk0xMjUuOCA3LjVDMTI1LjggNy4zIDEyNS43IDcuMiAxMjUuNSA3LjJDMTI1LjMgNy4yIDEyNS4yIDcuMyAxMjUuMSA3LjVDMTI1LjEgNy42IDEyNS4yIDcuOCAxMjUuNCA3LjhDMTI1LjYgNy45IDEyNS43IDcuNyAxMjUuOCA3LjZDMTI1LjggNy42IDEyNS44IDcuNSAxMjUuOCA3LjVaTTExNS4yIDMuNUMxMTUuMiAzLjIgMTE1IDIuOSAxMTQuNyAyLjlDMTE0LjMgMi44IDExNC4xIDMuMSAxMTQgMy40QzExNCAzLjcgMTE0LjMgNCAxMTQuNiA0QzExNC45IDQuMSAxMTUuMiAzLjggMTE1LjIgMy41QzExNS4yIDMuNSAxMTUuMiAzLjUgMTE1LjIgMy41Wk0xMjEuMSA2LjRDMTIxLjIgNi4xIDEyMC45IDUuOCAxMjAuNiA1LjhIMTIwLjZDMTIwLjMgNS43IDEyMCA2IDExOS45IDYuM0MxMTkuOSA2LjYgMTIwLjEgNi45IDEyMC40IDYuOUMxMjAuNCA2LjkgMTIwLjQgNi45IDEyMC41IDYuOUgxMjAuNUMxMjAuOCA3IDEyMS4xIDYuNyAxMjEuMSA2LjRDMTIxLjEgNi40IDEyMS4xIDYuNCAxMjEuMSA2LjRNMTI1LjIgMTAuNkMxMjQuOCAxMC42IDEyNC42IDEwLjkgMTI0LjUgMTEuMkMxMjQuNSAxMS41IDEyNC44IDExLjggMTI1LjEgMTEuOEMxMjUuNCAxMS44IDEyNS43IDExLjYgMTI1LjcgMTEuM0MxMjUuOCAxMC45IDEyNS41IDEwLjcgMTI1LjIgMTAuNkMxMjUuMiAxMC42IDEyNS4yIDEwLjYgMTI1LjIgMTAuNlpNMTA3LjUgMS45QzEwNy4yIDEuOSAxMDcgMi4xIDEwNyAyLjRDMTA3IDIuOCAxMDcuMiAzIDEwNy41IDNDMTA3LjkgMyAxMDguMSAyLjggMTA4LjEgMi40QzEwOC4xIDIuMSAxMDcuOSAxLjkgMTA3LjUgMS45QzEwNy41IDEuOSAxMDcuNSAxLjkgMTA3LjUgMS45Wk0xMDQuNyAzLjVDMTA0LjIgMy41IDEwMy44IDMuOSAxMDMuOCA0LjRDMTAzLjggNC45IDEwNC4yIDUuMyAxMDQuNyA1LjNDMTA1LjIgNS4zIDEwNS42IDQuOSAxMDUuNiA0LjRDMTA1LjYgMy45IDEwNS4yIDMuNSAxMDQuNyAzLjVaTTk4LjkgNS40Qzk4LjQgNS40IDk4IDUuOCA5OCA2LjNDOTggNi44IDk4LjQgNy4yIDk4LjkgNy4yQzk5LjQgNy4yIDk5LjggNi44IDk5LjggNi4zQzk5LjggNS44IDk5LjQgNS40IDk4LjkgNS40Wk05MC41IDE5LjFDOTAgMTkuMSA4OS42IDE5LjUgODkuNiAyMEM4OS42IDIwLjUgOTAgMjAuOSA5MC41IDIwLjlDOTEgMjAuOSA5MS40IDIwLjUgOTEuNCAyMEM5MS40IDE5LjYgOTEgMTkuMSA5MC41IDE5LjFaTTkxLjYgMTMuOEM5MS4xIDEzLjggOTAuNyAxNC4yIDkwLjcgMTQuN0M5MC43IDE1LjIgOTEuMSAxNS42IDkxLjYgMTUuNkM5Mi4xIDE1LjYgOTIuNSAxNS4yIDkyLjUgMTQuN0M5Mi42IDE0LjIgOTIuMiAxMy44IDkxLjcgMTMuOE05NC42IDlDOTQuMSA5IDkzLjYgOS40IDkzLjYgOS45QzkzLjYgMTAuNCA5NCAxMC44IDk0LjYgMTAuOEM5NSAxMC44IDk1LjUgMTAuNCA5NS41IDkuOUM5NS40IDkuNCA5NSA5IDk0LjYgOVpNMTA3LjUgMzQuNEMxMDguMiAzNC40IDEwOC43IDMzLjkgMTA4LjcgMzMuMkMxMDguNyAzMi42IDEwOC4yIDMyLjEgMTA3LjYgMzIuMUMxMDYuOSAzMi4xIDEwNi40IDMyLjYgMTA2LjQgMzMuMkMxMDYuNCAzMy45IDEwNi45IDM0LjQgMTA3LjUgMzQuNFpNMTA3LjUgOEMxMDguMiA4IDEwOC43IDcuNSAxMDguNyA2LjhDMTA4LjcgNi4yIDEwOC4yIDUuNyAxMDcuNiA1LjdDMTA2LjkgNS43IDEwNi40IDYuMiAxMDYuNCA2LjhDMTA2LjQgNy41IDEwNi45IDggMTA3LjUgOFpNMTAyLjkgOC43QzEwMy42IDguNyAxMDQuMSA4LjIgMTA0LjEgNy41QzEwNC4xIDYuOSAxMDMuNiA2LjQgMTAzIDYuNEMxMDIuMyA2LjQgMTAxLjggNi45IDEwMS44IDcuNUMxMDEuOCA4LjEgMTAyLjMgOC43IDEwMi45IDguN0MxMDIuOSA4LjcgMTAyLjkgOC43IDEwMi45IDguN1pNOTkgMTEuMUM5OS43IDExLjEgMTAwLjIgMTAuNSAxMDAuMiA5LjlDMTAwLjIgOS4zIDk5LjcgOC43IDk5IDguN0M5OC40IDguNyA5Ny45IDkuMiA5Ny45IDkuOUM5Ny45IDEwLjUgOTguNCAxMS4xIDk5IDExLjFaTTk2IDE0LjVDOTYuNiAxNC41IDk3LjEgMTQgOTcuMiAxMy40Qzk3LjIgMTIuOCA5Ni43IDEyLjIgOTYuMSAxMi4yQzk1LjQgMTIuMSA5NC45IDEyLjYgOTQuOSAxMy4zVjEzLjNDOTQuOSAxMy45IDk1LjQgMTQuNCA5NiAxNC41TTk0LjcgMTguOEM5NS40IDE4LjggOTUuOSAxOC4zIDk1LjkgMTcuNkM5NS45IDE3IDk1LjQgMTYuNSA5NC44IDE2LjVDOTQuMSAxNi41IDkzLjYgMTcgOTMuNiAxNy42QzkzLjYgMTguMyA5NC4xIDE4LjggOTQuNyAxOC44Wk0xMDMuNSAwLjZDMTAzLjcgMC42IDEwMy44IDAuNSAxMDMuOCAwLjNDMTAzLjggMC4xIDEwMy42IDAgMTAzLjQgMEMxMDMuMyAwIDEwMy4yIDAuMiAxMDMuMiAwLjNDMTAzLjIgMC4zIDEwMy4yIDAuMyAxMDMuMiAwLjRDMTAzLjIgMC41IDEwMy4zIDAuNiAxMDMuNSAwLjZDMTAzLjUgMC42IDEwMy41IDAuNiAxMDMuNSAwLjZaTTk1LjggMy40Qzk1LjkgMy40IDk2IDMuMyA5NiAzLjFDOTYgMi45IDk1LjkgMi44IDk1LjcgMi44Qzk1LjUgMi44IDk1LjQgMyA5NS40IDMuMkM5NS40IDMuMyA5NS42IDMuNCA5NS44IDMuNFpNMTI5LjMgMjcuN0MxMjkuNSAyNy43IDEyOS42IDI3LjYgMTI5LjYgMjcuNEMxMjkuNiAyNy4yIDEyOS40IDI3LjEgMTI5LjMgMjcuMUgxMjkuMkMxMjkgMjcuMSAxMjguOSAyNy4zIDEyOC45IDI3LjRDMTI5IDI3LjYgMTI5LjEgMjcuNyAxMjkuMyAyNy43TTEyNS42IDMyLjlDMTI1LjcgMzIuOCAxMjUuOCAzMi43IDEyNS44IDMyLjVDMTI1LjggMzIuNCAxMjUuNyAzMi4yIDEyNS41IDMyLjJDMTI1LjMgMzIuMyAxMjUuMiAzMi40IDEyNS4yIDMyLjZDMTI1LjIgMzIuOCAxMjUuNCAzMi45IDEyNS42IDMyLjlaTTExOS40IDM3LjJDMTE5LjYgMzcuMiAxMTkuNyAzNy4xIDExOS43IDM2LjlDMTE5LjcgMzYuNyAxMTkuNSAzNi42IDExOS40IDM2LjZDMTE5LjIgMzYuNiAxMTkuMSAzNi43IDExOSAzNi45QzExOSAzNi45IDExOSAzNi45IDExOSAzNi45QzExOS4xIDM3LjEgMTE5LjIgMzcuMiAxMTkuNCAzNy4yQzExOS40IDM3LjIgMTE5LjQgMzcuMiAxMTkuNCAzNy4yWk0xMTEuNyA0MEMxMTEuOCA0MCAxMTIgMzkuOCAxMTEuOSAzOS43QzExMS45IDM5LjUgMTExLjggMzkuNCAxMTEuNiAzOS40QzExMS40IDM5LjQgMTExLjMgMzkuNSAxMTEuMyAzOS43QzExMS4zIDM5LjkgMTExLjUgNDAgMTExLjcgNDBaTTEwMy41IDQwQzEwMy43IDQwIDEwMy44IDM5LjggMTAzLjggMzkuN0MxMDMuOCAzOS41IDEwMy42IDM5LjQgMTAzLjQgMzkuNEMxMDMuMyAzOS40IDEwMy4xIDM5LjUgMTAzLjIgMzkuN0MxMDMuMiAzOS45IDEwMy4zIDQwIDEwMy41IDQwWk05NS44IDM3LjJDOTUuOSAzNy4yIDk2IDM3IDk2IDM2LjlDOTYgMzYuNyA5NS45IDM2LjYgOTUuNyAzNi42Qzk1LjUgMzYuNiA5NS40IDM2LjcgOTUuNCAzNi45Qzk1LjQgMzcuMSA5NS42IDM3LjIgOTUuOCAzNy4yWk04OS42IDMyLjhDODkuOCAzMi44IDg5LjkgMzIuNyA4OS45IDMyLjVDODkuOSAzMi4zIDg5LjggMzIuMiA4OS42IDMyLjJDODkuNCAzMi4yIDg5LjMgMzIuNCA4OS4zIDMyLjVDODkuMyAzMi43IDg5LjUgMzIuOCA4OS42IDMyLjhaTTg1LjggMjcuN0M4NiAyNy43IDg2LjEgMjcuNiA4Ni4xIDI3LjRDODYuMSAyNy4yIDg2IDI3LjEgODUuOCAyNy4xSDg1LjhDODUuNiAyNy4xIDg1LjUgMjcuMyA4NS41IDI3LjVDODUuNSAyNy42IDg1LjcgMjcuNyA4NS44IDI3LjdNODkuNyA3LjhDODkuOSA3LjggOTAgNy42IDkwIDcuNEM4OS45IDcuMyA4OS44IDcuMSA4OS42IDcuMkM4OS41IDcuMiA4OS4zIDcuMyA4OS4zIDcuNUM4OS40IDcuNyA4OS41IDcuOCA4OS43IDcuOFpNMTAwLjUgNEMxMDAuOCAzLjkgMTAxIDMuNiAxMDEgMy4zQzEwMSAzIDEwMC43IDIuOCAxMDAuNCAyLjhDMTAwLjEgMi45IDk5LjggMy4yIDk5LjkgMy41Qzk5LjkgMy44IDEwMC4yIDQgMTAwLjUgNE05NC42IDYuOUM5NC45IDYuOSA5NS4xIDYuNyA5NS4xIDYuNEM5NS4xIDYuMSA5NC44IDUuOCA5NC41IDUuOEM5NC4yIDUuOSA5NCA2LjEgOTQgNi40Qzk0IDYuNyA5NC4yIDYuOSA5NC41IDYuOUg5NC42Wk04OS40IDExLjJDODkuNCAxMS42IDg5LjYgMTEuOCA4OS45IDExLjhIOTBDOTAuMyAxMS44IDkwLjYgMTEuNSA5MC42IDExLjJDOTAuNiAxMC45IDkwLjMgMTAuNiA5MCAxMC42QzkwIDEwLjYgODkuOSAxMC42IDg5LjkgMTAuNkM4OS42IDEwLjcgODkuMyAxMC45IDg5LjQgMTEuMlpNMTI3LjUgMjIuNEMxMjcuMiAyMi41IDEyNi45IDIyLjggMTI2LjkgMjMuMUMxMjcgMjMuNCAxMjcuMyAyMy42IDEyNy42IDIzLjZDMTI3LjkgMjMuNiAxMjguMSAyMy4zIDEyOC4xIDIzQzEyOC4xIDIyLjcgMTI3LjggMjIuNCAxMjcuNSAyMi40Wk0xMjUuMiAyOC4yQzEyNC45IDI4LjIgMTI0LjYgMjguNSAxMjQuNyAyOC44QzEyNC43IDI5LjEgMTI1IDI5LjMgMTI1LjMgMjkuM0MxMjUuNiAyOS4zIDEyNS44IDI5IDEyNS44IDI4LjdDMTI1LjcgMjguNCAxMjUuNSAyOC4yIDEyNS4yIDI4LjJNMTIwLjYgMzNDMTIwLjMgMzMgMTIwLjEgMzMuMyAxMjAuMSAzMy42QzEyMC4xIDMzLjkgMTIwLjMgMzQuMiAxMjAuNyAzNC4yQzEyMC43IDM0LjIgMTIwLjcgMzQuMiAxMjAuNyAzNC4yQzEyMSAzNC4yIDEyMS4zIDMzLjkgMTIxLjMgMzMuNkMxMjEuMyAzMy4zIDEyMSAzMyAxMjAuNyAzM0gxMjAuNk0xMTQuNiAzNkMxMTQuMyAzNiAxMTQgMzYuMyAxMTQgMzYuNkMxMTQuMSAzNi45IDExNC4zIDM3LjIgMTE0LjYgMzcuMkMxMTUgMzcuMiAxMTUuMiAzNi45IDExNS4yIDM2LjZDMTE1LjIgMzYuNiAxMTUuMiAzNi41IDExNS4yIDM2LjVDMTE1LjIgMzYuMiAxMTQuOSAzNS45IDExNC42IDM2TTEwNy41IDM2LjlDMTA3LjIgMzcgMTA2LjkgMzcuMiAxMDYuOSAzNy42QzEwNi45IDM3LjkgMTA3LjIgMzguMSAxMDcuNSAzOC4xSDEwNy42QzEwNy45IDM4LjEgMTA4LjEgMzcuOCAxMDguMSAzNy41QzEwOCAzNy4yIDEwNy44IDM2LjkgMTA3LjUgMzYuOVpNMTAwLjYgMzYuMkMxMDAuMyAzNi4yIDEwMC4xIDM2LjUgMTAwLjEgMzYuOEMxMDAuMiAzNy4xIDEwMC40IDM3LjQgMTAwLjggMzcuM0MxMDEuMSAzNy4zIDEwMS4zIDM3IDEwMS4zIDM2LjdDMTAxLjMgMzYuNCAxMDEgMzYuMSAxMDAuNyAzNi4xQzEwMC43IDM2LjIgMTAwLjcgMzYuMiAxMDAuNiAzNi4yWk05NC41IDMzLjFDOTQuMiAzMy4xIDkzLjkgMzMuMyA5My45IDMzLjdDOTMuOSAzNCA5NC4yIDM0LjIgOTQuNSAzNC4ySDk0LjZDOTQuOSAzNC4yIDk1LjEgMzMuOSA5NS4xIDMzLjZDOTUgMzMuMyA5NC44IDMzIDk0LjUgMzMuMVpNODkuOSAyOC4yQzg5LjYgMjguMiA4OS40IDI4LjUgODkuNCAyOC44Qzg5LjQgMjkuMiA4OS43IDI5LjQgOTAgMjkuNEM5MC4zIDI5LjMgOTAuNSAyOSA5MC41IDI4LjdDOTAuNCAyOC40IDkwLjIgMjguMiA4OS45IDI4LjJNODcuNCAxNi45Qzg3LjEgMTcgODYuOCAxNy4yIDg2LjkgMTcuNkM4Ni45IDE3LjkgODcuMiAxOC4xIDg3LjUgMTguMUM4Ny44IDE4IDg4IDE3LjcgODggMTcuNEM4Ny45IDE3LjEgODcuNyAxNi45IDg3LjQgMTYuOU0xMDQuMSAzMi41QzEwNC4xIDMxLjggMTAzLjYgMzEuMyAxMDMgMzEuM0MxMDIuMyAzMS4zIDEwMS44IDMxLjggMTAxLjggMzIuNUMxMDEuOCAzMy4xIDEwMi4zIDMzLjYgMTAzIDMzLjZDMTAzLjYgMzMuNiAxMDQuMSAzMy4xIDEwNC4xIDMyLjVaTTExMi4xIDMxLjNDMTExLjUgMzEuMyAxMTAuOSAzMS44IDExMC45IDMyLjRDMTEwLjkgMzMuMSAxMTEuNCAzMy42IDExMi4xIDMzLjZDMTEyLjcgMzMuNiAxMTMuMyAzMy4xIDExMy4zIDMyLjVDMTEzLjMgMzEuOCAxMTIuOCAzMS4zIDExMi4xIDMxLjNDMTEyLjEgMzEuMyAxMTIuMSAzMS4zIDExMi4xIDMxLjNaTTExNi4xIDI5QzExNS40IDI5IDExNC45IDI5LjUgMTE0LjkgMzAuMUMxMTQuOSAzMC44IDExNS40IDMxLjMgMTE2IDMxLjNDMTE2LjcgMzEuMyAxMTcuMiAzMC44IDExNy4yIDMwLjJWMzAuMkMxMTcuMiAyOS41IDExNi43IDI5IDExNi4xIDI5QzExNiAyOSAxMTYgMjkgMTE2IDI5TTEyMC4yIDI2LjdDMTIwLjIgMjYgMTE5LjcgMjUuNSAxMTkuMSAyNS41QzExOC40IDI1LjUgMTE3LjkgMjYgMTE3LjkgMjYuN0MxMTcuOSAyNy4zIDExOC40IDI3LjggMTE5LjEgMjcuOEMxMTkuNyAyNy44IDEyMC4yIDI3LjMgMTIwLjIgMjYuN1pNOTkuMSAyOC45Qzk4LjQgMjguOSA5Ny45IDI5LjUgOTcuOSAzMC4xQzk3LjkgMzAuNyA5OC40IDMxLjMgOTkgMzEuM0M5OS43IDMxLjMgMTAwLjIgMzAuOCAxMDAuMiAzMC4xQzEwMC4yIDI5LjUgOTkuNyAyOSA5OS4xIDI4LjlaTTk2IDI1LjVDOTUuNCAyNS41IDk0LjggMjYgOTQuOCAyNi43Qzk0LjggMjcuMyA5NS40IDI3LjggOTYgMjcuOEM5Ni42IDI3LjggOTcuMiAyNy4zIDk3LjIgMjYuN1YyNi43Qzk3LjIgMjYgOTYuNiAyNS41IDk2IDI1LjVaTTE0Mi40IDE1LjZIMTQ5LjZWMjUuMUgxNTIuMVYxNS42SDE1OC42TDE1OS4yIDEzLjlIMTQzTDE0Mi40IDE1LjZaTTg0LjMgMTMuOUg4MS44VjI1LjFIOTMuM0w5My45IDIzLjRIODQuM1YxMy45Wk0xMDcuNyAxMy45TDExMy44IDI1SDExNi41TDExMC40IDEzLjlMMTA3LjcgMTMuOVpNOTguNiAyNUgxMDEuMkwxMDcuMyAxMy45SDEwNC42TDk4LjYgMjVaTTEzNC43IDIyLjJMMTI0LjIgMTMuOUgxMjEuNlYyNUgxMjQuMlYxNi43TDEzNC43IDI1SDEzNy4yVjEzLjlIMTM0LjdMMTM0LjcgMjIuMlpNMTg1LjYgMTguNkgxNzcuOUMxNzcuMSAxOC43IDE3Ni40IDE4LjEgMTc2LjQgMTcuNEMxNzYuNCAxNy4zIDE3Ni40IDE3LjMgMTc2LjQgMTcuMlYxNi45QzE3Ni40IDE2LjIgMTc3IDE1LjYgMTc3LjcgMTUuNkMxNzcuNyAxNS42IDE3Ny43IDE1LjYgMTc3LjggMTUuNkgxODguM0wxODguOSAxMy45SDE3Ny4xQzE3NSAxMy45IDE3My45IDE1LjMgMTczLjkgMTYuOFYxNy41QzE3My45IDE4LjkgMTc1IDIwLjQgMTc3LjIgMjAuNEgxODQuOUMxODUuNyAyMC40IDE4Ni4zIDIwLjkgMTg2LjQgMjEuN0MxODYuNCAyMS43IDE4Ni40IDIxLjcgMTg2LjQgMjEuOFYyMi4xQzE4Ni40IDIyLjkgMTg1LjggMjMuNSAxODUgMjMuNUgxNzQuNUwxNzMuOSAyNS4xSDE4NS43QzE4Ny44IDI1LjEgMTg4LjkgMjMuNyAxODguOSAyMi4zVjIxLjVDMTg4LjkgMjAuMSAxODcuOCAxOC42IDE4NS42IDE4LjZNMTEuNyAxOC42SDRDMy4yIDE4LjcgMi41IDE4LjEgMi41IDE3LjNDMi41IDE3LjMgMi41IDE3LjMgMi41IDE3LjJWMTYuOUMyLjUgMTYuMiAzLjEgMTUuNiAzLjkgMTUuNkgxNC40TDE1IDEzLjlIMy4yQzEuMSAxNCAwIDE1LjQgMCAxNi44VjE3LjVDMCAxOSAxLjEgMjAuNCAzLjMgMjAuNEgxMUMxMS44IDIwLjQgMTIuNCAyMC45IDEyLjUgMjEuN0MxMi41IDIxLjcgMTIuNSAyMS44IDEyLjUgMjEuOFYyMi4xQzEyLjUgMjIuOSAxMS45IDIzLjUgMTEuMSAyMy41SDAuNkwwIDI1LjFIMTEuOEMxMy45IDI1LjEgMTUgMjMuNyAxNSAyMi4zVjIxLjVDMTUgMjAuMSAxMy45IDE4LjYgMTEuNyAxOC42TTE2NC41IDI1SDE2N1YxMy45SDE2NC41VjI1Wk0yMC41IDE1LjZIMjcuNlYyNS4xSDMwLjFWMTUuNkgzNi43TDM3LjMgMTMuOUgyMS4xTDIwLjUgMTUuNlpNNTQuOSAxNS42TDU1LjUgMTMuOUg0Mi44VjI1LjFINTQuOUw1NS41IDIzLjRINDUuM1YyMC4zSDUyLjRMNTMuMSAxOC43SDQ1LjNWMTUuNkg1NC45Wk02NS42IDIzLjVINzUuMkw3NC42IDI1LjFINjMuMVYxMy45SDY1LjZWMjMuNVoiIGZpbGw9IndoaXRlIi8+PC9zdmc+IA==",
+              "size": 34
+            },
+            {
+              "name": "Toyota Motor Europe",
+              "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ2IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMTQ2IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yMDAzXzUwOSkiPjxwYXRoIGQ9Ik01Ny42IDMuNEg0Mi44VjYuN0g0OC4zVjIwLjZINTIuMlY2LjdINTcuNlYzLjRNNzIuMSAxNC43QzcxLjggMTUuNSA3MS4zIDE2LjIgNzAuNyAxNi43QzcwLjEgMTcuMiA2OS4zIDE3LjUgNjguNSAxNy43QzY4LjIgMTcuNyA2Ny45IDE3LjcgNjcuNiAxNy43QzY3LjMgMTcuNyA2NyAxNy43IDY2LjcgMTcuN0M2NS45IDE3LjUgNjUuMiAxNy4yIDY0LjUgMTYuN0M2My45IDE2LjIgNjMuNCAxNS41IDYzLjEgMTQuN0M2Mi44IDEzLjkgNjIuNiAxMi45IDYyLjYgMTJDNjIuNiAxMS4xIDYyLjggMTAuMSA2My4xIDkuM0M2My40IDguNSA2My45IDcuOCA2NC41IDcuM0M2NS4yIDYuOCA2NS45IDYuNSA2Ni43IDYuM0M2Ny4zIDYuMiA2Ny45IDYuMiA2OC41IDYuM0M2OS4zIDYuNSA3MC4xIDYuOCA3MC43IDcuM0M3MS4zIDcuOCA3MS44IDguNSA3Mi4xIDkuMkM3Mi44IDExIDcyLjggMTMgNzIuMSAxNC43Wk02Ny42IDIuOUM2NS4yIDIuOSA2Mi45IDMuOSA2MS4yIDUuNkM1OS41IDcuMyA1OC41IDkuNiA1OC41IDEyQzU4LjUgMTQuNCA1OS41IDE2LjcgNjEuMiAxOC40QzYyLjkgMjAuMSA2NS4yIDIxLjEgNjcuNiAyMS4xQzcwIDIxLjEgNzIuNCAyMC4xIDc0LjEgMTguNEM3NS44IDE2LjcgNzYuNyAxNC40IDc2LjcgMTJDNzYuNyA5LjYgNzUuOCA3LjMgNzQuMSA1LjZDNzIuNCAzLjkgNzAgMi45IDY3LjYgMi45Wk03Ni44IDMuNEg4MS40TDg1LjYgMTAuOEw4OS45IDMuNEg5NC40TDg3LjUgMTQuMlYyMC42SDgzLjdWMTQuMkw3Ni44IDMuNE0xMDMuNiAxNy43QzEwMy45IDE3LjcgMTA0LjIgMTcuNyAxMDQuNSAxNy43QzEwNS4zIDE3LjUgMTA2LjEgMTcuMiAxMDYuNyAxNi43QzEwNy4zIDE2LjIgMTA3LjggMTUuNSAxMDguMSAxNC43QzEwOC44IDEzIDEwOC44IDExIDEwOC4xIDkuM0MxMDcuOCA4LjUgMTA3LjMgNy44IDEwNi43IDcuM0MxMDYuMSA2LjggMTA1LjMgNi41IDEwNC41IDYuM0MxMDMuOSA2LjIgMTAzLjMgNi4yIDEwMi43IDYuM0MxMDEuOSA2LjUgMTAxLjIgNi44IDEwMC42IDcuM0M5OS45IDcuOCA5OS40IDguNSA5OS4yIDkuM0M5OC44IDEwLjEgOTguNiAxMS4xIDk4LjYgMTJDOTguNiAxMyA5OC44IDEzLjkgOTkuMiAxNC43Qzk5LjQgMTUuNSA5OS45IDE2LjIgMTAwLjYgMTYuN0MxMDEuMiAxNy4yIDEwMS45IDE3LjUgMTAyLjcgMTcuN0MxMDMgMTcuNyAxMDMuMyAxNy43IDEwMy42IDE3LjdaTTk0LjUgMTJDOTQuNSA5LjYgOTUuNSA3LjMgOTcuMiA1LjZDOTguOSAzLjkgMTAxLjIgMi45IDEwMy42IDIuOUMxMDYgMi45IDEwOC40IDMuOSAxMTAuMSA1LjZDMTExLjggNy4zIDExMi43IDkuNiAxMTIuNyAxMkMxMTIuNyAxNC40IDExMS44IDE2LjcgMTEwLjEgMTguNEMxMDguNCAyMC4xIDEwNiAyMS4xIDEwMy42IDIxLjFDMTAxLjIgMjEuMSA5OC45IDIwLjEgOTcuMiAxOC40Qzk1LjUgMTYuNyA5NC41IDE0LjQgOTQuNSAxMlpNMTM5LjIgMTMuOEwxMzYuNiA3TDEzNC4xIDEzLjhIMTM5LjJNMTQwLjMgMTYuOEgxMzNMMTMxLjUgMjAuNUgxMjcuMkwxMzQuMiAzLjRIMTM5TDE0NiAyMC41SDE0MS43TDE0MC4zIDE2LjhaTTEyOC40IDMuNEgxMTMuNlY2LjdIMTE5VjIwLjZIMTIyLjlWNi43SDEyOC40VjMuNE0yNyAxLjJDMjQuMyAwLjQgMjEuNSAwIDE4LjcgLTMuNmUtMDZDMTUuOSAwIDEzLjEgMC40IDEwLjQgMS4yQzQuMyAzLjEgMCA3LjIgMCAxMkMwIDE4LjYgOC40IDI0IDE4LjcgMjRDMjkuMSAyNCAzNy40IDE4LjYgMzcuNCAxMkMzNy40IDcuMiAzMy4yIDMuMSAyNyAxLjJaTTE4LjcgMTguOEMxNy4yIDE4LjggMTUuOSAxNS44IDE1LjggMTJDMTYuOCAxMi4xIDE3LjcgMTIuMSAxOC43IDEyLjFDMTkuNyAxMi4xIDIwLjcgMTIuMSAyMS42IDEyQzIxLjUgMTUuOCAyMC4zIDE4LjggMTguNyAxOC44Wk0xNiA5LjFDMTYuNCA2LjQgMTcuNSA0LjUgMTguNyA0LjVDMTkuOSA0LjUgMjEgNi40IDIxLjQgOS4xQzE5LjYgOS4yIDE3LjggOS4yIDE2IDkuMVpNMjMuMSA4LjhDMjIuNCA0LjcgMjAuNyAxLjcgMTguNyAxLjdDMTYuNyAxLjcgMTUgNC43IDE0LjQgOC44QzEwLjYgOC4yIDcuOSA2LjkgNy45IDUuNEM3LjkgMy4yIDEyLjggMS41IDE4LjcgMS41QzI0LjcgMS41IDI5LjUgMy4yIDI5LjUgNS40QzI5LjUgNi45IDI2LjkgOC4zIDIzLjEgOC44SDIzLjFaTTIuNyAxMS41QzIuNyA5LjUgMy41IDcuNiA0LjkgNS45QzQuOSA2IDQuOSA2LjIgNC45IDYuMkM0LjkgOC44IDguOCAxMSAxNC4yIDExLjhWMTIuNEMxNC4yIDE3LjEgMTUuNSAyMS4yIDE3LjMgMjIuNkM5LjIgMjIuMSAyLjcgMTcuMyAyLjcgMTEuNUgyLjdaTTIwLjEgMjIuNkMyMiAyMS4yIDIzLjMgMTcuMiAyMy4zIDEyLjRWMTEuOEMyOC43IDExIDMyLjYgOC44IDMyLjYgNi4zQzMyLjYgNi4yIDMyLjYgNiAzMi41IDUuOUMzMy45IDcuNSAzNC43IDkuNSAzNC43IDExLjVDMzQuNyAxNy4zIDI4LjMgMjIuMSAyMC4xIDIyLjZWMjIuNloiIGZpbGw9IndoaXRlIi8+PC9nPjxkZWZzPjxjbGlwUGF0aCBpZD0iY2xpcDBfMjAwM181MDkiPjxyZWN0IHdpZHRoPSIxNDYiIGhlaWdodD0iMjQiIGZpbGw9IndoaXRlIi8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+IA==",
+              "size": 24
+            },
+            {
+              "name": "Applied Intuition",
+              "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAxMDkwIDEzOCI+PGcgZmlsbD0iY3VycmVudENvbG9yIj48cGF0aCBkPSJNMTg3LjQsMTIuNGwtMzUuMiw5NC4xaDE3LjRsOC43LTI1LjloMzguN2w4LjYsMjUuOWgxNy4zTDIwOCwxMi40aC0yMC42LDBaTTE4Mi45LDY3bDEzLjMtMzkuOGgzbDEzLjMsMzkuOGgtMjkuNloiPjwvcGF0aD48cGF0aCBkPSJNNDAwLjgsMTIuNGgxNC42djk0LjFoLTE0LjZWMTIuNFoiPjwvcGF0aD48cGF0aCBkPSJNNTAzLjEsNDEuM2MtNC45LTMuMS0xMC42LTQuNi0xNy4zLTQuNnMtMTIuNSwxLjUtMTcuNCw0LjUtOC43LDcuMi0xMS4zLDEyLjZjLTIuNiw1LjQtNCwxMS41LTQsMTguNnMxLjMsMTMuMiw0LDE4LjdjMi43LDUuNCw2LjUsOS42LDExLjUsMTIuN3MxMC45LDQuNiwxNy44LDQuNiwxNC42LTIuMSwyMC02LjJjNS4yLTMuOSw4LjctOS41LDEwLjYtMTYuNWgtMTQuOWMtMy4yLDguMS0xMC4xLDEwLjYtMTUuOCwxMC42LTkuOSwwLTE4LjItNy4zLTE4LjItMTYuNHYtMy4xaDQ5LjdjMC0wLjgsMC0xLjksMC0zLjQsMC03LjItMS4zLTEzLjUtMy44LTE5cy02LjMtOS44LTExLjEtMTIuOGgwdi0wLjNaTTUwMy4zLDY1LjFoLTM1LjF2LTAuNWMwLTguOSw3LjktMTYuMSwxNy41LTE2LjFzMTcuNSw3LjIsMTcuNSwxNi4xdjAuNWgwLjFaIj48L3BhdGg+PHBhdGggZD0iTTU3Ni44LDEyLjR2MzUuMmgtMS4yYy00LjktOC4xLTEzLjEtMTAuOS0yMC4xLTEwLjlzLTEyLjEsMS42LTE2LjcsNC44Yy00LjcsMy4yLTguMiw3LjUtMTAuNSwxMi45LTIuNCw1LjQtMy41LDExLjQtMy41LDE4czEuMiwxMi42LDMuNSwxOC4xYzIuNCw1LjQsNS45LDkuOCwxMC41LDEzLDQuNywzLjIsMTAuMiw0LjgsMTYuNyw0LjhzMTUuMS0yLjYsMjAuMS0xMC45aDEuMnY5LjJoMTQuNlYxMi40aC0xNC42Wk01NzcuMSw3OC40YzAsOS40LTguMywxNy4xLTE4LjYsMTcuMXMtMTguNi03LjctMTguNi0xNy4xdi0xMi42YzAtOS40LDguMy0xNy4xLDE4LjYtMTcuMXMxOC42LDcuNywxOC42LDE3LjF2MTIuNloiPjwvcGF0aD48cGF0aCBkPSJNMzc3LjcsNDEuNWMtNC43LTMuMi0xMC4yLTQuOC0xNi43LTQuOHMtMTUuMSwyLjYtMjAuMSwxMC45aC0xLjJ2LTkuMmgtMTQuNnY5NC4xaDE0LjZ2LTM1LjJoMS4yYzQuOSw4LjEsMTMuMSwxMC45LDIwLjEsMTAuOXMxMi4xLTEuNiwxNi43LTQuOCw4LjItNy41LDEwLjUtMTIuOWMyLjQtNS40LDMuNS0xMS40LDMuNS0xOHMtMS4yLTEyLjYtMy41LTE4Yy0yLjQtNS40LTUuOS05LjgtMTAuNS0xM2gwWk0zNzYuNSw3OC40YzAsOS40LTguMywxNy4xLTE4LjYsMTcuMXMtMTguNi03LjctMTguNi0xNy4xdi0xMi42YzAtOS40LDguMy0xNy4xLDE4LjYtMTcuMXMxOC42LDcuNywxOC42LDE3LjF2MTIuNloiPjwvcGF0aD48cGF0aCBkPSJNMzAxLjksNDEuNWMtNC43LTMuMi0xMC4yLTQuOC0xNi43LTQuOHMtMTUuMSwyLjYtMjAuMSwxMC45aC0xLjJ2LTkuMmgtMTQuNnY5NC4xaDE0LjZ2LTM1LjJoMS4yYzQuOSw4LjEsMTMuMSwxMC45LDIwLjEsMTAuOXMxMi4xLTEuNiwxNi43LTQuOCw4LjItNy41LDEwLjUtMTIuOWMyLjQtNS40LDMuNS0xMS40LDMuNS0xOHMtMS4yLTEyLjYtMy41LTE4Yy0yLjQtNS40LTUuOS05LjgtMTAuNS0xM2gwWk0zMDAuNyw3OC40YzAsOS40LTguMywxNy4xLTE4LjYsMTcuMXMtMTguNi03LjctMTguNi0xNy4xdi0xMi42YzAtOS40LDguMy0xNy4xLDE4LjYtMTcuMXMxOC42LDcuNywxOC42LDE3LjF2MTIuNloiPjwvcGF0aD48cGF0aCBkPSJNNDQ0LjIsMzguNGgtMTQuOHY2OC4xaDE0LjhWMzguNFoiPjwvcGF0aD48cGF0aCBkPSJNNDM3LjcsMjguNGM0LjYtMC41LDgtNC42LDcuNS05LjEtMC41LTQuNi00LjUtNy45LTkuMS03LjVzLTgsNC42LTcuNSw5LjFjMC41LDQuNiw0LjUsNy45LDkuMSw3LjVaIj48L3BhdGg+PHBhdGggZD0iTTY0OC42LDEyLjRoLTE1Ljl2OTQuMWgxNS45VjEyLjRaIj48L3BhdGg+PHBhdGggZD0iTTY5OS43LDM2LjdjLTkuNCwwLTE1LjksNC0yMC41LDEyLjVoLTEuMnYtMTAuOGgtMTQuNnY2OC4xaDE0LjZ2LTM3LjRjMC0zLjgwLjctNy4yLDItMTAuMiwxLjQtMywzLjQtNS40LDYuMS03LjEsMi43LTEuNyw2LjEtMi42LDEwLTIuNnM2LjksMS4xLDkuMSwzLjQsMy4zLDUuNCwzLjMsOS40djQ0LjVoMTQuNnYtNDUuM2MwLTcuNy0xLjgtMTMuNy01LjUtMTgtMy42LTQuMy05LjYtNi41LTE4LTYuNWgwLjFaIj48L3BhdGg+PHBhdGggZD0iTTc1NS4yLDE4aC0xNC42djE1YzAsMy0yLjQsNS40LTUuNCw1LjRoLTUuNHYxMi4yaDEwLjh2NDZjMCwyLjcwLjksNS4xLDIuOCw3LDEuOSwxLjksNC4yLDIuOSw3LDIuOWgxOXYtMTIuMmgtMTQuMnYtNDMuNmgxNC4ydi0xMi4yaC0xNC4ydi0yMC40aDBaIj48L3BhdGg+PHBhdGggZD0iTTkwMSwxOGgtMTQuNnYxNWMwLDMtMi40LDUuNC01LjQsNS40aC01LjR2MTIuMmgxMC44djQ2YzAsMi43MC45LDUuMSwyLjgsNywxLjksMS45LDQuMiwyLjksNywyLjloMTl2LTEyLjJoLTE0LjJ2LTQzLjZoMTQuMnYtMTIuMmgtMTQuMnYtMjAuNGgwWiI+PC9wYXRoPjxwYXRoIGQ9Ik04MjMuNiw3NS44YzAsMy44LTAuNyw3LjItMiwxMC4yLTEuNCwzLTMuNCw1LjQtNi4xLDcuMS0yLjcsMS43LTYuMSwyLjYtMTAsMi42cy02LjktMS4yLTkuMS0zLjVjLTIuMi0yLjMtMy4zLTUuNC0zLjMtOS4zdi00NC41aC0xNC42djQ1LjNjMCw3LjcsMS44LDEzLjcsNS41LDE4LjEsMy42LDQuMyw5LjYsNi41LDE4LDYuNXMxNS45LTQsMjAuNS0xMi41aDEuMnYxMC44aDE0LjZWMzguNGgtMTQuNnYzNy40aC0wLjFaIj48L3BhdGg+PHBhdGggZD0iTTEwMDAuMiw0MS4zYy01LjEtMy4xLTExLjItNC43LTE4LjUtNC43cy0xMy40LDEuNi0xOC41LDQuN2MtNS4xLDMuMS05LDcuNC0xMS43LDEyLjgtMi42LDUuNC00LDExLjUtNCwxOC4yczEuMywxMyw0LDE4LjQsNi41LDkuNywxMS43LDEyLjhjNS4xLDMuMSwxMS4zLDQuNywxOC41LDQuN3MxMy4zLTEuNiwxOC41LTQuN2M1LjEtMy4xLDktNy40LDExLjYtMTIuOHM0LTExLjUsNC0xOC40LTEuMy0xMi44LTQtMTguMi02LjUtOS43LTExLjYtMTIuOFpNMTAwMC40LDc4LjZjMCw5LjUtOC40LDE3LjItMTguNywxNy4ycy0xOC43LTcuNy0xOC43LTE3LjJ2LTEyLjRjMC05LjUsOC40LTE3LjIsMTguNy0xNy4yczE4LjcsNy43LDE4LjcsMTcuMnYxMi40WiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMDc5LjEsNDMuMWMtMy42LTQuMy05LjYtNi41LTE4LTYuNXMtMTUuOSw0LTIwLjUsMTIuNWgtMS4ydi0xMC44aC0xNC42djY4LjFoMTQuNnYtMzcuNGMwLTMuODAuNy03LjIsMi0xMC4yLDEuNC0zLDMuNC01LjQsNi4xLTcuMSwyLjctMS43LDYuMS0yLjYsMTAtMi42czYuOSwxLjEsOS4xLDMuNCwzLjMsNS40LDMuMyw5LjR2NDQuNWgxNC42di00NS4zYzAtNy43LTEuOC0xMy43LTUuNS0xOGgwWiI+PC9wYXRoPjxwYXRoIGQ9Ik04NjcsMzguNGgtMTQuOHY2OC4xaDE0LjhWMzguNFoiPjwvcGF0aD48cGF0aCBkPSJNODU5LjcsMjguNGM0LjYsMCw4LjQtMy43LDguNC04LjRzLTMuNy04LjQtOC40LTguNC04LjQsMy43LTguNCw4LjQsMy43LDguNCw4LjQsOC40WiI+PC9wYXRoPjxwYXRoIGQ9Ik05MzguNiwzOC40aC0xNC44djY4LjFoMTQuOFYzOC40WiI+PC9wYXRoPjxwYXRoIGQ9Ik05MzEuMywyOC40YzQuNiwwLDguNC0zLjcsOC40LTguNHMtMy43LTguNC04LjQtOC40LTguNCwzLjctOC40LDguNCwzLjcsOC40LDguNCw4LjRaIj48L3BhdGg+PC9nPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTUuNSw5OEw2Mi44LDMuNmgzbDU3LjIsOTQuNC0yLjMsMS45Yy0xMy4yLTE2LjgtMzMuNy0yNy42LTU2LjUtMjcuNnMtNDMsMTAuNy01Ni40LDI3LjZjMCwwLTIuMy0xLjktMi4zLTEuOVpNNDQuNSwxMTQuN2MwLTExLjEsOC44LTE5LjgsMTkuNy0xOS44czE5LjgsOC44LDE5LjgsMTkuOC04LjgsMTkuNy0xOS44LDE5LjctMTkuNy04LjktMTkuNy0xOS43WiI+PC9wYXRoPjwvc3ZnPg==",
+              "size": 22
+            },
+            {
+              "name": "MobileDrive and Foxconn",
+              "src": "data:image/png;base64,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",
+              "size": 42
+            }
+          ]
+        }
+      ],
+      "desc": "Production-grade agent architecture, n8n orchestration pipelines, and zero-trust security."
+    },
+    "careers": {
+      "label": "Careers",
+      "title": "Careers · Biftu",
+      "sections": [
+        {
+          "type": "pghero",
+          "lab": "Careers",
+          "h": "Join Biftu · Build Autonomous Business Workflows",
+          "p": "We are hiring engineers and automation architects who want to build high-leverage AI agent infrastructure for global commerce."
+        },
+        {
+          "type": "roles",
+          "anchor": "roles",
+          "lab": "Open roles",
+          "items": [
+            {
+              "id": "agent-eng-01",
+              "h": "Senior AI Automation Engineer (n8n & Node.js)",
+              "p": "Architect and scale multi-turn autonomous agent pipelines, tool-calling nodes, and webhook gateways.",
+              "loc": "Remote / Hybrid",
+              "team": "Agent Core",
+              "type": "Full-time"
+            },
+            {
+              "id": "agent-eng-02",
+              "h": "Full-Stack Platform Engineer (React, TypeScript & Supabase)",
+              "p": "Build high-performance client dashboards, real-time analytics views, and embedded MCP UI components.",
+              "loc": "Remote",
+              "team": "Platform",
+              "type": "Full-time"
+            },
+            {
+              "id": "agent-eng-03",
+              "h": "Cloud & DevOps Security Engineer (Azure & Zero-Trust)",
+              "p": "Harden CI/CD deployment pipelines, manage container clusters, and enforce HMAC webhook verification.",
+              "loc": "Remote",
+              "team": "Security & Infra",
+              "type": "Full-time"
+            }
+          ],
+          "h": "Open Engineering Roles"
+        },
+        {
+          "type": "callouts",
+          "anchor": "other-work",
+          "lab": "Other work",
+          "h": "Looking for project or task work?",
+          "items": [
+            {
+              "lab": "Biftu OEM projects",
+              "t": "Engineering projects for vehicle manufacturers",
+              "p": "Find open projects and apply on the Biftu platform.",
+              "link": {
+                "t": "Biftu platform",
+                "h": "https://app.biftu.com"
+              }
+            },
+            {
+              "lab": "Expert data work",
+              "t": "Paid tasks for engineers and domain experts",
+              "p": "Sign up and help build tasks for frontier AI labs.",
+              "link": {
+                "t": "Find work",
+                "h": "https://dop.biftu.com"
+              }
+            }
+          ]
+        }
+      ],
+      "desc": "Build the future of autonomous business operations with the Biftu team."
+    },
+    "enterprise": {
+      "label": "Enterprise",
+      "title": "Enterprise Solutions · Biftu",
+      "desc": "Sovereign multi-tenant agents running on your private Azure or AWS cloud infrastructure.",
+      "sections": [
+        {
+          "type": "ehero",
+          "tone": "data",
+          "lab": "Enterprise",
+          "h": "Enterprise Multi-Tenant Autonomous Agent Platform",
+          "p": "Deploy autonomous agents inside your private cloud VPC with dedicated PostgreSQL Row-Level Security, custom branded dashboards, and guaranteed SLAs.",
+          "ctas": [
+            {
+              "t": "Request access",
+              "h": "#contact"
+            },
+            {
+              "t": "How it works ↓",
+              "h": "#how"
+            }
+          ],
+          "board": {
+            "h": "Your model",
+            "la": "Today",
+            "lb": "Target",
+            "rows": [
+              {
+                "h": "Correctness",
+                "u": "Runs that pass",
+                "a": "25%",
+                "b": "60%+",
+                "av": 25,
+                "bv": 60,
+                "max": 100
+              },
+              {
+                "h": "Speed",
+                "u": "Time per task",
+                "a": "3 min",
+                "b": "45 s",
+                "av": 3,
+                "bv": 0.75,
+                "max": 3.5
+              },
+              {
+                "h": "Cost",
+                "u": "Cost per task",
+                "a": "$11.41",
+                "b": "$1.14",
+                "av": 11.41,
+                "bv": 1.14,
+                "max": 12
+              }
+            ],
+            "sov": {
+              "h": "Sovereign",
+              "t": "You own the model, the weights and the data"
+            },
+            "note": "Data from long-horizon engineering tasks from our benchmark, [constraintbench.com](https://constraintbench.com)"
+          }
+        },
+        {
+          "type": "egap",
+          "anchor": "why",
+          "lab": "Why",
+          "h": "A model that understands your engineering",
+          "a": {
+            "lab": "Frontier AI",
+            "t": "Knows public code"
+          },
+          "b": {
+            "lab": "Your own model",
+            "t": "Knows your engineering too"
+          },
+          "pubLab": "Public code",
+          "ownLab": "Your engineering",
+          "pub": [
+            {
+              "t": "C and C++"
+            },
+            {
+              "t": "Verilog"
+            },
+            {
+              "t": "Python"
+            },
+            {
+              "t": "Linux"
+            },
+            {
+              "t": "Public docs"
+            }
+          ],
+          "own": [
+            {
+              "t": "Design rules"
+            },
+            {
+              "t": "Toolchain"
+            },
+            {
+              "t": "Internal libraries"
+            },
+            {
+              "t": "Test benches"
+            },
+            {
+              "t": "Past fixes"
+            }
+          ]
+        },
+        {
+          "type": "eflow",
+          "anchor": "how",
+          "h": "How it works",
+          "items": [
+            {
+              "n": "01",
+              "h": "Benchmark",
+              "p": "A free, private test of today’s models on your typical task.",
+              "viz": "bench",
+              "bench": {
+                "cap": "Illustrative · 100 typical tasks, e.g. fix a failing regression test or RTL simulation",
+                "mmax": 6,
+                "dmax": 3,
+                "rows": [
+                  {
+                    "t": "Frontier model A",
+                    "c": "42%",
+                    "cv": 42,
+                    "m": "6 min",
+                    "mv": 6,
+                    "d": "$$$",
+                    "dv": 3
+                  },
+                  {
+                    "t": "Frontier model B",
+                    "c": "31%",
+                    "cv": 31,
+                    "m": "4 min",
+                    "mv": 4,
+                    "d": "$$",
+                    "dv": 2
+                  },
+                  {
+                    "t": "Open model",
+                    "c": "12%",
+                    "cv": 12,
+                    "m": "2 min",
+                    "mv": 2,
+                    "d": "$",
+                    "dv": 1
+                  }
+                ]
+              }
+            },
+            {
+              "n": "02",
+              "h": "Data",
+              "p": "Where AI fails, our engineer writes the right answer and a checker. AI then works the task many times, and the runs that pass become training data.",
+              "viz": "data",
+              "data": {
+                "fix": {
+                  "lab": "Expert fixes",
+                  "a": "AI fails",
+                  "b": "Expert",
+                  "c": "Answer + checker"
+                },
+                "runs": {
+                  "lab": "Agent runs",
+                  "marks": [
+                    1,
+                    1,
+                    0,
+                    1,
+                    0
+                  ]
+                }
+              }
+            },
+            {
+              "n": "03",
+              "h": "Training",
+              "p": "We train an open model on that data. It learns from examples first, then by practice.",
+              "viz": "train",
+              "train": {
+                "lab": "Open model",
+                "models": [
+                  {
+                    "k": "qwen",
+                    "t": "Qwen"
+                  },
+                  {
+                    "k": "kimi",
+                    "t": "Kimi"
+                  },
+                  {
+                    "k": "nvidia",
+                    "t": "Nemotron"
+                  },
+                  {
+                    "k": "muse",
+                    "t": "Muse"
+                  },
+                  {
+                    "k": "openai",
+                    "t": "gpt-oss"
+                  }
+                ],
+                "s1": {
+                  "n": "01",
+                  "h": "Learn from examples",
+                  "p": "Fine-tuning: copies thousands of correct runs"
+                },
+                "s2": {
+                  "n": "02",
+                  "h": "Learn by practice",
+                  "p": "RL: tries, gets scored by the checker, improves"
+                },
+                "out": "Your model"
+              }
+            },
+            {
+              "n": "04",
+              "h": "Your model",
+              "p": "Owned by you, running on your servers.",
+              "viz": "own",
+              "own": {
+                "lab": "Your company",
+                "optLab": "Option",
+                "opt": "Keep building on it with more data",
+                "tiles": [
+                  {
+                    "i": "server",
+                    "t": "Runs on your servers"
+                  },
+                  {
+                    "i": "key",
+                    "t": "You own the weights"
+                  },
+                  {
+                    "i": "data",
+                    "t": "You own the data set"
+                  },
+                  {
+                    "i": "people",
+                    "t": "Any engineer or CI pipeline can use it"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "eladder",
+          "anchor": "pilot",
+          "h": "Start small, and grow flexibly",
+          "legend": "Areas where your model beats the frontier",
+          "cells": 24,
+          "items": [
+            {
+              "n": "01",
+              "h": "Pilot",
+              "g": "On a limited number of tasks",
+              "f": 3
+            },
+            {
+              "n": "02",
+              "h": "Fine-tuned",
+              "g": "In specific areas",
+              "f": 8
+            },
+            {
+              "n": "03",
+              "h": "Post-trained",
+              "g": "Across several large fields",
+              "f": 15
+            },
+            {
+              "n": "04",
+              "h": "SoTA",
+              "g": "State-of-the-art performance on most of your tasks",
+              "f": 21
+            }
+          ]
+        },
+        {
+          "type": "band",
+          "mode": "form",
+          "anchor": "access",
+          "tone": "data",
+          "lab": "Get started",
+          "h": "Ready to get started?",
+          "p": "Start with a free, private benchmark on your typical task.",
+          "btn": "Request access",
+          "mail": "team@biftu.com",
+          "link": {
+            "t": "Request access",
+            "h": "#contact"
+          }
+        }
+      ]
+    }
+  }
+}
